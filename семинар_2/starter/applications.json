@@ -1,0 +1,602 @@
+[
+  {
+    "full_name": "Иванова Анна Сергеевна",
+    "age": 30,
+    "address": {
+      "city": "Нижний Новгород",
+      "district": "Нижегородский район"
+    },
+    "speciality": "маркетолог",
+    "desired_course": "Цифровой маркетинг",
+    "years_of_experience": 7,
+    "graduation_year": 2015
+  },
+  {
+    "full_name": "Анна Владимировна Соколова",
+    "age": 42,
+    "address": {
+      "city": "Казань",
+      "district": "Вахитовский район"
+    },
+    "speciality": "бухгалтер",
+    "desired_course": "Финансовый учет и Excel",
+    "years_of_experience": 18,
+    "graduation_year": 2004
+  },
+  {
+    "full_name": "Сергей Иванович Петров",
+    "age": 35,
+    "address": {
+      "city": "Екатеринбург",
+      "district": "Ленинский район"
+    },
+    "speciality": "менеджер по продажам",
+    "desired_course": "Цифровой маркетинг",
+    "years_of_experience": 10,
+    "graduation_year": 2010
+  },
+  {
+    "full_name": "Иванов Иван Иванович",
+    "age": 35,
+    "address": {
+      "city": "Новосибирск",
+      "district": "Центральный район"
+    },
+    "speciality": "специалист по закупкам",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 12,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 35,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный округ"
+    },
+    "speciality": "специалист по закупкам",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 10,
+    "graduation_year": 2010
+  },
+  {
+    "full_name": "Иванов Иван Иванович",
+    "age": 35,
+    "address": {
+      "city": "Пермь",
+      "district": "Ленинский район"
+    },
+    "speciality": "специалист по закупкам",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 12,
+    "graduation_year": 2010
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 35,
+    "address": {
+      "city": "Нижний Новгород",
+      "district": "Советский район"
+    },
+    "speciality": "бухгалтер",
+    "desired_course": "Финансовый учет и Excel",
+    "years_of_experience": 12,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Иванова Анна Сергеевна",
+    "age": 35,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Приморский район"
+    },
+    "speciality": "HR-специалист",
+    "desired_course": "HR-аналитика",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Сергеев Дмитрий Алексеевич",
+    "age": 35,
+    "address": {
+      "city": "Нижний Новгород",
+      "district": "Нижегородский район"
+    },
+    "speciality": "инженер",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 12,
+    "graduation_year": 2010
+  },
+  {
+    "full_name": "Иванова Светлана Петровна",
+    "age": 35,
+    "address": {
+      "city": "Екатеринбург",
+      "district": "Ленинский район"
+    },
+    "speciality": "менеджер по продажам",
+    "desired_course": "Цифровой маркетинг",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Петров Иван Алексеевич",
+    "age": 35,
+    "address": {
+      "city": "Самара",
+      "district": "Промышленный район"
+    },
+    "speciality": "аналитик данных",
+    "desired_course": "Data Analytics для бизнеса",
+    "years_of_experience": 12,
+    "graduation_year": 2010
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 35,
+    "address": {
+      "city": "Казань",
+      "district": "Вахитовский район"
+    },
+    "speciality": "HR-специалист",
+    "desired_course": "HR-аналитика",
+    "years_of_experience": 13,
+    "graduation_year": 2010
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 30,
+    "address": {
+      "city": "Новосибирск",
+      "district": "Октябрьский район"
+    },
+    "speciality": "аналитик данных",
+    "desired_course": "Data Analytics для бизнеса",
+    "years_of_experience": 8,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Иванова Елена Сергеевна",
+    "age": 32,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный округ"
+    },
+    "speciality": "маркетолог",
+    "desired_course": "Цифровой маркетинг",
+    "years_of_experience": 8,
+    "graduation_year": 2014
+  },
+  {
+    "full_name": "Петрова Анна Ивановна",
+    "age": 32,
+    "address": {
+      "city": "Ростов-на-Дону",
+      "district": "Кировский район"
+    },
+    "speciality": "медицинская сестра",
+    "desired_course": "Охрана труда",
+    "years_of_experience": 10,
+    "graduation_year": 2014
+  },
+  {
+    "full_name": "Сергеев Дмитрий Алексеевич",
+    "age": 34,
+    "address": {
+      "city": "Ростов-на-Дону",
+      "district": "Советский район"
+    },
+    "speciality": "инженер",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 12,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Иванов Иван Иванович",
+    "age": 30,
+    "address": {
+      "city": "Новосибирск",
+      "district": "Центральный район"
+    },
+    "speciality": "аналитик данных",
+    "desired_course": "Data Analytics для бизнеса",
+    "years_of_experience": 7,
+    "graduation_year": 2015
+  },
+  {
+    "full_name": "Петров Сергей Михайлович",
+    "age": 35,
+    "address": {
+      "city": "Казань",
+      "district": "Вахитовский район"
+    },
+    "speciality": "юрист",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 12,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Алексеев Владимир Николаевич",
+    "age": 42,
+    "address": {
+      "city": "Ростов-на-Дону",
+      "district": "Советский район"
+    },
+    "speciality": "инженер",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 18,
+    "graduation_year": 2004
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 35,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный округ"
+    },
+    "speciality": "юрист",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 12,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Соколова Анна Сергеевна",
+    "age": 35,
+    "address": {
+      "city": "Краснодар",
+      "district": "Прикубанский округ"
+    },
+    "speciality": "HR-специалист",
+    "desired_course": "HR-аналитика",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Иванов Иван Иванович",
+    "age": 42,
+    "address": {
+      "city": "Екатеринбург",
+      "district": "Ленинский район"
+    },
+    "speciality": "бухгалтер",
+    "desired_course": "Финансовый учет и Excel",
+    "years_of_experience": 18,
+    "graduation_year": 2002
+  },
+  {
+    "full_name": "Иванова Анна Петровна",
+    "age": 32,
+    "address": {
+      "city": "Самара",
+      "district": "Ленинский район"
+    },
+    "speciality": "маркетолог",
+    "desired_course": "Цифровой маркетинг",
+    "years_of_experience": 10,
+    "graduation_year": 2014
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 34,
+    "address": {
+      "city": "Пермь",
+      "district": "Свердловский район"
+    },
+    "speciality": "бухгалтер",
+    "desired_course": "Финансовый учет и Excel",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 35,
+    "address": {
+      "city": "Краснодар",
+      "district": "Прикубанский округ"
+    },
+    "speciality": "юрист",
+    "desired_course": "Бизнес-аналитика и BPMN",
+    "years_of_experience": 13,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Иванов Иван Иванович",
+    "age": 40,
+    "address": {
+      "city": "Самара",
+      "district": "Промышленный район"
+    },
+    "speciality": "специалист по закупкам",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 15,
+    "graduation_year": 2002
+  },
+  {
+    "full_name": "Соколова Ирина Викторовна",
+    "age": 35,
+    "address": {
+      "city": "Нижний Новгород",
+      "district": "Нижегородский район"
+    },
+    "speciality": "бухгалтер",
+    "desired_course": "Финансовый учет и Excel",
+    "years_of_experience": 12,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 35,
+    "address": {
+      "city": "Казань",
+      "district": "Вахитовский район"
+    },
+    "speciality": "медицинская сестра",
+    "desired_course": "Охрана труда",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Елена Владимировна Соколова",
+    "age": 30,
+    "address": {
+      "city": "Казань",
+      "district": "Вахитовский район"
+    },
+    "speciality": "HR-специалист",
+    "desired_course": "HR-аналитика",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Сидоров Иван Петрович",
+    "age": 34,
+    "address": {
+      "city": "Краснодар",
+      "district": "Прикубанский округ"
+    },
+    "speciality": "менеджер по продажам",
+    "desired_course": "Цифровой маркетинг",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Иванова Елена Павловна",
+    "age": 35,
+    "address": {
+      "city": "Пермь",
+      "district": "Индустриальный район"
+    },
+    "speciality": "аналитик данных",
+    "desired_course": "Data Analytics для бизнеса",
+    "years_of_experience": 13,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Петрова Елена Сергеевна",
+    "age": 42,
+    "address": {
+      "city": "Ростов-на-Дону",
+      "district": "Ворошиловский район"
+    },
+    "speciality": "юрист",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 20,
+    "graduation_year": 2004
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 35,
+    "address": {
+      "city": "Самара",
+      "district": "Промышленный район"
+    },
+    "speciality": "медицинская сестра",
+    "desired_course": "Охрана труда",
+    "years_of_experience": 12,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Иванов Сергей Петрович",
+    "age": 35,
+    "address": {
+      "city": "Краснодар",
+      "district": "Прикубанский округ"
+    },
+    "speciality": "менеджер по продажам",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 10,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Иванова Анна Петровна",
+    "age": 35,
+    "address": {
+      "city": "Новосибирск",
+      "district": "Ленинский район"
+    },
+    "speciality": "медицинская сестра",
+    "desired_course": "Охрана труда",
+    "years_of_experience": 10,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Петрова Елена Сергеевна",
+    "age": 38,
+    "address": {
+      "city": "Пермь",
+      "district": "Свердловский район"
+    },
+    "speciality": "учитель",
+    "desired_course": "Педагогический дизайн",
+    "years_of_experience": 12,
+    "graduation_year": 2008
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 35,
+    "address": {
+      "city": "Пермь",
+      "district": "Индустриальный район"
+    },
+    "speciality": "учитель",
+    "desired_course": "Педагогический дизайн",
+    "years_of_experience": 13,
+    "graduation_year": 2009
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 32,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный округ"
+    },
+    "speciality": "маркетолог",
+    "desired_course": "Цифровой маркетинг",
+    "years_of_experience": 10,
+    "graduation_year": 2014
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 35,
+    "address": {
+      "city": "Нижний Новгород",
+      "district": "Советский район"
+    },
+    "speciality": "учитель",
+    "desired_course": "Педагогический дизайн",
+    "years_of_experience": 12,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Смирнова Екатерина Андреевна",
+    "age": 34,
+    "address": {
+      "city": "Ростов-на-Дону",
+      "district": "Кировский район"
+    },
+    "speciality": "маркетолог",
+    "desired_course": "Цифровой маркетинг",
+    "years_of_experience": 11,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 40,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Приморский район"
+    },
+    "speciality": "медицинская сестра",
+    "desired_course": "Охрана труда",
+    "years_of_experience": 15,
+    "graduation_year": 2005
+  },
+  {
+    "full_name": "Иванов Иван Иванович",
+    "age": 35,
+    "address": {
+      "city": "Самара",
+      "district": "Промышленный район"
+    },
+    "speciality": "менеджер по продажам",
+    "desired_course": "Цифровой маркетинг",
+    "years_of_experience": 13,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 35,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Приморский район"
+    },
+    "speciality": "специалист по закупкам",
+    "desired_course": "Бизнес-аналитика и BPMN",
+    "years_of_experience": 13,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Иванова Елена Сергеевна",
+    "age": 35,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Приморский район"
+    },
+    "speciality": "HR-специалист",
+    "desired_course": "HR-аналитика",
+    "years_of_experience": 10,
+    "graduation_year": 2010
+  },
+  {
+    "full_name": "Иванова Мария Сергеевна",
+    "age": 30,
+    "address": {
+      "city": "Новосибирск",
+      "district": "Центральный район"
+    },
+    "speciality": "аналитик данных",
+    "desired_course": "Data Analytics для бизнеса",
+    "years_of_experience": 8,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Иванов Иван Иванович",
+    "age": 35,
+    "address": {
+      "city": "Екатеринбург",
+      "district": "Верх-Исетский район"
+    },
+    "speciality": "инженер",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 12,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Иванов Иван Иванович",
+    "age": 35,
+    "address": {
+      "city": "Екатеринбург",
+      "district": "Ленинский район"
+    },
+    "speciality": "инженер",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 13,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Сергеева Анна Владимировна",
+    "age": 45,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный округ"
+    },
+    "speciality": "учитель",
+    "desired_course": "Педагогический дизайн",
+    "years_of_experience": 20,
+    "graduation_year": 2001
+  },
+  {
+    "full_name": "Смирнова Елена Викторовна",
+    "age": 35,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Адмиралтейский район"
+    },
+    "speciality": "юрист",
+    "desired_course": "Управление проектами",
+    "years_of_experience": 12,
+    "graduation_year": 2011
+  },
+  {
+    "full_name": "Иванова Мария Петровна",
+    "age": 38,
+    "address": {
+      "city": "Краснодар",
+      "district": "Прикубанский округ"
+    },
+    "speciality": "учитель",
+    "desired_course": "Педагогический дизайн",
+    "years_of_experience": 15,
+    "graduation_year": 2008
+  }
+]
