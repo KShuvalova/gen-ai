@@ -1,0 +1,12 @@
+{
+  "overall_score": 0.9,
+  "factuality_score": 0.9,
+  "usefulness_score": 1.0,
+  "quote_grounding_score": 0.9,
+  "verdict": "pass",
+  "weak_or_unsupported_items": [],
+  "recommendations": [
+    "Ensure all quotes in summary are exact matches from source reviews to eliminate ghost quotes.",
+    "Consider adding more quantitative data (e.g., percentage of users affected) for stronger evidence."
+  ]
+}

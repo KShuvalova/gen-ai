@@ -12,3 +12,6 @@ wheels/
 
 # env
 .env
+.venv/
+.env
+.venv/

@@ -1,0 +1,55 @@
+Review ID: R009
+App: Any.do
+Source: Google Play
+Rating: 1
+Date: 2020-10-21
+Text: Constant crashing. After reading all the negative reviews, I Uninstalled it from all my devices. **Canceled subscription. App was great, until it crashed. After spending more than a hour setting it up on my Samsung tablet, it will not run. Cannot even get it to start. Too bad. In the past, my experiences have been good with this app. Guess I will see how long it takes to crash on my cell phone. So much for multi-device sync. Such a disappointment. **see above, for new comment added.
+
+Review ID: R010
+App: Any.do
+Source: Google Play
+Rating: 1
+Date: 2020-10-21
+Text: Widgets are useless because they always show all tasks I have, regardless of category. There's no option to show only a specific category like groceries so they're all mixed up with to-do list tasks. Do developers even care about usability? Isn't it a software design 101?
+
+Review ID: R011
+App: Any.do
+Source: Google Play
+Rating: 2
+Date: 2020-10-27
+Text: Please Add UPI feature because I tried many debit cards to get the Premium Versionof this app but any of them was accepted.
+
+Review ID: R012
+App: Any.do
+Source: Google Play
+Rating: 2
+Date: 2020-10-27
+Text: Lost all my lists when I was forced to give email address. Was good prior to having to start all over.
+
+Review ID: R013
+App: Any.do
+Source: Google Play
+Rating: 2
+Date: 2020-10-25
+Text: Many errors, the app is good but sometimes with the recurrent task do not work when I use desktop app it do not sync well and I lose many task and this is unpleasant. Pay for this app with this errors is a bad idea. I do no feel secure with app I lose taks and time. I hope the app get better. And the plan my day would be good if add the tasks in someday
+
+Review ID: R014
+App: Any.do
+Source: Google Play
+Rating: 2
+Date: 2020-10-23
+Text: Since last 2 updates I am facing this problem that when I open the app, one or two tasks get shuffled to the top. Then I have to put it again in the planned sequence. This happens almost everytime I open the app.
+
+Review ID: R015
+App: Any.do
+Source: Google Play
+Rating: 2
+Date: 2020-10-20
+Text: Updates made it worse. Was using it all the time, and the recent updates made it all confusing and unnecessarily graphically complex. Sorry had to uninstall.
+
+Review ID: R016
+App: Any.do
+Source: Google Play
+Rating: 2
+Date: 2020-10-16
+Text: Good app but I wish there was a monthly payment option for premium instead of annual.

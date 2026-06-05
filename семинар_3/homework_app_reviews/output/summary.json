@@ -1,0 +1,49 @@
+{
+  "executive_summary": "The app has received mixed reviews, with significant negative feedback concentrated on recent updates that degraded design and reliability. Users report that the 2020 updates made the interface messy and confusing, widgets no longer show tasks chronologically or by priority, and the app crashes frequently, especially after troubleshooting. Sync issues cause data loss across devices, and customer support is unresponsive to refund requests and cancellation queries. Pricing is a major barrier: the annual premium cost (~910 INR) is considered high, and there are no monthly or UPI payment options. Aggressive premium upgrade prompts annoy free users, and reminders/notifications malfunction. However, positive reviews highlight that the free version is functional and helps with organization, and some users appreciate the app's simplicity and features like shopping lists and widgets. Overall, the app is at risk of losing users due to these persistent issues.",
+  "main_issues": [
+    "Design degradation after updates: UI complexity, jumbled lists, and loss of chronological ordering",
+    "App crashes and performance instability, including crashes after setup",
+    "Sync and data loss across devices, especially with recurrent tasks on desktop",
+    "Customer support unresponsive to refund requests and cancellation help",
+    "High premium cost (~910 INR/year) with no monthly option or UPI payment support",
+    "Aggressive premium upgrade prompts in the free version",
+    "Widget malfunction: tasks displayed by category instead of by day or priority",
+    "Reminder/notification malfunctions: wrong times, no repeat after dismissal",
+    "Difficulty canceling subscriptions via app",
+    "Intrusive pop-up ads despite notification settings off"
+  ],
+  "aspect_takeaways": [
+    "Design: Most criticized aspect (22.5% mentions, mean severity 0.575). Users are frustrated with post-update UI changes that broke task organization and widget functionality.",
+    "Reliability: High severity (mean 0.6) with 20% mentions. Crashes, sync failures, and data loss are recurring problems.",
+    "Price: 20% mentions, mean severity 0.4. Premium cost is a barrier, especially for students and users in developing countries. Limited payment methods (no UPI) and no monthly subscription are pain points.",
+    "Support: Only 7.5% mentions but high severity (max 4). Refund requests and cancellation queries go unanswered.",
+    "Performance: 10% mentions, mean severity 0.375. Crashes are common but not as severe as reliability issues.",
+    "Ads: Minimal mentions (2.5%) but intrusive pop-ups despite notification settings being off."
+  ],
+  "action_items": [
+    "Roll back or redesign the widget to allow chronological and priority-based task display.",
+    "Improve app stability: fix crashes, especially after setup and when creating events with invites.",
+    "Enhance sync reliability across platforms, particularly for recurrent tasks and after forced email login.",
+    "Introduce a monthly subscription option and support UPI and debit cards in more countries.",
+    "Respond to customer support tickets promptly, especially refund and cancellation requests.",
+    "Reduce the frequency and intrusiveness of premium upgrade prompts.",
+    "Fix reminder and notification functionality to ensure correct times and repeat options.",
+    "Allow users to easily cancel subscriptions directly within the app.",
+    "Review recent UI changes and simplify the interface to restore ease of use.",
+    "Investigate and fix the issue where tasks shuffle to top upon reopening the app."
+  ],
+  "evidence_quotes": [
+    "I have been begging for a refund from this app for over a month and nobody is replying me",
+    "Very costly for the premium version (approx Indian Rupees 910 per year).",
+    "all the 2020 UPDATES have made a mess of things",
+    "Now they are all jumbled together and I can't find what I need.",
+    "every time I tap away from the app I have to tap again (after opening it again) to see the list.",
+    "Constant crashing.",
+    "So much for multi-device sync.",
+    "Widgets are useless because they always show all tasks I have, regardless of category.",
+    "Lost all my lists when I was forced to give email address.",
+    "the recent updates made it all confusing and unnecessarily graphically complex.",
+    "Pushing to hard for premium upgrade. Not interested anymore",
+    "now app widget shows tasks by category not by next 7 days which has created a serious issue for me."
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "map_summaries": [
+    {
+      "source_file": "reviews_batch_1.txt",
+      "key_findings": [
+        "Customer support is unresponsive, ignoring refund requests and failing to provide cancellation assistance.",
+        "The 2020 updates have introduced significant usability issues, including jumbled lists and a messy interface.",
+        "Premium pricing is considered too high at approximately 910 INR per year.",
+        "The app suffers from persistent crashes that return even after following troubleshooting steps.",
+        "The app does not retain the last viewed list, requiring repeated taps to access the same list.",
+        "Users have difficulty canceling monthly subscriptions with no clear in-app option."
+      ],
+      "frequent_issues": [
+        "Unresponsive or inadequate customer support",
+        "App crashes and performance instability",
+        "Updates degrading app functionality and organization",
+        "Difficulty managing subscriptions and payments"
+      ],
+      "representative_quotes": [
+        "I have been begging for a refund from this app for over a month and nobody is replying me",
+        "Very costly for the premium version (approx Indian Rupees 910 per year).",
+        "all the 2020 UPDATES have made a mess of things",
+        "Now they are all jumbled together and I can't find what I need.",
+        "every time I tap away from the app I have to tap again (after opening it again) to see the list.",
+        "How do to stop monthly payment because i don't use this app anymore",
+        "Now the crashes have returned! ... It crashed again"
+      ]
+    },
+    {
+      "source_file": "reviews_batch_2.txt",
+      "key_findings": [
+        "Multiple users report app crashes and failure to start after setup.",
+        "Sync issues cause loss of tasks and data across devices.",
+        "Widgets display all tasks without category filtering, making them useless for specific lists.",
+        "Recent app updates introduced confusing and overly complex UI, leading to uninstalls.",
+        "Users experience tasks being randomly shuffled to the top each time the app is opened.",
+        "Payment options are limited; users request UPI support and monthly subscription plans."
+      ],
+      "frequent_issues": [
+        "Sync and data loss problems across devices",
+        "Design flaws: widgets lacking category filtering and UI complexity after updates",
+        "Limited payment methods: no UPI and no monthly subscription option"
+      ],
+      "representative_quotes": [
+        "Constant crashing.",
+        "So much for multi-device sync.",
+        "Widgets are useless because they always show all tasks I have, regardless of category.",
+        "Lost all my lists when I was forced to give email address.",
+        "with the recurrent task do not work when I use desktop app it do not sync well and I lose many task",
+        "the recent updates made it all confusing and unnecessarily graphically complex."
+      ]
+    },
+    {
+      "source_file": "reviews_batch_3.txt",
+      "key_findings": [
+        "Design changes broke chronological task listing in widget and interface",
+        "Aggressive premium upgrade push frustrates free users",
+        "Reminder functionality unreliable: wrong times and no repeat after dismissal",
+        "Intrusive pop-up ads appear despite notification settings off",
+        "Subscription users directed to subscription page for basic features like recurring events",
+        "Landscape mode task creation became more cumbersome after redesign"
+      ],
+      "frequent_issues": [
+        "Design: tasks not listed chronologically after update",
+        "Price: aggressive premium upgrade prompts",
+        "Reliability: reminder malfunction (wrong time, no repeat)",
+        "Ads: unwanted pop-up despite notifications off",
+        "Support/subscription: paid users still asked to subscribe for features"
+      ],
+      "representative_quotes": [
+        "Pushing to hard for premium upgrade. Not interested anymore",
+        "i can't see my tasks laid out chronologically in an organized and pleasing way anymore",
+        "updated widget not listing tasks chronologically",
+        "Annoying pop up every morning on my phone even though I have the notification turned off",
+        "I WAS ABLE to create/edit a new task in ONE go (and in LANDSCAPE). It takes MORE moves now.",
+        "it kept directing me to the subscription page much to my disappointment",
+        "Once I click \"Done\", it sets the reminder the next day.... at 1am. ... it never reminded me again"
+      ]
+    },
+    {
+      "source_file": "reviews_batch_4.txt",
+      "key_findings": [
+        "Widget design regression after update: shows tasks by category instead of day/priority.",
+        "Pricing model disliked: users prefer one-time payment or find premium unaffordable.",
+        "Limited payment methods: debit card not supported for premium upgrade in Pakistan.",
+        "Calendar integration issues: syncing problems and app crash when adding people to events.",
+        "Zapier integration not working for Hangouts scheduler.",
+        "Request for calendar feature improvement."
+      ],
+      "frequent_issues": [
+        "Widget displays tasks by category instead of by day or priority.",
+        "Pricing and subscription cost concerns.",
+        "Payment method limitations for premium upgrade.",
+        "Calendar syncing issues.",
+        "App crashes when creating events with invites.",
+        "Integration issues with Zapier."
+      ],
+      "representative_quotes": [
+        "Since the last update I can only see whole lists, not those I prioritized.",
+        "I am not sure who want to pay monthly fee for a to-do list app.",
+        "My debit card isn't supported it says..I live in Pakistan",
+        "I do have syncing issues for calendar events as well as a crash everytime I add people to invites when creating an event.",
+        "I really want an automatoc hangouts chat scheduled to be sent but when I tried to set it up on zapier, it doesnt work.",
+        "now app widget shows tasks by category not by next 7 days which has created a serious issue for me.",
+        "Love it!! But can't afford premium😞",
+        "All good. Should work on calendar"
+      ]
+    },
+    {
+      "source_file": "reviews_batch_5.txt",
+      "key_findings": [
+        "Free version provides sufficient features for most users.",
+        "App helps users stay organized and track priorities effectively.",
+        "Pro version is considered too expensive for students.",
+        "App is simple, intuitive, and flexible with useful features like widgets, timeline, subtasks, and shopping list.",
+        "Users report increased productivity since using the app.",
+        "App prevents forgetting tasks and helps plan the day."
+      ],
+      "frequent_issues": [
+        "Pro version cost is a barrier for students.",
+        "No other recurring issues reported across reviews."
+      ],
+      "representative_quotes": [
+        "This app is awesome. I am currently using the free version and it had everything I need. It truly makes it easy for you to stai organized and not lose tracks of priorities.",
+        "Great app, helps me to plan my day ahead",
+        "The pro version is expesive for a student in my country.",
+        "It helps me so much now I can do what I have to do without forgotten anything It is so cool",
+        "Truly the best planning app! ... I love that you can see everythubg even in the smallest widget. ... I like the separate feature for the shopping list! This app is super flexible and intuitive!"
+      ]
+    }
+  ]
+}

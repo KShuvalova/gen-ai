@@ -1,0 +1,445 @@
+{
+  "total_quotes_checked": 100,
+  "ghost_quotes": 9,
+  "ghost_quote_share": 0.09,
+  "items": [
+    {
+      "quote": "I have been begging for a refund from this app for over a month and nobody is replying me",
+      "found_in_source": true
+    },
+    {
+      "quote": "Very costly for the premium version (approx Indian Rupees 910 per year).",
+      "found_in_source": true
+    },
+    {
+      "quote": "all the 2020 UPDATES have made a mess of things",
+      "found_in_source": true
+    },
+    {
+      "quote": "Now they are all jumbled together and I can't find what I need.",
+      "found_in_source": true
+    },
+    {
+      "quote": "every time I tap away from the app I have to tap again (after opening it again) to see the list.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Reset my free trial, new phone I'd like to see if it's better.",
+      "found_in_source": true
+    },
+    {
+      "quote": "How do to stop monthly payment because i don't use this app anymore",
+      "found_in_source": true
+    },
+    {
+      "quote": "Now the crashes have returned! ... It crashed again",
+      "found_in_source": false
+    },
+    {
+      "quote": "Constant crashing.",
+      "found_in_source": true
+    },
+    {
+      "quote": "So much for multi-device sync.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Widgets are useless because they always show all tasks I have, regardless of category.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Please Add UPI feature because I tried many debit cards to get the Premium Version of this app but any of them was accepted.",
+      "found_in_source": false
+    },
+    {
+      "quote": "Lost all my lists when I was forced to give email address.",
+      "found_in_source": true
+    },
+    {
+      "quote": "with the recurrent task do not work when I use desktop app it do not sync well and I lose many task",
+      "found_in_source": true
+    },
+    {
+      "quote": "one or two tasks get shuffled to the top. Then I have to put it again in the planned sequence.",
+      "found_in_source": true
+    },
+    {
+      "quote": "the recent updates made it all confusing and unnecessarily graphically complex.",
+      "found_in_source": true
+    },
+    {
+      "quote": "I wish there was a monthly payment option for premium instead of annual.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Pushing to hard for premium upgrade",
+      "found_in_source": true
+    },
+    {
+      "quote": "i can't see my tasks laid out chronologically in an organized and pleasing way anymore",
+      "found_in_source": true
+    },
+    {
+      "quote": "updated widget not listing tasks chronologically",
+      "found_in_source": true
+    },
+    {
+      "quote": "Annoying pop up every morning on my phone even though I have the notification turned off",
+      "found_in_source": true
+    },
+    {
+      "quote": "I WAS ABLE to create/edit a new task in ONE go (and in LANDSCAPE). It takes MORE moves now.",
+      "found_in_source": true
+    },
+    {
+      "quote": "it kept directing me to the subscription page much to my disappointment",
+      "found_in_source": true
+    },
+    {
+      "quote": "Once I click \"Done\", it sets the reminder the next day.... at 1am. ... I dismissed the 1am reminder once, ... it never reminded me again",
+      "found_in_source": false
+    },
+    {
+      "quote": "I am not sure who want to pay monthly fee for a to-do list app.",
+      "found_in_source": true
+    },
+    {
+      "quote": "My debit card isn't supported it says..I live in Pakistan",
+      "found_in_source": true
+    },
+    {
+      "quote": "I wish I could pick the day tasks to display on the widget. Since the last update I can only see whole lists, not those I prioritized.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Should work on calendar",
+      "found_in_source": true
+    },
+    {
+      "quote": "But can't afford premium😞",
+      "found_in_source": true
+    },
+    {
+      "quote": "I do have syncing issues for calendar events",
+      "found_in_source": true
+    },
+    {
+      "quote": "a crash everytime I add people to invites when creating an event",
+      "found_in_source": true
+    },
+    {
+      "quote": "I really want an automatoc hangouts chat scheduled to be sent but when I tried to set it up on zapier, it doesnt work.",
+      "found_in_source": true
+    },
+    {
+      "quote": "now app widget shows tasks by category not by next 7 days which has created a serious issue for me.",
+      "found_in_source": true
+    },
+    {
+      "quote": "The pro version is expesive for a student in my country.",
+      "found_in_source": true
+    },
+    {
+      "quote": "I have been begging for a refund from this app for over a month and nobody is replying me",
+      "found_in_source": true
+    },
+    {
+      "quote": "Very costly for the premium version (approx Indian Rupees 910 per year).",
+      "found_in_source": true
+    },
+    {
+      "quote": "all the 2020 UPDATES have made a mess of things",
+      "found_in_source": true
+    },
+    {
+      "quote": "Now they are all jumbled together and I can't find what I need.",
+      "found_in_source": true
+    },
+    {
+      "quote": "every time I tap away from the app I have to tap again (after opening it again) to see the list.",
+      "found_in_source": true
+    },
+    {
+      "quote": "How do to stop monthly payment because i don't use this app anymore",
+      "found_in_source": true
+    },
+    {
+      "quote": "Now the crashes have returned! ... It crashed again",
+      "found_in_source": false
+    },
+    {
+      "quote": "Constant crashing.",
+      "found_in_source": true
+    },
+    {
+      "quote": "So much for multi-device sync.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Widgets are useless because they always show all tasks I have, regardless of category.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Please Add UPI feature because I tried many debit cards to get the Premium Version of this app but any of them was accepted.",
+      "found_in_source": false
+    },
+    {
+      "quote": "Lost all my lists when I was forced to give email address.",
+      "found_in_source": true
+    },
+    {
+      "quote": "with the recurrent task do not work when I use desktop app it do not sync well and I lose many task",
+      "found_in_source": true
+    },
+    {
+      "quote": "one or two tasks get shuffled to the top. Then I have to put it again in the planned sequence.",
+      "found_in_source": true
+    },
+    {
+      "quote": "the recent updates made it all confusing and unnecessarily graphically complex.",
+      "found_in_source": true
+    },
+    {
+      "quote": "I wish there was a monthly payment option for premium instead of annual.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Pushing to hard for premium upgrade. Not interested anymore",
+      "found_in_source": true
+    },
+    {
+      "quote": "i can't see my tasks laid out chronologically in an organized and pleasing way anymore",
+      "found_in_source": true
+    },
+    {
+      "quote": "updated widget not listing tasks chronologically",
+      "found_in_source": true
+    },
+    {
+      "quote": "Annoying pop up every morning on my phone even though I have the notification turned off",
+      "found_in_source": true
+    },
+    {
+      "quote": "I WAS ABLE to create/edit a new task in ONE go (and in LANDSCAPE). It takes MORE moves now.",
+      "found_in_source": true
+    },
+    {
+      "quote": "it kept directing me to the subscription page much to my disappointment",
+      "found_in_source": true
+    },
+    {
+      "quote": "Once I click \"Done\", it sets the reminder the next day.... at 1am. ... I dismissed the 1am reminder once, ... it never reminded me again",
+      "found_in_source": false
+    },
+    {
+      "quote": "I am not sure who want to pay monthly fee for a to-do list app.",
+      "found_in_source": true
+    },
+    {
+      "quote": "My debit card isn't supported it says..I live in Pakistan",
+      "found_in_source": true
+    },
+    {
+      "quote": "I wish I could pick the day tasks to display on the widget. Since the last update I can only see whole lists, not those I prioritized.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Should work on calendar",
+      "found_in_source": true
+    },
+    {
+      "quote": "But can't afford premium😞",
+      "found_in_source": true
+    },
+    {
+      "quote": "a crash everytime I add people to invites when creating an event",
+      "found_in_source": true
+    },
+    {
+      "quote": "I do have syncing issues for calendar events",
+      "found_in_source": true
+    },
+    {
+      "quote": "I really want an automatoc hangouts chat scheduled to be sent but when I tried to set it up on zapier, it doesnt work.",
+      "found_in_source": true
+    },
+    {
+      "quote": "now app widget shows tasks by category not by next 7 days which has created a serious issue for me.",
+      "found_in_source": true
+    },
+    {
+      "quote": "The pro version is expesive for a student in my country.",
+      "found_in_source": true
+    },
+    {
+      "quote": "I have been begging for a refund from this app for over a month and nobody is replying me",
+      "found_in_source": true
+    },
+    {
+      "quote": "Very costly for the premium version (approx Indian Rupees 910 per year).",
+      "found_in_source": true
+    },
+    {
+      "quote": "all the 2020 UPDATES have made a mess of things",
+      "found_in_source": true
+    },
+    {
+      "quote": "Now they are all jumbled together and I can't find what I need.",
+      "found_in_source": true
+    },
+    {
+      "quote": "every time I tap away from the app I have to tap again (after opening it again) to see the list.",
+      "found_in_source": true
+    },
+    {
+      "quote": "How do to stop monthly payment because i don't use this app anymore",
+      "found_in_source": true
+    },
+    {
+      "quote": "Now the crashes have returned! ... It crashed again",
+      "found_in_source": false
+    },
+    {
+      "quote": "Constant crashing.",
+      "found_in_source": true
+    },
+    {
+      "quote": "So much for multi-device sync.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Widgets are useless because they always show all tasks I have, regardless of category.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Lost all my lists when I was forced to give email address.",
+      "found_in_source": true
+    },
+    {
+      "quote": "with the recurrent task do not work when I use desktop app it do not sync well and I lose many task",
+      "found_in_source": true
+    },
+    {
+      "quote": "the recent updates made it all confusing and unnecessarily graphically complex.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Pushing to hard for premium upgrade. Not interested anymore",
+      "found_in_source": true
+    },
+    {
+      "quote": "i can't see my tasks laid out chronologically in an organized and pleasing way anymore",
+      "found_in_source": true
+    },
+    {
+      "quote": "updated widget not listing tasks chronologically",
+      "found_in_source": true
+    },
+    {
+      "quote": "Annoying pop up every morning on my phone even though I have the notification turned off",
+      "found_in_source": true
+    },
+    {
+      "quote": "I WAS ABLE to create/edit a new task in ONE go (and in LANDSCAPE). It takes MORE moves now.",
+      "found_in_source": true
+    },
+    {
+      "quote": "it kept directing me to the subscription page much to my disappointment",
+      "found_in_source": true
+    },
+    {
+      "quote": "Once I click \"Done\", it sets the reminder the next day.... at 1am. ... it never reminded me again",
+      "found_in_source": false
+    },
+    {
+      "quote": "Since the last update I can only see whole lists, not those I prioritized.",
+      "found_in_source": true
+    },
+    {
+      "quote": "I am not sure who want to pay monthly fee for a to-do list app.",
+      "found_in_source": true
+    },
+    {
+      "quote": "My debit card isn't supported it says..I live in Pakistan",
+      "found_in_source": true
+    },
+    {
+      "quote": "I do have syncing issues for calendar events as well as a crash everytime I add people to invites when creating an event.",
+      "found_in_source": true
+    },
+    {
+      "quote": "I really want an automatoc hangouts chat scheduled to be sent but when I tried to set it up on zapier, it doesnt work.",
+      "found_in_source": true
+    },
+    {
+      "quote": "now app widget shows tasks by category not by next 7 days which has created a serious issue for me.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Love it!! But can't afford premium😞",
+      "found_in_source": true
+    },
+    {
+      "quote": "All good. Should work on calendar",
+      "found_in_source": true
+    },
+    {
+      "quote": "This app is awesome. I am currently using the free version and it had everything I need. It truly makes it easy for you to stai organized and not lose tracks of priorities.",
+      "found_in_source": true
+    },
+    {
+      "quote": "Great app, helps me to plan my day ahead",
+      "found_in_source": true
+    },
+    {
+      "quote": "The pro version is expesive for a student in my country.",
+      "found_in_source": true
+    },
+    {
+      "quote": "It helps me so much now I can do what I have to do without forgotten anything It is so cool",
+      "found_in_source": true
+    },
+    {
+      "quote": "Truly the best planning app! ... I love that you can see everythubg even in the smallest widget. ... I like the separate feature for the shopping list! This app is super flexible and intuitive!",
+      "found_in_source": false
+    }
+  ],
+  "ghost_items": [
+    {
+      "quote": "Now the crashes have returned! ... It crashed again",
+      "found_in_source": false
+    },
+    {
+      "quote": "Please Add UPI feature because I tried many debit cards to get the Premium Version of this app but any of them was accepted.",
+      "found_in_source": false
+    },
+    {
+      "quote": "Once I click \"Done\", it sets the reminder the next day.... at 1am. ... I dismissed the 1am reminder once, ... it never reminded me again",
+      "found_in_source": false
+    },
+    {
+      "quote": "Now the crashes have returned! ... It crashed again",
+      "found_in_source": false
+    },
+    {
+      "quote": "Please Add UPI feature because I tried many debit cards to get the Premium Version of this app but any of them was accepted.",
+      "found_in_source": false
+    },
+    {
+      "quote": "Once I click \"Done\", it sets the reminder the next day.... at 1am. ... I dismissed the 1am reminder once, ... it never reminded me again",
+      "found_in_source": false
+    },
+    {
+      "quote": "Now the crashes have returned! ... It crashed again",
+      "found_in_source": false
+    },
+    {
+      "quote": "Once I click \"Done\", it sets the reminder the next day.... at 1am. ... it never reminded me again",
+      "found_in_source": false
+    },
+    {
+      "quote": "Truly the best planning app! ... I love that you can see everythubg even in the smallest widget. ... I like the separate feature for the shopping list! This app is super flexible and intuitive!",
+      "found_in_source": false
+    }
+  ]
+}

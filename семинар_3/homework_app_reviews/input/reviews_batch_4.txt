@@ -1,0 +1,55 @@
+Review ID: R025
+App: Any.do
+Source: Google Play
+Rating: 3
+Date: 2020-10-23
+Text: I am not sure who want to pay monthly fee for a to-do list app. One time payment always make a sense.
+
+Review ID: R026
+App: Any.do
+Source: Google Play
+Rating: 4
+Date: 2020-10-27
+Text: The app is great but it would be better if you could increase the payment methods, to upgrade to premium. My debit card isn't supported it says..I live in Pakistan
+
+Review ID: R027
+App: Any.do
+Source: Google Play
+Rating: 4
+Date: 2020-10-24
+Text: I wish I could pick the day tasks to display on the widget. Since the last update I can only see whole lists, not those I prioritized. Edit: thanks for the response, but this is not true. When I change the layout in the app and delete and reload the widget, it still lists personal first
+
+Review ID: R028
+App: Any.do
+Source: Google Play
+Rating: 4
+Date: 2020-10-22
+Text: All good. Should work on calendar
+
+Review ID: R029
+App: Any.do
+Source: Google Play
+Rating: 4
+Date: 2020-10-21
+Text: Love it!! But can't afford premium😞
+
+Review ID: R030
+App: Any.do
+Source: Google Play
+Rating: 4
+Date: 2020-10-21
+Text: Coordinates Humans 🙌🏾 This app was my go-to until covid hit. Keeping my personal, consulting business, and day work calendars in one app was madness. I broke off my day work to microsoft .to do on a separate device. Any.do now coordinates my consulting and my personal and family tasks, lists, and bills. Its refreshing. I do have syncing issues for calendar events as well as a crash everytime I add people to invites when creating an event. Thats why I gave it 4-stars. Love it for tasks.
+
+Review ID: R031
+App: Any.do
+Source: Google Play
+Rating: 4
+Date: 2020-10-21
+Text: Good app. But didnt exceed my expectations to create a google hangouts scheduler. I really want an automatoc hangouts chat scheduled to be sent but when I tried to set it up on zapier, it doesnt work. I had to unsubscribe to yearly premium, Im not sure what gives the premium vs free
+
+Review ID: R032
+App: Any.do
+Source: Google Play
+Rating: 4
+Date: 2020-10-20
+Text: I have been using this app for years and previous update of "next 7 days" update is amazing. I usally plan my day in morning and use widget to view my today's tasks but now app widget shows tasks by category not by next 7 days which has created a serious issue for me. I highly recommend in widget show tasks by day wise list not by category wise otherwise for me and for many this app is useless.

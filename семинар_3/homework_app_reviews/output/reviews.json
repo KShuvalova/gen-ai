@@ -1,0 +1,606 @@
+{
+  "reviews": [
+    {
+      "review_id": "R001",
+      "source_file": "reviews_batch_1.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 1,
+      "review_date": "2020-10-27",
+      "review_text": "I have been begging for a refund from this app for over a month and nobody is replying me",
+      "issues": [
+        {
+          "category": "support",
+          "description": "User is unable to get a refund after a month of waiting, no response from support.",
+          "evidence_quote": "I have been begging for a refund from this app for over a month and nobody is replying me"
+        }
+      ]
+    },
+    {
+      "review_id": "R002",
+      "source_file": "reviews_batch_1.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 1,
+      "review_date": "2020-10-27",
+      "review_text": "Very costly for the premium version (approx Indian Rupees 910 per year). Better to download the premium version of this app from apkmos website and use it. Microsoft to do list app is far more better.",
+      "issues": [
+        {
+          "category": "price",
+          "description": "Premium version is too expensive at 910 INR per year.",
+          "evidence_quote": "Very costly for the premium version (approx Indian Rupees 910 per year)."
+        }
+      ]
+    },
+    {
+      "review_id": "R003",
+      "source_file": "reviews_batch_1.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 1,
+      "review_date": "2020-10-26",
+      "review_text": "Used to keep me organized, but all the 2020 UPDATES have made a mess of things !!! Y cudn't u leave well enuf alone ??? Guess ur techies feel the need to keep making changes to justify continuing to collect their salary !!! 🤤🤤🤤",
+      "issues": [
+        {
+          "category": "reliability",
+          "description": "2020 updates have made the app a mess, user frustrated with changes.",
+          "evidence_quote": "all the 2020 UPDATES have made a mess of things"
+        }
+      ]
+    },
+    {
+      "review_id": "R004",
+      "source_file": "reviews_batch_1.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 1,
+      "review_date": "2020-10-26",
+      "review_text": "It has changed how I viewed my different lists. Now they are all jumbled together and I can't find what I need.",
+      "issues": [
+        {
+          "category": "design",
+          "description": "Lists are jumbled together after update, user cannot find items.",
+          "evidence_quote": "Now they are all jumbled together and I can't find what I need."
+        }
+      ]
+    },
+    {
+      "review_id": "R005",
+      "source_file": "reviews_batch_1.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 1,
+      "review_date": "2020-10-25",
+      "review_text": "I'm only looking for a grocery list app but every time I tap away from the app I have to tap again (after opening it again) to see the list. I can't find a way to keep a certain list showing when I open or reopen the app. eta: in response to the reply, it doesn't work like that on my phone. Even if the grocery list is showing, when I open another app and then go back to the any.do app, the list of lists is showing and I have to retap to get the grocery list to show again.",
+      "issues": [
+        {
+          "category": "performance",
+          "description": "App does not retain the last viewed list; user must repeatedly tap to see grocery list.",
+          "evidence_quote": "every time I tap away from the app I have to tap again (after opening it again) to see the list."
+        }
+      ]
+    },
+    {
+      "review_id": "R006",
+      "source_file": "reviews_batch_1.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 1,
+      "review_date": "2020-10-25",
+      "review_text": "Reset my free trial, new phone I'd like to see if it's better.",
+      "issues": [
+        {
+          "category": "other",
+          "description": "User's free trial was reset on a new phone, causing inconvenience.",
+          "evidence_quote": "Reset my free trial, new phone I'd like to see if it's better."
+        }
+      ]
+    },
+    {
+      "review_id": "R007",
+      "source_file": "reviews_batch_1.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 1,
+      "review_date": "2020-10-25",
+      "review_text": "How do to stop monthly payment because i don't use this app anymore",
+      "issues": [
+        {
+          "category": "support",
+          "description": "User is unable to find how to cancel monthly payment.",
+          "evidence_quote": "How do to stop monthly payment because i don't use this app anymore"
+        }
+      ]
+    },
+    {
+      "review_id": "R008",
+      "source_file": "reviews_batch_1.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 1,
+      "review_date": "2020-10-23",
+      "review_text": "I complain about not crashes and it was immediately fixed!Good job!! Now the crashes have returned! I really need it fixed because I need to change apps otherwise 😩 I followed your instructions on deleting the data, etc but it just now crashed again. I am a patient person and I have used Any Do for years but let's try one more time and then I will have to find another app. It crashed again 😑",
+      "issues": [
+        {
+          "category": "performance",
+          "description": "App crashes repeatedly, even after following instructions to delete data.",
+          "evidence_quote": "Now the crashes have returned! ... It crashed again"
+        }
+      ]
+    },
+    {
+      "review_id": "R009",
+      "source_file": "reviews_batch_2.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 1,
+      "review_date": "2020-10-21",
+      "review_text": "Constant crashing. After reading all the negative reviews, I Uninstalled it from all my devices. **Canceled subscription. App was great, until it crashed. After spending more than a hour setting it up on my Samsung tablet, it will not run. Cannot even get it to start. Too bad. In the past, my experiences have been good with this app. Guess I will see how long it takes to crash on my cell phone. So much for multi-device sync. Such a disappointment. **see above, for new comment added.",
+      "issues": [
+        {
+          "category": "performance",
+          "description": "App crashes constantly and fails to start after setup.",
+          "evidence_quote": "Constant crashing."
+        },
+        {
+          "category": "reliability",
+          "description": "Multi-device sync does not work properly.",
+          "evidence_quote": "So much for multi-device sync."
+        }
+      ]
+    },
+    {
+      "review_id": "R010",
+      "source_file": "reviews_batch_2.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 1,
+      "review_date": "2020-10-21",
+      "review_text": "Widgets are useless because they always show all tasks I have, regardless of category. There's no option to show only a specific category like groceries so they're all mixed up with to-do list tasks. Do developers even care about usability? Isn't it a software design 101?",
+      "issues": [
+        {
+          "category": "design",
+          "description": "Widgets show all tasks without category filtering, mixing groceries with to-dos.",
+          "evidence_quote": "Widgets are useless because they always show all tasks I have, regardless of category."
+        }
+      ]
+    },
+    {
+      "review_id": "R011",
+      "source_file": "reviews_batch_2.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 2,
+      "review_date": "2020-10-27",
+      "review_text": "Please Add UPI feature because I tried many debit cards to get the Premium Versionof this app but any of them was accepted.",
+      "issues": [
+        {
+          "category": "price",
+          "description": "Payment methods not supported; cannot purchase premium with debit cards.",
+          "evidence_quote": "Please Add UPI feature because I tried many debit cards to get the Premium Version of this app but any of them was accepted."
+        }
+      ]
+    },
+    {
+      "review_id": "R012",
+      "source_file": "reviews_batch_2.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 2,
+      "review_date": "2020-10-27",
+      "review_text": "Lost all my lists when I was forced to give email address. Was good prior to having to start all over.",
+      "issues": [
+        {
+          "category": "reliability",
+          "description": "Lost all lists when required to give email address.",
+          "evidence_quote": "Lost all my lists when I was forced to give email address."
+        }
+      ]
+    },
+    {
+      "review_id": "R013",
+      "source_file": "reviews_batch_2.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 2,
+      "review_date": "2020-10-25",
+      "review_text": "Many errors, the app is good but sometimes with the recurrent task do not work when I use desktop app it do not sync well and I lose many task and this is unpleasant. Pay for this app with this errors is a bad idea. I do no feel secure with app I lose taks and time. I hope the app get better. And the plan my day would be good if add the tasks in someday",
+      "issues": [
+        {
+          "category": "reliability",
+          "description": "App has many errors, recurrent tasks don't sync, causing loss of tasks.",
+          "evidence_quote": "with the recurrent task do not work when I use desktop app it do not sync well and I lose many task"
+        }
+      ]
+    },
+    {
+      "review_id": "R014",
+      "source_file": "reviews_batch_2.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 2,
+      "review_date": "2020-10-23",
+      "review_text": "Since last 2 updates I am facing this problem that when I open the app, one or two tasks get shuffled to the top. Then I have to put it again in the planned sequence. This happens almost everytime I open the app.",
+      "issues": [
+        {
+          "category": "reliability",
+          "description": "Tasks get shuffled to top each time app is opened.",
+          "evidence_quote": "one or two tasks get shuffled to the top. Then I have to put it again in the planned sequence."
+        }
+      ]
+    },
+    {
+      "review_id": "R015",
+      "source_file": "reviews_batch_2.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 2,
+      "review_date": "2020-10-20",
+      "review_text": "Updates made it worse. Was using it all the time, and the recent updates made it all confusing and unnecessarily graphically complex. Sorry had to uninstall.",
+      "issues": [
+        {
+          "category": "design",
+          "description": "Recent updates made UI confusing and overly complex.",
+          "evidence_quote": "the recent updates made it all confusing and unnecessarily graphically complex."
+        }
+      ]
+    },
+    {
+      "review_id": "R016",
+      "source_file": "reviews_batch_2.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 2,
+      "review_date": "2020-10-16",
+      "review_text": "Good app but I wish there was a monthly payment option for premium instead of annual.",
+      "issues": [
+        {
+          "category": "price",
+          "description": "No monthly payment option for premium.",
+          "evidence_quote": "I wish there was a monthly payment option for premium instead of annual."
+        }
+      ]
+    },
+    {
+      "review_id": "R017",
+      "source_file": "reviews_batch_3.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 2,
+      "review_date": "2020-10-14",
+      "review_text": "Pushing to hard for premium upgrade. Not interested anymore",
+      "issues": [
+        {
+          "category": "price",
+          "description": "App pushes premium upgrade too aggressively",
+          "evidence_quote": "Pushing to hard for premium upgrade"
+        }
+      ]
+    },
+    {
+      "review_id": "R018",
+      "source_file": "reviews_batch_3.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 2,
+      "review_date": "2020-10-13",
+      "review_text": "Ill join with my fellow reviewers and say that i was very satisfied with the app when i started using it about two years ago, but since then i feel that its functionality and simplicity have been compromised, especially with the newest update that just made the app's interface (via smartphone) completely uncomfortable because i can't see my tasks laid out chronologically in an organized and pleasing way anymore.",
+      "issues": [
+        {
+          "category": "design",
+          "description": "New update made interface uncomfortable, tasks not laid out chronologically",
+          "evidence_quote": "i can't see my tasks laid out chronologically in an organized and pleasing way anymore"
+        }
+      ]
+    },
+    {
+      "review_id": "R019",
+      "source_file": "reviews_batch_3.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 3,
+      "review_date": "2020-10-27",
+      "review_text": "This still works pretty well, but I'm not a fan of the updated widget not listing tasks chronologically.",
+      "issues": [
+        {
+          "category": "design",
+          "description": "Updated widget does not list tasks chronologically",
+          "evidence_quote": "updated widget not listing tasks chronologically"
+        }
+      ]
+    },
+    {
+      "review_id": "R020",
+      "source_file": "reviews_batch_3.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 3,
+      "review_date": "2020-10-27",
+      "review_text": "Good app. Annoying pop up every morning on my phone even though I have the notification turned off.",
+      "issues": [
+        {
+          "category": "ads",
+          "description": "Annoying pop-up appears every morning despite notifications being turned off",
+          "evidence_quote": "Annoying pop up every morning on my phone even though I have the notification turned off"
+        }
+      ]
+    },
+    {
+      "review_id": "R021",
+      "source_file": "reviews_batch_3.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 3,
+      "review_date": "2020-10-26",
+      "review_text": "I haven't used they made an effort from there side. I'm a bit of a mess and I need time.",
+      "issues": []
+    },
+    {
+      "review_id": "R022",
+      "source_file": "reviews_batch_3.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 3,
+      "review_date": "2020-10-24",
+      "review_text": "29.9. Nothing new, I've already reconciled to that \"improved\" GUI. // 16.7.20, 3.8.19: No, a long time ago I was able to create a FULL (WITH a reminder) task in a LANDSCAPE mode. It's impossible now (after that 'redesign'). // 17.7., 2.3.: I'm pretty sure I WAS ABLE to create/edit a new task in ONE go (and in LANDSCAPE). It takes MORE moves now. // 2.2.2019: I CANNOT believe that when I HAVE got to change a grip from PORTAIT to LANDSCAPE when creating / editing a task it is more effective than before...",
+      "issues": [
+        {
+          "category": "design",
+          "description": "After redesign, creating/editing tasks in landscape mode is more cumbersome and no longer allows full task creation in one go",
+          "evidence_quote": "I WAS ABLE to create/edit a new task in ONE go (and in LANDSCAPE). It takes MORE moves now."
+        }
+      ]
+    },
+    {
+      "review_id": "R023",
+      "source_file": "reviews_batch_3.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 3,
+      "review_date": "2020-10-23",
+      "review_text": "I've been a satisfied user of Any.do since March 2018 and my subscription is until 2021. However, when I tried to create a recurring event, it kept directing me to the subscription page much to my disappointment.",
+      "issues": [
+        {
+          "category": "price",
+          "description": "Creating recurring events prompts subscription page even though user has active subscription",
+          "evidence_quote": "it kept directing me to the subscription page much to my disappointment"
+        }
+      ]
+    },
+    {
+      "review_id": "R024",
+      "source_file": "reviews_batch_3.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 3,
+      "review_date": "2020-10-23",
+      "review_text": "Some features just don't work in the free app! I have tried to set a daily reminder for 9am to put a ticket in my car. Once I click \"Done\", it sets the reminder the next day.... at 1am. I dismissed the 1am reminder once, half asleep as the sound woke me up, it never reminded me again and now I have a parking fine to pay. I have real memory difficulties and need an app that actually works properly! Disappointing, as I find the one off reminders really helpful.",
+      "issues": [
+        {
+          "category": "reliability",
+          "description": "Daily reminder feature malfunctions: sets wrong time and does not repeat after dismissal, causing user to miss reminder and incur a parking fine",
+          "evidence_quote": "Once I click \"Done\", it sets the reminder the next day.... at 1am. ... I dismissed the 1am reminder once, ... it never reminded me again"
+        }
+      ]
+    },
+    {
+      "review_id": "R025",
+      "source_file": "reviews_batch_4.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 3,
+      "review_date": "2020-10-23",
+      "review_text": "I am not sure who want to pay monthly fee for a to-do list app. One time payment always make a sense.",
+      "issues": [
+        {
+          "category": "price",
+          "description": "User doesn't want to pay monthly fee, prefers one-time payment.",
+          "evidence_quote": "I am not sure who want to pay monthly fee for a to-do list app."
+        }
+      ]
+    },
+    {
+      "review_id": "R026",
+      "source_file": "reviews_batch_4.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 4,
+      "review_date": "2020-10-27",
+      "review_text": "The app is great but it would be better if you could increase the payment methods, to upgrade to premium. My debit card isn't supported it says..I live in Pakistan",
+      "issues": [
+        {
+          "category": "support",
+          "description": "Debit card not supported for premium upgrade in Pakistan.",
+          "evidence_quote": "My debit card isn't supported it says..I live in Pakistan"
+        }
+      ]
+    },
+    {
+      "review_id": "R027",
+      "source_file": "reviews_batch_4.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 4,
+      "review_date": "2020-10-24",
+      "review_text": "I wish I could pick the day tasks to display on the widget. Since the last update I can only see whole lists, not those I prioritized. Edit: thanks for the response, but this is not true. When I change the layout in the app and delete and reload the widget, it still lists personal first",
+      "issues": [
+        {
+          "category": "design",
+          "description": "Widget displays whole lists instead of prioritized tasks.",
+          "evidence_quote": "I wish I could pick the day tasks to display on the widget. Since the last update I can only see whole lists, not those I prioritized."
+        }
+      ]
+    },
+    {
+      "review_id": "R028",
+      "source_file": "reviews_batch_4.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 4,
+      "review_date": "2020-10-22",
+      "review_text": "All good. Should work on calendar",
+      "issues": [
+        {
+          "category": "design",
+          "description": "User suggests calendar feature needs improvement.",
+          "evidence_quote": "Should work on calendar"
+        }
+      ]
+    },
+    {
+      "review_id": "R029",
+      "source_file": "reviews_batch_4.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 4,
+      "review_date": "2020-10-21",
+      "review_text": "Love it!! But can't afford premium😞",
+      "issues": [
+        {
+          "category": "price",
+          "description": "User cannot afford premium subscription.",
+          "evidence_quote": "But can't afford premium😞"
+        }
+      ]
+    },
+    {
+      "review_id": "R030",
+      "source_file": "reviews_batch_4.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 4,
+      "review_date": "2020-10-21",
+      "review_text": "Coordinates Humans 🙌🏾 This app was my go-to until covid hit. Keeping my personal, consulting business, and day work calendars in one app was madness. I broke off my day work to microsoft .to do on a separate device. Any.do now coordinates my consulting and my personal and family tasks, lists, and bills. Its refreshing. I do have syncing issues for calendar events as well as a crash everytime I add people to invites when creating an event. Thats why I gave it 4-stars. Love it for tasks.",
+      "issues": [
+        {
+          "category": "reliability",
+          "description": "Syncing issues for calendar events.",
+          "evidence_quote": "I do have syncing issues for calendar events"
+        },
+        {
+          "category": "performance",
+          "description": "App crashes when adding people to invites when creating an event.",
+          "evidence_quote": "a crash everytime I add people to invites when creating an event"
+        }
+      ]
+    },
+    {
+      "review_id": "R031",
+      "source_file": "reviews_batch_4.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 4,
+      "review_date": "2020-10-21",
+      "review_text": "Good app. But didnt exceed my expectations to create a google hangouts scheduler. I really want an automatoc hangouts chat scheduled to be sent but when I tried to set it up on zapier, it doesnt work. I had to unsubscribe to yearly premium, Im not sure what gives the premium vs free",
+      "issues": [
+        {
+          "category": "reliability",
+          "description": "Google Hangouts scheduler via Zapier integration does not work.",
+          "evidence_quote": "I really want an automatoc hangouts chat scheduled to be sent but when I tried to set it up on zapier, it doesnt work."
+        }
+      ]
+    },
+    {
+      "review_id": "R032",
+      "source_file": "reviews_batch_4.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 4,
+      "review_date": "2020-10-20",
+      "review_text": "I have been using this app for years and previous update of \"next 7 days\" update is amazing. I usally plan my day in morning and use widget to view my today's tasks but now app widget shows tasks by category not by next 7 days which has created a serious issue for me. I highly recommend in widget show tasks by day wise list not by category wise otherwise for me and for many this app is useless.",
+      "issues": [
+        {
+          "category": "design",
+          "description": "Widget shows tasks by category instead of by day, making it useless for daily planning.",
+          "evidence_quote": "now app widget shows tasks by category not by next 7 days which has created a serious issue for me."
+        }
+      ]
+    },
+    {
+      "review_id": "R033",
+      "source_file": "reviews_batch_5.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 5,
+      "review_date": "2020-10-27",
+      "review_text": "This app is awesome. I am currently using the free version and it had everything I need. It truly makes it easy for you to stai organized and not lose tracks of priorities.",
+      "issues": []
+    },
+    {
+      "review_id": "R034",
+      "source_file": "reviews_batch_5.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 5,
+      "review_date": "2020-10-27",
+      "review_text": "Great app, helps me to plan my day ahead",
+      "issues": []
+    },
+    {
+      "review_id": "R035",
+      "source_file": "reviews_batch_5.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 5,
+      "review_date": "2020-10-27",
+      "review_text": "This app is amazing, changed my life. I'm doing 3x tasks daily since I installed the app, I can't be lazy. The pro version is expesive for a student in my country.",
+      "issues": [
+        {
+          "category": "price",
+          "description": "Pro version too expensive for students",
+          "evidence_quote": "The pro version is expesive for a student in my country."
+        }
+      ]
+    },
+    {
+      "review_id": "R036",
+      "source_file": "reviews_batch_5.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 5,
+      "review_date": "2020-10-27",
+      "review_text": "I like this app. It is the most simple and straight forward of its type that I've found.",
+      "issues": []
+    },
+    {
+      "review_id": "R037",
+      "source_file": "reviews_batch_5.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 5,
+      "review_date": "2020-10-26",
+      "review_text": "Really good to have when i have a busy week as can put appointments in all at once and other special dates",
+      "issues": []
+    },
+    {
+      "review_id": "R038",
+      "source_file": "reviews_batch_5.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 5,
+      "review_date": "2020-10-26",
+      "review_text": "It helps me so much now I can do what I have to do without forgotten anything It is so cool",
+      "issues": []
+    },
+    {
+      "review_id": "R039",
+      "source_file": "reviews_batch_5.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 5,
+      "review_date": "2020-10-25",
+      "review_text": "I started using this a week ago, it has already became a useful tool for being productive. Really recommend downloading",
+      "issues": []
+    },
+    {
+      "review_id": "R040",
+      "source_file": "reviews_batch_5.txt",
+      "app_name": "Any.do",
+      "source": "Google Play",
+      "rating": 5,
+      "review_date": "2020-10-25",
+      "review_text": "Truly the best planning app! I was looking for a planning app with widgets that can change their size. Was harder than I thought! I love that you can see everythubg even in the smallest widget. That was very important to me. What I also like is that you can see all your tasks in a time line sorted by time. This way I don't miss anything. Subtasks and notes are helpful. I like the separate feature for the shopping list! This app is super flexible and intuitive!",
+      "issues": []
+    }
+  ]
+}

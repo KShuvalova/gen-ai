@@ -1,0 +1,78 @@
+{
+  "by_aspect": [
+    {
+      "aspect": "ads",
+      "mean_severity": 0.05,
+      "max_severity": 2,
+      "mentions": 1,
+      "total": 40,
+      "mention_share": 0.025
+    },
+    {
+      "aspect": "design",
+      "mean_severity": 0.575,
+      "max_severity": 3,
+      "mentions": 9,
+      "total": 40,
+      "mention_share": 0.225
+    },
+    {
+      "aspect": "performance",
+      "mean_severity": 0.375,
+      "max_severity": 5,
+      "mentions": 4,
+      "total": 40,
+      "mention_share": 0.1
+    },
+    {
+      "aspect": "price",
+      "mean_severity": 0.4,
+      "max_severity": 3,
+      "mentions": 8,
+      "total": 40,
+      "mention_share": 0.2
+    },
+    {
+      "aspect": "reliability",
+      "mean_severity": 0.6,
+      "max_severity": 4,
+      "mentions": 8,
+      "total": 40,
+      "mention_share": 0.2
+    },
+    {
+      "aspect": "support",
+      "mean_severity": 0.225,
+      "max_severity": 4,
+      "mentions": 3,
+      "total": 40,
+      "mention_share": 0.075
+    }
+  ],
+  "sentiment_pivot": {
+    "negative": {
+      "ads": 1,
+      "design": 8,
+      "performance": 4,
+      "price": 8,
+      "reliability": 8,
+      "support": 3
+    },
+    "neutral": {
+      "ads": 0,
+      "design": 1,
+      "performance": 0,
+      "price": 0,
+      "reliability": 0,
+      "support": 0
+    },
+    "not_mentioned": {
+      "ads": 39,
+      "design": 31,
+      "performance": 36,
+      "price": 32,
+      "reliability": 32,
+      "support": 37
+    }
+  }
+}

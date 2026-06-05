@@ -1,0 +1,1684 @@
+{
+  "aspects": [
+    {
+      "review_id": "R001",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R001",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R001",
+      "aspect": "support",
+      "sentiment": "negative",
+      "severity": 4,
+      "evidence_quote": "I have been begging for a refund from this app for over a month and nobody is replying me"
+    },
+    {
+      "review_id": "R001",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R001",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R001",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R002",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R002",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R002",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R002",
+      "aspect": "price",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "Very costly for the premium version (approx Indian Rupees 910 per year)."
+    },
+    {
+      "review_id": "R002",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R002",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R003",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R003",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R003",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R003",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R003",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R003",
+      "aspect": "reliability",
+      "sentiment": "negative",
+      "severity": 4,
+      "evidence_quote": "all the 2020 UPDATES have made a mess of things"
+    },
+    {
+      "review_id": "R004",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R004",
+      "aspect": "design",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "Now they are all jumbled together and I can't find what I need."
+    },
+    {
+      "review_id": "R004",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R004",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R004",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R004",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R005",
+      "aspect": "performance",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "every time I tap away from the app I have to tap again (after opening it again) to see the list."
+    },
+    {
+      "review_id": "R005",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R005",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R005",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R005",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R005",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R006",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R006",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R006",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R006",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R006",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R006",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R007",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R007",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R007",
+      "aspect": "support",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "How do to stop monthly payment because i don't use this app anymore"
+    },
+    {
+      "review_id": "R007",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R007",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R007",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R008",
+      "aspect": "performance",
+      "sentiment": "negative",
+      "severity": 4,
+      "evidence_quote": "Now the crashes have returned! ... It crashed again"
+    },
+    {
+      "review_id": "R008",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R008",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R008",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R008",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R008",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R009",
+      "aspect": "performance",
+      "sentiment": "negative",
+      "severity": 5,
+      "evidence_quote": "Constant crashing."
+    },
+    {
+      "review_id": "R009",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R009",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R009",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R009",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R009",
+      "aspect": "reliability",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "So much for multi-device sync."
+    },
+    {
+      "review_id": "R010",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R010",
+      "aspect": "design",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "Widgets are useless because they always show all tasks I have, regardless of category."
+    },
+    {
+      "review_id": "R010",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R010",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R010",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R010",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R011",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R011",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R011",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R011",
+      "aspect": "price",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "Please Add UPI feature because I tried many debit cards to get the Premium Version of this app but any of them was accepted."
+    },
+    {
+      "review_id": "R011",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R011",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R012",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R012",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R012",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R012",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R012",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R012",
+      "aspect": "reliability",
+      "sentiment": "negative",
+      "severity": 4,
+      "evidence_quote": "Lost all my lists when I was forced to give email address."
+    },
+    {
+      "review_id": "R013",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R013",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R013",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R013",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R013",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R013",
+      "aspect": "reliability",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "with the recurrent task do not work when I use desktop app it do not sync well and I lose many task"
+    },
+    {
+      "review_id": "R014",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R014",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R014",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R014",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R014",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R014",
+      "aspect": "reliability",
+      "sentiment": "negative",
+      "severity": 2,
+      "evidence_quote": "one or two tasks get shuffled to the top. Then I have to put it again in the planned sequence."
+    },
+    {
+      "review_id": "R015",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R015",
+      "aspect": "design",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "the recent updates made it all confusing and unnecessarily graphically complex."
+    },
+    {
+      "review_id": "R015",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R015",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R015",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R015",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R016",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R016",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R016",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R016",
+      "aspect": "price",
+      "sentiment": "negative",
+      "severity": 2,
+      "evidence_quote": "I wish there was a monthly payment option for premium instead of annual."
+    },
+    {
+      "review_id": "R016",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R016",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R017",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R017",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R017",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R017",
+      "aspect": "price",
+      "sentiment": "negative",
+      "severity": 2,
+      "evidence_quote": "Pushing to hard for premium upgrade. Not interested anymore"
+    },
+    {
+      "review_id": "R017",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R017",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R018",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R018",
+      "aspect": "design",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "i can't see my tasks laid out chronologically in an organized and pleasing way anymore"
+    },
+    {
+      "review_id": "R018",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R018",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R018",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R018",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R019",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R019",
+      "aspect": "design",
+      "sentiment": "negative",
+      "severity": 2,
+      "evidence_quote": "updated widget not listing tasks chronologically"
+    },
+    {
+      "review_id": "R019",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R019",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R019",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R019",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R020",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R020",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R020",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R020",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R020",
+      "aspect": "ads",
+      "sentiment": "negative",
+      "severity": 2,
+      "evidence_quote": "Annoying pop up every morning on my phone even though I have the notification turned off"
+    },
+    {
+      "review_id": "R020",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R021",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R021",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R021",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R021",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R021",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R021",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R022",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R022",
+      "aspect": "design",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "I WAS ABLE to create/edit a new task in ONE go (and in LANDSCAPE). It takes MORE moves now."
+    },
+    {
+      "review_id": "R022",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R022",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R022",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R022",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R023",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R023",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R023",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R023",
+      "aspect": "price",
+      "sentiment": "negative",
+      "severity": 2,
+      "evidence_quote": "it kept directing me to the subscription page much to my disappointment"
+    },
+    {
+      "review_id": "R023",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R023",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R024",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R024",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R024",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R024",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R024",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R024",
+      "aspect": "reliability",
+      "sentiment": "negative",
+      "severity": 4,
+      "evidence_quote": "Once I click \"Done\", it sets the reminder the next day.... at 1am. ... I dismissed the 1am reminder once, ... it never reminded me again"
+    },
+    {
+      "review_id": "R025",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R025",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R025",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R025",
+      "aspect": "price",
+      "sentiment": "negative",
+      "severity": 1,
+      "evidence_quote": "I am not sure who want to pay monthly fee for a to-do list app."
+    },
+    {
+      "review_id": "R025",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R025",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R026",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R026",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R026",
+      "aspect": "support",
+      "sentiment": "negative",
+      "severity": 2,
+      "evidence_quote": "My debit card isn't supported it says..I live in Pakistan"
+    },
+    {
+      "review_id": "R026",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R026",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R026",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R027",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R027",
+      "aspect": "design",
+      "sentiment": "negative",
+      "severity": 2,
+      "evidence_quote": "I wish I could pick the day tasks to display on the widget. Since the last update I can only see whole lists, not those I prioritized."
+    },
+    {
+      "review_id": "R027",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R027",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R027",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R027",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R028",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R028",
+      "aspect": "design",
+      "sentiment": "neutral",
+      "severity": 1,
+      "evidence_quote": "Should work on calendar"
+    },
+    {
+      "review_id": "R028",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R028",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R028",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R028",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R029",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R029",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R029",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R029",
+      "aspect": "price",
+      "sentiment": "negative",
+      "severity": 1,
+      "evidence_quote": "But can't afford premium😞"
+    },
+    {
+      "review_id": "R029",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R029",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R030",
+      "aspect": "performance",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "a crash everytime I add people to invites when creating an event"
+    },
+    {
+      "review_id": "R030",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R030",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R030",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R030",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R030",
+      "aspect": "reliability",
+      "sentiment": "negative",
+      "severity": 2,
+      "evidence_quote": "I do have syncing issues for calendar events"
+    },
+    {
+      "review_id": "R031",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R031",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R031",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R031",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R031",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R031",
+      "aspect": "reliability",
+      "sentiment": "negative",
+      "severity": 2,
+      "evidence_quote": "I really want an automatoc hangouts chat scheduled to be sent but when I tried to set it up on zapier, it doesnt work."
+    },
+    {
+      "review_id": "R032",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R032",
+      "aspect": "design",
+      "sentiment": "negative",
+      "severity": 3,
+      "evidence_quote": "now app widget shows tasks by category not by next 7 days which has created a serious issue for me."
+    },
+    {
+      "review_id": "R032",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R032",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R032",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R032",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R033",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R033",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R033",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R033",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R033",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R033",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R034",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R034",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R034",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R034",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R034",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R034",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R035",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R035",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R035",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R035",
+      "aspect": "price",
+      "sentiment": "negative",
+      "severity": 2,
+      "evidence_quote": "The pro version is expesive for a student in my country."
+    },
+    {
+      "review_id": "R035",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R035",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R036",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R036",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R036",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R036",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R036",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R036",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R037",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R037",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R037",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R037",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R037",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R037",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R038",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R038",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R038",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R038",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R038",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R038",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R039",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R039",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R039",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R039",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R039",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R039",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R040",
+      "aspect": "performance",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R040",
+      "aspect": "design",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R040",
+      "aspect": "support",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R040",
+      "aspect": "price",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R040",
+      "aspect": "ads",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    },
+    {
+      "review_id": "R040",
+      "aspect": "reliability",
+      "sentiment": "not_mentioned",
+      "severity": 0,
+      "evidence_quote": null
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+Review ID: R017
+App: Any.do
+Source: Google Play
+Rating: 2
+Date: 2020-10-14
+Text: Pushing to hard for premium upgrade. Not interested anymore
+
+Review ID: R018
+App: Any.do
+Source: Google Play
+Rating: 2
+Date: 2020-10-13
+Text: Ill join with my fellow reviewers and say that i was very satisfied with the app when i started using it about two years ago, but since then i feel that its functionality and simplicity have been compromised, especially with the newest update that just made the app's interface (via smartphone) completely uncomfortable because i can't see my tasks laid out chronologically in an organized and pleasing way anymore.
+
+Review ID: R019
+App: Any.do
+Source: Google Play
+Rating: 3
+Date: 2020-10-27
+Text: This still works pretty well, but I'm not a fan of the updated widget not listing tasks chronologically.
+
+Review ID: R020
+App: Any.do
+Source: Google Play
+Rating: 3
+Date: 2020-10-27
+Text: Good app. Annoying pop up every morning on my phone even though I have the notification turned off.
+
+Review ID: R021
+App: Any.do
+Source: Google Play
+Rating: 3
+Date: 2020-10-26
+Text: I haven't used they made an effort from there side. I'm a bit of a mess and I need time.
+
+Review ID: R022
+App: Any.do
+Source: Google Play
+Rating: 3
+Date: 2020-10-24
+Text: 29.9. Nothing new, I've already reconciled to that "improved" GUI. // 16.7.20, 3.8.19: No, a long time ago I was able to create a FULL (WITH a reminder) task in a LANDSCAPE mode. It's impossible now (after that 'redesign'). // 17.7., 2.3.: I'm pretty sure I WAS ABLE to create/edit a new task in ONE go (and in LANDSCAPE). It takes MORE moves now. // 2.2.2019: I CANNOT believe that when I HAVE got to change a grip from PORTAIT to LANDSCAPE when creating / editing a task it is more effective than before...
+
+Review ID: R023
+App: Any.do
+Source: Google Play
+Rating: 3
+Date: 2020-10-23
+Text: I've been a satisfied user of Any.do since March 2018 and my subscription is until 2021. However, when I tried to create a recurring event, it kept directing me to the subscription page much to my disappointment.
+
+Review ID: R024
+App: Any.do
+Source: Google Play
+Rating: 3
+Date: 2020-10-23
+Text: Some features just don't work in the free app! I have tried to set a daily reminder for 9am to put a ticket in my car. Once I click "Done", it sets the reminder the next day.... at 1am. I dismissed the 1am reminder once, half asleep as the sound woke me up, it never reminded me again and now I have a parking fine to pay. I have real memory difficulties and need an app that actually works properly! Disappointing, as I find the one off reminders really helpful.
