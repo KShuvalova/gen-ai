@@ -1,0 +1,2 @@
+total,category_accuracy,priority_accuracy,department_accuracy,escalation_accuracy,quote_valid_rate,rag_hit_rate,agent_path_valid_rate,judge_pass_rate,avg_tool_steps,ghost_quote_count,fake_source_count
+20,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,5.0,0,0

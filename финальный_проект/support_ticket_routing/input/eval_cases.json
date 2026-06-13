@@ -1,0 +1,321 @@
+[
+  {
+    "id": "case_001",
+    "ticket_id": 199214,
+    "text": "Two-factor authentication codes are not being delivered to my phone.",
+    "expected_category": "account_access",
+    "expected_priority": "urgent",
+    "expected_department": "support_l2",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "account_access.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "Two-factor authentication codes are not being delivered to my phone.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_002",
+    "ticket_id": 166241,
+    "text": "I am unable to access my account after entering the correct credentials.",
+    "expected_category": "account_access",
+    "expected_priority": "medium",
+    "expected_department": "support_l2",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "account_access.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "I am unable to access my account after entering the correct credentials.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_003",
+    "ticket_id": 122066,
+    "text": "I am unable to access my account after entering the correct credentials.",
+    "expected_category": "account_access",
+    "expected_priority": "urgent",
+    "expected_department": "support_l2",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "account_access.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "I am unable to access my account after entering the correct credentials.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_004",
+    "ticket_id": 112708,
+    "text": "I am unable to access my account after entering the correct credentials.",
+    "expected_category": "account_access",
+    "expected_priority": "high",
+    "expected_department": "support_l2",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "account_access.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "I am unable to access my account after entering the correct credentials.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_005",
+    "ticket_id": 112186,
+    "text": "Two-factor authentication codes are not being delivered to my phone.",
+    "expected_category": "account_access",
+    "expected_priority": "medium",
+    "expected_department": "support_l2",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "account_access.md"
+    ],
+    "expected_evidence_quote": "Two-factor authentication codes are not being delivered to my phone.",
+    "expected_escalation": false
+  },
+  {
+    "id": "case_006",
+    "ticket_id": 199186,
+    "text": "I would like to request a refund for the recent charge.",
+    "expected_category": "billing_refund",
+    "expected_priority": "low",
+    "expected_department": "billing_team",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "I would like to request a refund for the recent charge.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_007",
+    "ticket_id": 99213,
+    "text": "The payment was deducted from my bank account but the transaction shows failed.",
+    "expected_category": "billing_refund",
+    "expected_priority": "urgent",
+    "expected_department": "billing_team",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "The payment was deducted from my bank account but the transaction shows failed.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_008",
+    "ticket_id": 101002,
+    "text": "There seems to be a discrepancy in my billing statement for this month.",
+    "expected_category": "billing_refund",
+    "expected_priority": "medium",
+    "expected_department": "billing_team",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "There seems to be a discrepancy in my billing statement for this month.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_009",
+    "ticket_id": 129449,
+    "text": "I would like to request a refund for the recent charge.",
+    "expected_category": "billing_refund",
+    "expected_priority": "high",
+    "expected_department": "billing_team",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "I would like to request a refund for the recent charge.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_010",
+    "ticket_id": 199908,
+    "text": "The payment was deducted from my bank account but the transaction shows failed.",
+    "expected_category": "billing_refund",
+    "expected_priority": "high",
+    "expected_department": "billing_team",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "The payment was deducted from my bank account but the transaction shows failed.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_011",
+    "ticket_id": 121291,
+    "text": "My subscription was cancelled without my request and I need clarification.",
+    "expected_category": "subscription",
+    "expected_priority": "high",
+    "expected_department": "support_l2",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "subscription_policy.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "My subscription was cancelled without my request and I need clarification.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_012",
+    "ticket_id": 112229,
+    "text": "My subscription was cancelled without my request and I need clarification.",
+    "expected_category": "subscription",
+    "expected_priority": "high",
+    "expected_department": "support_l2",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "subscription_policy.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "My subscription was cancelled without my request and I need clarification.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_013",
+    "ticket_id": 119488,
+    "text": "My subscription was cancelled without my request and I need clarification.",
+    "expected_category": "subscription",
+    "expected_priority": "medium",
+    "expected_department": "support_l2",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "subscription_policy.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "My subscription was cancelled without my request and I need clarification.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_014",
+    "ticket_id": 163481,
+    "text": "My subscription was cancelled without my request and I need clarification.",
+    "expected_category": "subscription",
+    "expected_priority": "urgent",
+    "expected_department": "support_l2",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "subscription_policy.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "My subscription was cancelled without my request and I need clarification.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_015",
+    "ticket_id": 96674,
+    "text": "My subscription was cancelled without my request and I need clarification.",
+    "expected_category": "subscription",
+    "expected_priority": "medium",
+    "expected_department": "support_l2",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "subscription_policy.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "My subscription was cancelled without my request and I need clarification.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_016",
+    "ticket_id": 66990,
+    "text": "The application crashes whenever I try to upload a file.",
+    "expected_category": "technical_bug",
+    "expected_priority": "high",
+    "expected_department": "technical_team",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "technical_bugs.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "The application crashes whenever I try to upload a file.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_017",
+    "ticket_id": 36783,
+    "text": "The application crashes whenever I try to upload a file.",
+    "expected_category": "technical_bug",
+    "expected_priority": "urgent",
+    "expected_department": "technical_team",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "technical_bugs.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "The application crashes whenever I try to upload a file.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_018",
+    "ticket_id": 35766,
+    "text": "The application crashes whenever I try to upload a file.",
+    "expected_category": "technical_bug",
+    "expected_priority": "low",
+    "expected_department": "technical_team",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "technical_bugs.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "The application crashes whenever I try to upload a file.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_019",
+    "ticket_id": 153413,
+    "text": "I found a bug in the latest update affecting report generation.",
+    "expected_category": "technical_bug",
+    "expected_priority": "medium",
+    "expected_department": "technical_team",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "technical_bugs.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "I found a bug in the latest update affecting report generation.",
+    "expected_escalation": true
+  },
+  {
+    "id": "case_020",
+    "ticket_id": 3668,
+    "text": "I am experiencing very slow performance while using the dashboard.",
+    "expected_category": "technical_bug",
+    "expected_priority": "high",
+    "expected_department": "technical_team",
+    "expected_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "technical_bugs.md",
+      "escalation_policy.md"
+    ],
+    "expected_evidence_quote": "I am experiencing very slow performance while using the dashboard.",
+    "expected_escalation": true
+  }
+]

@@ -1,0 +1,1034 @@
+[
+  {
+    "case": {
+      "id": "challenge_001",
+      "ticket_id": "challenge_001",
+      "issue_description": "My account was locked after too many attempts and the password reset email never arrives.",
+      "priority": "High",
+      "expected_category": "account_access",
+      "expected_department": "support_l2"
+    },
+    "classification": {
+      "ticket_id": "challenge_001",
+      "category": "account_access",
+      "priority": "high",
+      "department": "support_l2",
+      "summary": "My account was locked after too many attempts and the password reset email never arrives.",
+      "recommended_action": "Escalate and verify authentication logs, check recovery channel delivery, and guide the customer through secure account recovery.",
+      "evidence_quote": "My account was locked after too many attempts and the password reset email never arrives.",
+      "confidence": 0.75,
+      "escalation_required": true,
+      "escalation_reason": "priority is high",
+      "used_sources": [
+        "account_access.md",
+        "routing_rules.md",
+        "escalation_policy.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "account_access.md",
+          "score": 0.251949155988338,
+          "text": "# Account access policy Account access tickets include login failures, password reset problems, missing authentication codes, two-factor authentication delivery issues, account lockouts, and situations where the customer cannot enter the account despite correct credentials. Typical evidence phrases: - unable to access my account - correct credentials - password reset - authentication codes are not being delivered - two-factor authentication - verification code - account locked Default department: support_l2. Recommended actions: 1. Confirm whether the customer can access the recovery email or phone number. 2. Check recent login attempts and authentication delivery logs. 3. If two-factor codes are not delivered, verify SMS or email provider status. 4. If the customer cannot access the account after correct credentials, reset the account session and initiate secure recovery. 5. Escalate if the ticket is high or urgent, if SLA is breached, or if multiple previous tickets exist. The response must not invent security events. If the ticket only says that the user cannot log in, do not claim that the account was hacked."
+        },
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.1751507163457516,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        },
+        {
+          "source_id": "escalation_policy.md",
+          "score": 0.17313342787620845,
+          "text": "# Escalation policy Escalation is required when at least one of the following conditions is true: 1. Priority is high or urgent. 2. The ticket is already marked as escalated. 3. SLA is breached. 4. The customer cannot access an account and previous attempts failed. 5. Payment was deducted but the transaction failed. 6. The issue affects a business-critical workflow. 7. The ticket has high complexity or multiple previous tickets. Escalated tickets must include: - reason for escalation - responsible department - evidence quote from the ticket - recommended next action - policy sources used by the system Escalation must not be based on assumptions. If there is no evidence of urgency, the system should not mark the ticket as escalated."
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_001",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_001",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "My account was locked after too many attempts and the password reset email never arrives.",
+          "output_summary": "category=account_access, confidence=0.75"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=account_access, priority=high",
+          "output_summary": "department=support_l2"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=high, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=True; reason=priority is high"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "My account was locked after too many attempts and the password reset email never arrives. category account_access priority high department support_l2 escalation True",
+          "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'escalation_policy.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=My account was locked after too many attempts and the password reset email never arrives.; sources=['account_access.md', 'routing_rules.md', 'escalation_policy.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "id": "challenge_002",
+      "ticket_id": "challenge_002",
+      "issue_description": "I was charged twice after the checkout page crashed during payment.",
+      "priority": "High",
+      "expected_category": "billing_refund",
+      "expected_department": "billing_team"
+    },
+    "classification": {
+      "ticket_id": "challenge_002",
+      "category": "billing_refund",
+      "priority": "high",
+      "department": "billing_team",
+      "summary": "I was charged twice after the checkout page crashed during payment.",
+      "recommended_action": "Escalate and check transaction status, verify billing records, and start a refund or payment investigation if needed.",
+      "evidence_quote": "I was charged twice after the checkout page crashed during payment.",
+      "confidence": 0.95,
+      "escalation_required": true,
+      "escalation_reason": "priority is high",
+      "used_sources": [
+        "routing_rules.md",
+        "escalation_policy.md",
+        "priority_rules.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.21426945344589543,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        },
+        {
+          "source_id": "escalation_policy.md",
+          "score": 0.21337721353524308,
+          "text": "# Escalation policy Escalation is required when at least one of the following conditions is true: 1. Priority is high or urgent. 2. The ticket is already marked as escalated. 3. SLA is breached. 4. The customer cannot access an account and previous attempts failed. 5. Payment was deducted but the transaction failed. 6. The issue affects a business-critical workflow. 7. The ticket has high complexity or multiple previous tickets. Escalated tickets must include: - reason for escalation - responsible department - evidence quote from the ticket - recommended next action - policy sources used by the system Escalation must not be based on assumptions. If there is no evidence of urgency, the system should not mark the ticket as escalated."
+        },
+        {
+          "source_id": "priority_rules.md",
+          "score": 0.1969720332064071,
+          "text": "# Priority rules for support tickets This document defines how ticket priority should be interpreted. Allowed priority values are low, medium, high, and urgent. Low priority: The customer reports a minor inconvenience, a general question, or a non-blocking problem. The issue does not prevent the customer from using the main product. Medium priority: The issue affects a useful feature or creates noticeable friction, but the customer can still continue working. Medium priority is also used when the issue description is incomplete and the risk is unclear. High priority: The issue blocks an important workflow, affects payments, prevents access to an account, breaks a key feature, or may require escalation. High priority requires faster review and clearer operator guidance. Urgent priority: The issue is severe, time-sensitive, repeated, connected with security, account access, payment loss, SLA breach, or customer escalation. Urgent tickets must be reviewed quickly and should usually include escalation policy. Priority must not be increased without evidence. If the text does not support the selected priority, the system must explain uncertainty and keep the priority conservative."
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_002",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_002",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "I was charged twice after the checkout page crashed during payment.",
+          "output_summary": "category=billing_refund, confidence=0.95"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=billing_refund, priority=high",
+          "output_summary": "department=billing_team"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=high, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=True; reason=priority is high"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "I was charged twice after the checkout page crashed during payment. category billing_refund priority high department billing_team escalation True",
+          "output_summary": "used_sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=I was charged twice after the checkout page crashed during payment.; sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "id": "challenge_003",
+      "ticket_id": "challenge_003",
+      "issue_description": "Since the latest update the app is slow and reports do not load.",
+      "priority": "Medium",
+      "expected_category": "technical_bug",
+      "expected_department": "technical_team"
+    },
+    "classification": {
+      "ticket_id": "challenge_003",
+      "category": "technical_bug",
+      "priority": "medium",
+      "department": "technical_team",
+      "summary": "Since the latest update the app is slow and reports do not load.",
+      "recommended_action": "collect reproduction details, identify the affected feature, and route the issue to the technical team.",
+      "evidence_quote": "Since the latest update the app is slow and reports do not load.",
+      "confidence": 0.8500000000000001,
+      "escalation_required": false,
+      "escalation_reason": "no escalation trigger found",
+      "used_sources": [
+        "priority_rules.md",
+        "technical_bugs.md",
+        "routing_rules.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "priority_rules.md",
+          "score": 0.2046191622128791,
+          "text": "# Priority rules for support tickets This document defines how ticket priority should be interpreted. Allowed priority values are low, medium, high, and urgent. Low priority: The customer reports a minor inconvenience, a general question, or a non-blocking problem. The issue does not prevent the customer from using the main product. Medium priority: The issue affects a useful feature or creates noticeable friction, but the customer can still continue working. Medium priority is also used when the issue description is incomplete and the risk is unclear. High priority: The issue blocks an important workflow, affects payments, prevents access to an account, breaks a key feature, or may require escalation. High priority requires faster review and clearer operator guidance. Urgent priority: The issue is severe, time-sensitive, repeated, connected with security, account access, payment loss, SLA breach, or customer escalation. Urgent tickets must be reviewed quickly and should usually include escalation policy. Priority must not be increased without evidence. If the text does not support the selected priority, the system must explain uncertainty and keep the priority conservative."
+        },
+        {
+          "source_id": "technical_bugs.md",
+          "score": 0.17871526903357243,
+          "text": "# Technical bug policy Technical bug tickets include software crashes, errors, upload failures, data synchronization problems, broken features, report generation problems, slow performance, and issues caused by a recent update. Typical evidence phrases: - application crashes - found a bug - latest update - report generation - upload a file - not syncing data - performance issue - error message Default department: technical_team. Recommended actions: 1. Identify the affected product and feature. 2. Ask for reproduction steps if they are missing. 3. Check whether the issue is already known. 4. If the ticket mentions a crash, update, report generation, or data synchronization failure, route it to the technical team. 5. Escalate if the issue affects a key workflow, has urgent priority, or appears across multiple customers. The system must not claim that engineering fixed the bug unless this is present in the ticket or resolution notes."
+        },
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.17191841756754167,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_003",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_003",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "Since the latest update the app is slow and reports do not load.",
+          "output_summary": "category=technical_bug, confidence=0.85"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=technical_bug, priority=medium",
+          "output_summary": "department=technical_team"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=medium, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=False; reason=no escalation trigger found"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "Since the latest update the app is slow and reports do not load. category technical_bug priority medium department technical_team escalation False",
+          "output_summary": "used_sources=['priority_rules.md', 'technical_bugs.md', 'routing_rules.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=Since the latest update the app is slow and reports do not load.; sources=['priority_rules.md', 'technical_bugs.md', 'routing_rules.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "id": "challenge_004",
+      "ticket_id": "challenge_004",
+      "issue_description": "Please cancel my trial renewal because I cannot find the plan settings.",
+      "priority": "Medium",
+      "expected_category": "subscription",
+      "expected_department": "support_l2"
+    },
+    "classification": {
+      "ticket_id": "challenge_004",
+      "category": "subscription",
+      "priority": "medium",
+      "department": "support_l2",
+      "summary": "Please cancel my trial renewal because I cannot find the plan settings.",
+      "recommended_action": "check subscription status, verify cancellation or renewal events, and clarify the customer's plan state.",
+      "evidence_quote": "Please cancel my trial renewal because I cannot find the plan settings.",
+      "confidence": 0.95,
+      "escalation_required": false,
+      "escalation_reason": "no escalation trigger found",
+      "used_sources": [
+        "subscription_policy.md",
+        "routing_rules.md",
+        "priority_rules.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "subscription_policy.md",
+          "score": 0.3208423330679948,
+          "text": "# Subscription policy Subscription tickets include unexpected cancellation, cancellation requests, renewal problems, plan upgrade, plan downgrade, trial expiration, and unclear subscription status. Typical evidence phrases: - subscription was cancelled - without my request - cancel subscription - renewal - plan - upgrade - downgrade - trial Default department: support_l2. Recommended actions: 1. Check the current subscription status. 2. Verify whether cancellation or renewal was initiated by the customer or by the system. 3. If the customer reports cancellation without request, review account activity and billing events. 4. If the ticket is connected to payment, billing_team may be consulted, but the main route remains support_l2 unless the issue is primarily a payment failure. 5. Escalate if the customer is blocked from using a paid plan or if SLA is breached. The system must not promise a refund unless the ticket clearly asks for refund or billing policy applies."
+        },
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.2573087882753723,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        },
+        {
+          "source_id": "priority_rules.md",
+          "score": 0.19497589804053295,
+          "text": "# Priority rules for support tickets This document defines how ticket priority should be interpreted. Allowed priority values are low, medium, high, and urgent. Low priority: The customer reports a minor inconvenience, a general question, or a non-blocking problem. The issue does not prevent the customer from using the main product. Medium priority: The issue affects a useful feature or creates noticeable friction, but the customer can still continue working. Medium priority is also used when the issue description is incomplete and the risk is unclear. High priority: The issue blocks an important workflow, affects payments, prevents access to an account, breaks a key feature, or may require escalation. High priority requires faster review and clearer operator guidance. Urgent priority: The issue is severe, time-sensitive, repeated, connected with security, account access, payment loss, SLA breach, or customer escalation. Urgent tickets must be reviewed quickly and should usually include escalation policy. Priority must not be increased without evidence. If the text does not support the selected priority, the system must explain uncertainty and keep the priority conservative."
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_004",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_004",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "Please cancel my trial renewal because I cannot find the plan settings.",
+          "output_summary": "category=subscription, confidence=0.95"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=subscription, priority=medium",
+          "output_summary": "department=support_l2"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=medium, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=False; reason=no escalation trigger found"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "Please cancel my trial renewal because I cannot find the plan settings. category subscription priority medium department support_l2 escalation False",
+          "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=Please cancel my trial renewal because I cannot find the plan settings.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "id": "challenge_005",
+      "ticket_id": "challenge_005",
+      "issue_description": "Someone used my account without permission and changed my email address.",
+      "priority": "Urgent",
+      "expected_category": "security_privacy",
+      "expected_department": "security_team"
+    },
+    "classification": {
+      "ticket_id": "challenge_005",
+      "category": "other",
+      "priority": "urgent",
+      "department": "support_l1",
+      "summary": "Someone used my account without permission and changed my email address.",
+      "recommended_action": "Escalate and review the ticket manually and request additional information if the issue is unclear.",
+      "evidence_quote": "Someone used my account without permission and changed my email address.",
+      "confidence": 0.55,
+      "escalation_required": true,
+      "escalation_reason": "priority is urgent",
+      "used_sources": [
+        "priority_rules.md",
+        "routing_rules.md",
+        "escalation_policy.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "priority_rules.md",
+          "score": 0.22023380239624665,
+          "text": "# Priority rules for support tickets This document defines how ticket priority should be interpreted. Allowed priority values are low, medium, high, and urgent. Low priority: The customer reports a minor inconvenience, a general question, or a non-blocking problem. The issue does not prevent the customer from using the main product. Medium priority: The issue affects a useful feature or creates noticeable friction, but the customer can still continue working. Medium priority is also used when the issue description is incomplete and the risk is unclear. High priority: The issue blocks an important workflow, affects payments, prevents access to an account, breaks a key feature, or may require escalation. High priority requires faster review and clearer operator guidance. Urgent priority: The issue is severe, time-sensitive, repeated, connected with security, account access, payment loss, SLA breach, or customer escalation. Urgent tickets must be reviewed quickly and should usually include escalation policy. Priority must not be increased without evidence. If the text does not support the selected priority, the system must explain uncertainty and keep the priority conservative."
+        },
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.19992839623517064,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        },
+        {
+          "source_id": "escalation_policy.md",
+          "score": 0.19135726840819745,
+          "text": "# Escalation policy Escalation is required when at least one of the following conditions is true: 1. Priority is high or urgent. 2. The ticket is already marked as escalated. 3. SLA is breached. 4. The customer cannot access an account and previous attempts failed. 5. Payment was deducted but the transaction failed. 6. The issue affects a business-critical workflow. 7. The ticket has high complexity or multiple previous tickets. Escalated tickets must include: - reason for escalation - responsible department - evidence quote from the ticket - recommended next action - policy sources used by the system Escalation must not be based on assumptions. If there is no evidence of urgency, the system should not mark the ticket as escalated."
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_005",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_005",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "Someone used my account without permission and changed my email address.",
+          "output_summary": "category=other, confidence=0.55"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=other, priority=urgent",
+          "output_summary": "department=support_l1"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=urgent, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=True; reason=priority is urgent"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "Someone used my account without permission and changed my email address. category other priority urgent department support_l1 escalation True",
+          "output_summary": "used_sources=['priority_rules.md', 'routing_rules.md', 'escalation_policy.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=Someone used my account without permission and changed my email address.; sources=['priority_rules.md', 'routing_rules.md', 'escalation_policy.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "id": "challenge_006",
+      "ticket_id": "challenge_006",
+      "issue_description": "Where can I find the export feature for invoices?",
+      "priority": "Low",
+      "expected_category": "product_question",
+      "expected_department": "support_l1"
+    },
+    "classification": {
+      "ticket_id": "challenge_006",
+      "category": "billing_refund",
+      "priority": "low",
+      "department": "billing_team",
+      "summary": "Where can I find the export feature for invoices?",
+      "recommended_action": "check transaction status, verify billing records, and start a refund or payment investigation if needed.",
+      "evidence_quote": "Where can I find the export feature for invoices?",
+      "confidence": 0.75,
+      "escalation_required": false,
+      "escalation_reason": "no escalation trigger found",
+      "used_sources": [
+        "priority_rules.md",
+        "routing_rules.md",
+        "escalation_policy.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "priority_rules.md",
+          "score": 0.2582319699769243,
+          "text": "# Priority rules for support tickets This document defines how ticket priority should be interpreted. Allowed priority values are low, medium, high, and urgent. Low priority: The customer reports a minor inconvenience, a general question, or a non-blocking problem. The issue does not prevent the customer from using the main product. Medium priority: The issue affects a useful feature or creates noticeable friction, but the customer can still continue working. Medium priority is also used when the issue description is incomplete and the risk is unclear. High priority: The issue blocks an important workflow, affects payments, prevents access to an account, breaks a key feature, or may require escalation. High priority requires faster review and clearer operator guidance. Urgent priority: The issue is severe, time-sensitive, repeated, connected with security, account access, payment loss, SLA breach, or customer escalation. Urgent tickets must be reviewed quickly and should usually include escalation policy. Priority must not be increased without evidence. If the text does not support the selected priority, the system must explain uncertainty and keep the priority conservative."
+        },
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.21953659495831784,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        },
+        {
+          "source_id": "escalation_policy.md",
+          "score": 0.10883675794003614,
+          "text": "# Escalation policy Escalation is required when at least one of the following conditions is true: 1. Priority is high or urgent. 2. The ticket is already marked as escalated. 3. SLA is breached. 4. The customer cannot access an account and previous attempts failed. 5. Payment was deducted but the transaction failed. 6. The issue affects a business-critical workflow. 7. The ticket has high complexity or multiple previous tickets. Escalated tickets must include: - reason for escalation - responsible department - evidence quote from the ticket - recommended next action - policy sources used by the system Escalation must not be based on assumptions. If there is no evidence of urgency, the system should not mark the ticket as escalated."
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_006",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_006",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "Where can I find the export feature for invoices?",
+          "output_summary": "category=billing_refund, confidence=0.75"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=billing_refund, priority=low",
+          "output_summary": "department=billing_team"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=low, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=False; reason=no escalation trigger found"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "Where can I find the export feature for invoices? category billing_refund priority low department billing_team escalation False",
+          "output_summary": "used_sources=['priority_rules.md', 'routing_rules.md', 'escalation_policy.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=Where can I find the export feature for invoices?; sources=['priority_rules.md', 'routing_rules.md', 'escalation_policy.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "id": "challenge_007",
+      "ticket_id": "challenge_007",
+      "issue_description": "The package tracking number is not updating and the shipment is delayed.",
+      "priority": "Medium",
+      "expected_category": "delivery_status",
+      "expected_department": "logistics_team"
+    },
+    "classification": {
+      "ticket_id": "challenge_007",
+      "category": "delivery_status",
+      "priority": "medium",
+      "department": "logistics_team",
+      "summary": "The package tracking number is not updating and the shipment is delayed.",
+      "recommended_action": "check shipment or tracking status and route the issue to the logistics team.",
+      "evidence_quote": "The package tracking number is not updating and the shipment is delayed.",
+      "confidence": 0.95,
+      "escalation_required": false,
+      "escalation_reason": "no escalation trigger found",
+      "used_sources": [
+        "priority_rules.md",
+        "routing_rules.md",
+        "escalation_policy.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "priority_rules.md",
+          "score": 0.3112829016446936,
+          "text": "# Priority rules for support tickets This document defines how ticket priority should be interpreted. Allowed priority values are low, medium, high, and urgent. Low priority: The customer reports a minor inconvenience, a general question, or a non-blocking problem. The issue does not prevent the customer from using the main product. Medium priority: The issue affects a useful feature or creates noticeable friction, but the customer can still continue working. Medium priority is also used when the issue description is incomplete and the risk is unclear. High priority: The issue blocks an important workflow, affects payments, prevents access to an account, breaks a key feature, or may require escalation. High priority requires faster review and clearer operator guidance. Urgent priority: The issue is severe, time-sensitive, repeated, connected with security, account access, payment loss, SLA breach, or customer escalation. Urgent tickets must be reviewed quickly and should usually include escalation policy. Priority must not be increased without evidence. If the text does not support the selected priority, the system must explain uncertainty and keep the priority conservative."
+        },
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.22103169630591024,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        },
+        {
+          "source_id": "escalation_policy.md",
+          "score": 0.13589714795923447,
+          "text": "# Escalation policy Escalation is required when at least one of the following conditions is true: 1. Priority is high or urgent. 2. The ticket is already marked as escalated. 3. SLA is breached. 4. The customer cannot access an account and previous attempts failed. 5. Payment was deducted but the transaction failed. 6. The issue affects a business-critical workflow. 7. The ticket has high complexity or multiple previous tickets. Escalated tickets must include: - reason for escalation - responsible department - evidence quote from the ticket - recommended next action - policy sources used by the system Escalation must not be based on assumptions. If there is no evidence of urgency, the system should not mark the ticket as escalated."
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_007",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_007",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "The package tracking number is not updating and the shipment is delayed.",
+          "output_summary": "category=delivery_status, confidence=0.95"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=delivery_status, priority=medium",
+          "output_summary": "department=logistics_team"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=medium, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=False; reason=no escalation trigger found"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "The package tracking number is not updating and the shipment is delayed. category delivery_status priority medium department logistics_team escalation False",
+          "output_summary": "used_sources=['priority_rules.md', 'routing_rules.md', 'escalation_policy.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=The package tracking number is not updating and the shipment is delayed.; sources=['priority_rules.md', 'routing_rules.md', 'escalation_policy.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "id": "challenge_008",
+      "ticket_id": "challenge_008",
+      "issue_description": "My subscription was cancelled and the latest invoice still charged my card.",
+      "priority": "High",
+      "expected_category": "subscription",
+      "expected_department": "support_l2"
+    },
+    "classification": {
+      "ticket_id": "challenge_008",
+      "category": "billing_refund",
+      "priority": "high",
+      "department": "billing_team",
+      "summary": "My subscription was cancelled and the latest invoice still charged my card.",
+      "recommended_action": "Escalate and check transaction status, verify billing records, and start a refund or payment investigation if needed.",
+      "evidence_quote": "My subscription was cancelled and the latest invoice still charged my card.",
+      "confidence": 0.95,
+      "escalation_required": true,
+      "escalation_reason": "priority is high",
+      "used_sources": [
+        "routing_rules.md",
+        "escalation_policy.md",
+        "priority_rules.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.20185202147143982,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        },
+        {
+          "source_id": "escalation_policy.md",
+          "score": 0.16142690448469713,
+          "text": "# Escalation policy Escalation is required when at least one of the following conditions is true: 1. Priority is high or urgent. 2. The ticket is already marked as escalated. 3. SLA is breached. 4. The customer cannot access an account and previous attempts failed. 5. Payment was deducted but the transaction failed. 6. The issue affects a business-critical workflow. 7. The ticket has high complexity or multiple previous tickets. Escalated tickets must include: - reason for escalation - responsible department - evidence quote from the ticket - recommended next action - policy sources used by the system Escalation must not be based on assumptions. If there is no evidence of urgency, the system should not mark the ticket as escalated."
+        },
+        {
+          "source_id": "priority_rules.md",
+          "score": 0.1518155360417491,
+          "text": "# Priority rules for support tickets This document defines how ticket priority should be interpreted. Allowed priority values are low, medium, high, and urgent. Low priority: The customer reports a minor inconvenience, a general question, or a non-blocking problem. The issue does not prevent the customer from using the main product. Medium priority: The issue affects a useful feature or creates noticeable friction, but the customer can still continue working. Medium priority is also used when the issue description is incomplete and the risk is unclear. High priority: The issue blocks an important workflow, affects payments, prevents access to an account, breaks a key feature, or may require escalation. High priority requires faster review and clearer operator guidance. Urgent priority: The issue is severe, time-sensitive, repeated, connected with security, account access, payment loss, SLA breach, or customer escalation. Urgent tickets must be reviewed quickly and should usually include escalation policy. Priority must not be increased without evidence. If the text does not support the selected priority, the system must explain uncertainty and keep the priority conservative."
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_008",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_008",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "My subscription was cancelled and the latest invoice still charged my card.",
+          "output_summary": "category=billing_refund, confidence=0.95"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=billing_refund, priority=high",
+          "output_summary": "department=billing_team"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=high, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=True; reason=priority is high"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "My subscription was cancelled and the latest invoice still charged my card. category billing_refund priority high department billing_team escalation True",
+          "output_summary": "used_sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=My subscription was cancelled and the latest invoice still charged my card.; sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "id": "challenge_009",
+      "ticket_id": "challenge_009",
+      "issue_description": "I want all my personal data deleted from your platform.",
+      "priority": "High",
+      "expected_category": "security_privacy",
+      "expected_department": "security_team"
+    },
+    "classification": {
+      "ticket_id": "challenge_009",
+      "category": "security_privacy",
+      "priority": "high",
+      "department": "security_team",
+      "summary": "I want all my personal data deleted from your platform.",
+      "recommended_action": "Escalate and review security indicators, protect the account, and route the request to the security team.",
+      "evidence_quote": "I want all my personal data deleted from your platform.",
+      "confidence": 0.75,
+      "escalation_required": true,
+      "escalation_reason": "priority is high",
+      "used_sources": [
+        "escalation_policy.md",
+        "priority_rules.md",
+        "routing_rules.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "escalation_policy.md",
+          "score": 0.23445860858842654,
+          "text": "# Escalation policy Escalation is required when at least one of the following conditions is true: 1. Priority is high or urgent. 2. The ticket is already marked as escalated. 3. SLA is breached. 4. The customer cannot access an account and previous attempts failed. 5. Payment was deducted but the transaction failed. 6. The issue affects a business-critical workflow. 7. The ticket has high complexity or multiple previous tickets. Escalated tickets must include: - reason for escalation - responsible department - evidence quote from the ticket - recommended next action - policy sources used by the system Escalation must not be based on assumptions. If there is no evidence of urgency, the system should not mark the ticket as escalated."
+        },
+        {
+          "source_id": "priority_rules.md",
+          "score": 0.22049892771021254,
+          "text": "# Priority rules for support tickets This document defines how ticket priority should be interpreted. Allowed priority values are low, medium, high, and urgent. Low priority: The customer reports a minor inconvenience, a general question, or a non-blocking problem. The issue does not prevent the customer from using the main product. Medium priority: The issue affects a useful feature or creates noticeable friction, but the customer can still continue working. Medium priority is also used when the issue description is incomplete and the risk is unclear. High priority: The issue blocks an important workflow, affects payments, prevents access to an account, breaks a key feature, or may require escalation. High priority requires faster review and clearer operator guidance. Urgent priority: The issue is severe, time-sensitive, repeated, connected with security, account access, payment loss, SLA breach, or customer escalation. Urgent tickets must be reviewed quickly and should usually include escalation policy. Priority must not be increased without evidence. If the text does not support the selected priority, the system must explain uncertainty and keep the priority conservative."
+        },
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.20445966690606565,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_009",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_009",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "I want all my personal data deleted from your platform.",
+          "output_summary": "category=security_privacy, confidence=0.75"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=security_privacy, priority=high",
+          "output_summary": "department=security_team"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=high, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=True; reason=priority is high"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "I want all my personal data deleted from your platform. category security_privacy priority high department security_team escalation True",
+          "output_summary": "used_sources=['escalation_policy.md', 'priority_rules.md', 'routing_rules.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=I want all my personal data deleted from your platform.; sources=['escalation_policy.md', 'priority_rules.md', 'routing_rules.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "id": "challenge_010",
+      "ticket_id": "challenge_010",
+      "issue_description": "The upload button returns an error, but only when I use the free plan.",
+      "priority": "Medium",
+      "expected_category": "technical_bug",
+      "expected_department": "technical_team"
+    },
+    "classification": {
+      "ticket_id": "challenge_010",
+      "category": "technical_bug",
+      "priority": "medium",
+      "department": "technical_team",
+      "summary": "The upload button returns an error, but only when I use the free plan.",
+      "recommended_action": "collect reproduction details, identify the affected feature, and route the issue to the technical team.",
+      "evidence_quote": "The upload button returns an error, but only when I use the free plan.",
+      "confidence": 0.8500000000000001,
+      "escalation_required": false,
+      "escalation_reason": "no escalation trigger found",
+      "used_sources": [
+        "routing_rules.md",
+        "priority_rules.md",
+        "technical_bugs.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.28106469790838334,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        },
+        {
+          "source_id": "priority_rules.md",
+          "score": 0.2056062078165895,
+          "text": "# Priority rules for support tickets This document defines how ticket priority should be interpreted. Allowed priority values are low, medium, high, and urgent. Low priority: The customer reports a minor inconvenience, a general question, or a non-blocking problem. The issue does not prevent the customer from using the main product. Medium priority: The issue affects a useful feature or creates noticeable friction, but the customer can still continue working. Medium priority is also used when the issue description is incomplete and the risk is unclear. High priority: The issue blocks an important workflow, affects payments, prevents access to an account, breaks a key feature, or may require escalation. High priority requires faster review and clearer operator guidance. Urgent priority: The issue is severe, time-sensitive, repeated, connected with security, account access, payment loss, SLA breach, or customer escalation. Urgent tickets must be reviewed quickly and should usually include escalation policy. Priority must not be increased without evidence. If the text does not support the selected priority, the system must explain uncertainty and keep the priority conservative."
+        },
+        {
+          "source_id": "technical_bugs.md",
+          "score": 0.10583811299327718,
+          "text": "# Technical bug policy Technical bug tickets include software crashes, errors, upload failures, data synchronization problems, broken features, report generation problems, slow performance, and issues caused by a recent update. Typical evidence phrases: - application crashes - found a bug - latest update - report generation - upload a file - not syncing data - performance issue - error message Default department: technical_team. Recommended actions: 1. Identify the affected product and feature. 2. Ask for reproduction steps if they are missing. 3. Check whether the issue is already known. 4. If the ticket mentions a crash, update, report generation, or data synchronization failure, route it to the technical team. 5. Escalate if the issue affects a key workflow, has urgent priority, or appears across multiple customers. The system must not claim that engineering fixed the bug unless this is present in the ticket or resolution notes."
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_010",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_010",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "The upload button returns an error, but only when I use the free plan.",
+          "output_summary": "category=technical_bug, confidence=0.85"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=technical_bug, priority=medium",
+          "output_summary": "department=technical_team"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=medium, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=False; reason=no escalation trigger found"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "The upload button returns an error, but only when I use the free plan. category technical_bug priority medium department technical_team escalation False",
+          "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'technical_bugs.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=The upload button returns an error, but only when I use the free plan.; sources=['routing_rules.md', 'priority_rules.md', 'technical_bugs.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "id": "challenge_011",
+      "ticket_id": "challenge_011",
+      "issue_description": "My bank account was charged, but I cannot access the account dashboard to see the receipt.",
+      "priority": "High",
+      "expected_category": "billing_refund",
+      "expected_department": "billing_team"
+    },
+    "classification": {
+      "ticket_id": "challenge_011",
+      "category": "billing_refund",
+      "priority": "high",
+      "department": "billing_team",
+      "summary": "My bank account was charged, but I cannot access the account dashboard to see the receipt.",
+      "recommended_action": "Escalate and check transaction status, verify billing records, and start a refund or payment investigation if needed.",
+      "evidence_quote": "My bank account was charged, but I cannot access the account dashboard to see the receipt.",
+      "confidence": 0.95,
+      "escalation_required": true,
+      "escalation_reason": "priority is high",
+      "used_sources": [
+        "escalation_policy.md",
+        "priority_rules.md",
+        "routing_rules.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "escalation_policy.md",
+          "score": 0.20610904258684265,
+          "text": "# Escalation policy Escalation is required when at least one of the following conditions is true: 1. Priority is high or urgent. 2. The ticket is already marked as escalated. 3. SLA is breached. 4. The customer cannot access an account and previous attempts failed. 5. Payment was deducted but the transaction failed. 6. The issue affects a business-critical workflow. 7. The ticket has high complexity or multiple previous tickets. Escalated tickets must include: - reason for escalation - responsible department - evidence quote from the ticket - recommended next action - policy sources used by the system Escalation must not be based on assumptions. If there is no evidence of urgency, the system should not mark the ticket as escalated."
+        },
+        {
+          "source_id": "priority_rules.md",
+          "score": 0.1948717651142007,
+          "text": "# Priority rules for support tickets This document defines how ticket priority should be interpreted. Allowed priority values are low, medium, high, and urgent. Low priority: The customer reports a minor inconvenience, a general question, or a non-blocking problem. The issue does not prevent the customer from using the main product. Medium priority: The issue affects a useful feature or creates noticeable friction, but the customer can still continue working. Medium priority is also used when the issue description is incomplete and the risk is unclear. High priority: The issue blocks an important workflow, affects payments, prevents access to an account, breaks a key feature, or may require escalation. High priority requires faster review and clearer operator guidance. Urgent priority: The issue is severe, time-sensitive, repeated, connected with security, account access, payment loss, SLA breach, or customer escalation. Urgent tickets must be reviewed quickly and should usually include escalation policy. Priority must not be increased without evidence. If the text does not support the selected priority, the system must explain uncertainty and keep the priority conservative."
+        },
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.18570163333973658,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_011",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_011",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "My bank account was charged, but I cannot access the account dashboard to see the receipt.",
+          "output_summary": "category=billing_refund, confidence=0.95"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=billing_refund, priority=high",
+          "output_summary": "department=billing_team"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=high, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=True; reason=priority is high"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "My bank account was charged, but I cannot access the account dashboard to see the receipt. category billing_refund priority high department billing_team escalation True",
+          "output_summary": "used_sources=['escalation_policy.md', 'priority_rules.md', 'routing_rules.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=My bank account was charged, but I cannot access the account dashboard to see the receipt.; sources=['escalation_policy.md', 'priority_rules.md', 'routing_rules.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  },
+  {
+    "case": {
+      "id": "challenge_012",
+      "ticket_id": "challenge_012",
+      "issue_description": "The system is not syncing data, and my subscription status also looks wrong.",
+      "priority": "Medium",
+      "expected_category": "technical_bug",
+      "expected_department": "technical_team"
+    },
+    "classification": {
+      "ticket_id": "challenge_012",
+      "category": "technical_bug",
+      "priority": "medium",
+      "department": "technical_team",
+      "summary": "The system is not syncing data, and my subscription status also looks wrong.",
+      "recommended_action": "collect reproduction details, identify the affected feature, and route the issue to the technical team.",
+      "evidence_quote": "The system is not syncing data, and my subscription status also looks wrong.",
+      "confidence": 0.8500000000000001,
+      "escalation_required": false,
+      "escalation_reason": "no escalation trigger found",
+      "used_sources": [
+        "routing_rules.md",
+        "priority_rules.md",
+        "subscription_policy.md"
+      ],
+      "policy_context": [
+        {
+          "source_id": "routing_rules.md",
+          "score": 0.23180853920115924,
+          "text": "# Routing rules for support tickets This document defines the standard routing logic for customer support tickets. Every incoming ticket must be assigned to exactly one normalized category and one responsible department. The routing decision must be based primarily on the issue description, not on the raw category from the source dataset, because raw categories may be noisy or inconsistent. Supported normalized categories: 1. account_access Use this category for login failures, password problems, authentication issues, two-factor authentication codes, missing verification codes, account lockouts, credential problems, and account access failures. Responsible department: support_l2. 2. billing_refund Use this category for failed payments, duplicate charges, refunds, billing statement discrepancies, invoice issues, payment gateway timeouts, transaction failures, and payment method problems. Responsible department: billing_team. 3. technical_bug Use this category for crashes, errors, data synchronization failures, broken features, file upload problems, performance issues, report generation bugs, and problems after software updates. Responsible department: technical_team. 4. subscriptio"
+        },
+        {
+          "source_id": "priority_rules.md",
+          "score": 0.19437731503768352,
+          "text": "# Priority rules for support tickets This document defines how ticket priority should be interpreted. Allowed priority values are low, medium, high, and urgent. Low priority: The customer reports a minor inconvenience, a general question, or a non-blocking problem. The issue does not prevent the customer from using the main product. Medium priority: The issue affects a useful feature or creates noticeable friction, but the customer can still continue working. Medium priority is also used when the issue description is incomplete and the risk is unclear. High priority: The issue blocks an important workflow, affects payments, prevents access to an account, breaks a key feature, or may require escalation. High priority requires faster review and clearer operator guidance. Urgent priority: The issue is severe, time-sensitive, repeated, connected with security, account access, payment loss, SLA breach, or customer escalation. Urgent tickets must be reviewed quickly and should usually include escalation policy. Priority must not be increased without evidence. If the text does not support the selected priority, the system must explain uncertainty and keep the priority conservative."
+        },
+        {
+          "source_id": "subscription_policy.md",
+          "score": 0.14768027552957,
+          "text": "# Subscription policy Subscription tickets include unexpected cancellation, cancellation requests, renewal problems, plan upgrade, plan downgrade, trial expiration, and unclear subscription status. Typical evidence phrases: - subscription was cancelled - without my request - cancel subscription - renewal - plan - upgrade - downgrade - trial Default department: support_l2. Recommended actions: 1. Check the current subscription status. 2. Verify whether cancellation or renewal was initiated by the customer or by the system. 3. If the customer reports cancellation without request, review account activity and billing events. 4. If the ticket is connected to payment, billing_team may be consulted, but the main route remains support_l2 unless the issue is primarily a payment failure. 5. Escalate if the customer is blocked from using a paid plan or if SLA is breached. The system must not promise a refund unless the ticket clearly asks for refund or billing policy applies."
+        }
+      ]
+    },
+    "hallucination_check": {
+      "ticket_id": "challenge_012",
+      "evidence_quote_found": true,
+      "invalid_sources": [],
+      "ghost_quote_count": 0,
+      "fake_source_count": 0
+    },
+    "trace": {
+      "ticket_id": "challenge_012",
+      "steps": [
+        {
+          "step_id": 1,
+          "tool_name": "classify_ticket_text",
+          "input_summary": "The system is not syncing data, and my subscription status also looks wrong.",
+          "output_summary": "category=technical_bug, confidence=0.85"
+        },
+        {
+          "step_id": 2,
+          "tool_name": "choose_department",
+          "input_summary": "category=technical_bug, priority=medium",
+          "output_summary": "department=technical_team"
+        },
+        {
+          "step_id": 3,
+          "tool_name": "should_escalate",
+          "input_summary": "priority=medium, escalated=No, sla_breached=No",
+          "output_summary": "escalation_required=False; reason=no escalation trigger found"
+        },
+        {
+          "step_id": 4,
+          "tool_name": "retrieve_policy_docs",
+          "input_summary": "The system is not syncing data, and my subscription status also looks wrong. category technical_bug priority medium department technical_team escalation False",
+          "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'subscription_policy.md']"
+        },
+        {
+          "step_id": 5,
+          "tool_name": "hallucination_check",
+          "input_summary": "quote=The system is not syncing data, and my subscription status also looks wrong.; sources=['routing_rules.md', 'priority_rules.md', 'subscription_policy.md']",
+          "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+        }
+      ]
+    }
+  }
+]

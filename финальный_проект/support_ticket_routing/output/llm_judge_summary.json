@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "model": "deepseek-v4-flash",
+  "total": 20,
+  "llm_judge_pass_rate": 1.0,
+  "category_ok_rate": 1.0,
+  "priority_ok_rate": 1.0,
+  "department_ok_rate": 1.0,
+  "evidence_ok_rate": 1.0,
+  "source_ok_rate": 1.0
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "challenge_001",
+    "ticket_id": "challenge_001",
+    "issue_description": "My account was locked after too many attempts and the password reset email never arrives.",
+    "priority": "High",
+    "expected_category": "account_access",
+    "expected_department": "support_l2"
+  },
+  {
+    "id": "challenge_002",
+    "ticket_id": "challenge_002",
+    "issue_description": "I was charged twice after the checkout page crashed during payment.",
+    "priority": "High",
+    "expected_category": "billing_refund",
+    "expected_department": "billing_team"
+  },
+  {
+    "id": "challenge_003",
+    "ticket_id": "challenge_003",
+    "issue_description": "Since the latest update the app is slow and reports do not load.",
+    "priority": "Medium",
+    "expected_category": "technical_bug",
+    "expected_department": "technical_team"
+  },
+  {
+    "id": "challenge_004",
+    "ticket_id": "challenge_004",
+    "issue_description": "Please cancel my trial renewal because I cannot find the plan settings.",
+    "priority": "Medium",
+    "expected_category": "subscription",
+    "expected_department": "support_l2"
+  },
+  {
+    "id": "challenge_005",
+    "ticket_id": "challenge_005",
+    "issue_description": "Someone used my account without permission and changed my email address.",
+    "priority": "Urgent",
+    "expected_category": "security_privacy",
+    "expected_department": "security_team"
+  },
+  {
+    "id": "challenge_006",
+    "ticket_id": "challenge_006",
+    "issue_description": "Where can I find the export feature for invoices?",
+    "priority": "Low",
+    "expected_category": "product_question",
+    "expected_department": "support_l1"
+  },
+  {
+    "id": "challenge_007",
+    "ticket_id": "challenge_007",
+    "issue_description": "The package tracking number is not updating and the shipment is delayed.",
+    "priority": "Medium",
+    "expected_category": "delivery_status",
+    "expected_department": "logistics_team"
+  },
+  {
+    "id": "challenge_008",
+    "ticket_id": "challenge_008",
+    "issue_description": "My subscription was cancelled and the latest invoice still charged my card.",
+    "priority": "High",
+    "expected_category": "subscription",
+    "expected_department": "support_l2"
+  },
+  {
+    "id": "challenge_009",
+    "ticket_id": "challenge_009",
+    "issue_description": "I want all my personal data deleted from your platform.",
+    "priority": "High",
+    "expected_category": "security_privacy",
+    "expected_department": "security_team"
+  },
+  {
+    "id": "challenge_010",
+    "ticket_id": "challenge_010",
+    "issue_description": "The upload button returns an error, but only when I use the free plan.",
+    "priority": "Medium",
+    "expected_category": "technical_bug",
+    "expected_department": "technical_team"
+  },
+  {
+    "id": "challenge_011",
+    "ticket_id": "challenge_011",
+    "issue_description": "My bank account was charged, but I cannot access the account dashboard to see the receipt.",
+    "priority": "High",
+    "expected_category": "billing_refund",
+    "expected_department": "billing_team"
+  },
+  {
+    "id": "challenge_012",
+    "ticket_id": "challenge_012",
+    "issue_description": "The system is not syncing data, and my subscription status also looks wrong.",
+    "priority": "Medium",
+    "expected_category": "technical_bug",
+    "expected_department": "technical_team"
+  }
+]

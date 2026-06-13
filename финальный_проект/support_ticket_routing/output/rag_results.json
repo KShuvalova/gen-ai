@@ -1,0 +1,2302 @@
+[
+  {
+    "ticket_id": 122066,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3187237059987323
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18233430958979216
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.1736175346838818
+      }
+    ]
+  },
+  {
+    "ticket_id": 119884,
+    "query": "Two-factor authentication codes are not being delivered to my phone.",
+    "used_sources": [
+      "account_access.md",
+      "routing_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.2920325754861739
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22507053266816554
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.14935065182853458
+      }
+    ]
+  },
+  {
+    "ticket_id": 199127,
+    "query": "Two-factor authentication codes are not being delivered to my phone.",
+    "used_sources": [
+      "account_access.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.289732607758474
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22841239728869084
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.156676303067244
+      }
+    ]
+  },
+  {
+    "ticket_id": 94240,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3042795798180594
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.2039138492254607
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17702365224118927
+      }
+    ]
+  },
+  {
+    "ticket_id": 105022,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3187237059987323
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18233430958979216
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.1736175346838818
+      }
+    ]
+  },
+  {
+    "ticket_id": 92448,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3174033958168342
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.1953662982982758
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18465882066370917
+      }
+    ]
+  },
+  {
+    "ticket_id": 187925,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "escalation_policy.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3063339756577251
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.18180119296074138
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1743646162702947
+      }
+    ]
+  },
+  {
+    "ticket_id": 49241,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "escalation_policy.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3063339756577251
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.18180119296074138
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1743646162702947
+      }
+    ]
+  },
+  {
+    "ticket_id": 199214,
+    "query": "Two-factor authentication codes are not being delivered to my phone.",
+    "used_sources": [
+      "account_access.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3034241957389811
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.23507480083106436
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14222988280947843
+      }
+    ]
+  },
+  {
+    "ticket_id": 39008,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "escalation_policy.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3063339756577251
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.18180119296074138
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1743646162702947
+      }
+    ]
+  },
+  {
+    "ticket_id": 43144,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3042795798180594
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.18728840314964312
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17702365224118927
+      }
+    ]
+  },
+  {
+    "ticket_id": 112186,
+    "query": "Two-factor authentication codes are not being delivered to my phone.",
+    "used_sources": [
+      "account_access.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3018761903901465
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.23798586173935377
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.1803339381627403
+      }
+    ]
+  },
+  {
+    "ticket_id": 187072,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3042795798180594
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.18728840314964312
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17702365224118927
+      }
+    ]
+  },
+  {
+    "ticket_id": 144164,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3174033958168342
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.21270881285212612
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18465882066370917
+      }
+    ]
+  },
+  {
+    "ticket_id": 32944,
+    "query": "Two-factor authentication codes are not being delivered to my phone.",
+    "used_sources": [
+      "account_access.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.289732607758474
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22841239728869084
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17307963938368154
+      }
+    ]
+  },
+  {
+    "ticket_id": 128182,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3187237059987323
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18233430958979216
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.1736175346838818
+      }
+    ]
+  },
+  {
+    "ticket_id": 166241,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3042795798180594
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.2039138492254607
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17702365224118927
+      }
+    ]
+  },
+  {
+    "ticket_id": 150122,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3174033958168342
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.1953662982982758
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18465882066370917
+      }
+    ]
+  },
+  {
+    "ticket_id": 181278,
+    "query": "Two-factor authentication codes are not being delivered to my phone.",
+    "used_sources": [
+      "account_access.md",
+      "routing_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.2920325754861739
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22507053266816554
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.14935065182853458
+      }
+    ]
+  },
+  {
+    "ticket_id": 197100,
+    "query": "Two-factor authentication codes are not being delivered to my phone.",
+    "used_sources": [
+      "account_access.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3034241957389811
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.23507480083106436
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14222988280947843
+      }
+    ]
+  },
+  {
+    "ticket_id": 38006,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3174033958168342
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.21270881285212612
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18465882066370917
+      }
+    ]
+  },
+  {
+    "ticket_id": 145751,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3042795798180594
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.2039138492254607
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17702365224118927
+      }
+    ]
+  },
+  {
+    "ticket_id": 178184,
+    "query": "Two-factor authentication codes are not being delivered to my phone.",
+    "used_sources": [
+      "account_access.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.289732607758474
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22841239728869084
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17307963938368154
+      }
+    ]
+  },
+  {
+    "ticket_id": 112708,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "escalation_policy.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3063339756577251
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.18180119296074138
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1743646162702947
+      }
+    ]
+  },
+  {
+    "ticket_id": 43177,
+    "query": "I am unable to access my account after entering the correct credentials.",
+    "used_sources": [
+      "account_access.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "account_access.md",
+        "score": 0.3042795798180594
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.2039138492254607
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17702365224118927
+      }
+    ]
+  },
+  {
+    "ticket_id": 101002,
+    "query": "There seems to be a discrepancy in my billing statement for this month.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22802789027071496
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.21388241612664344
+      },
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.16098038792320818
+      }
+    ]
+  },
+  {
+    "ticket_id": 90935,
+    "query": "There seems to be a discrepancy in my billing statement for this month.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22802789027071496
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.19361206418697818
+      },
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.16098038792320818
+      }
+    ]
+  },
+  {
+    "ticket_id": 25242,
+    "query": "There seems to be a discrepancy in my billing statement for this month.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22802789027071496
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.21388241612664344
+      },
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.16098038792320818
+      }
+    ]
+  },
+  {
+    "ticket_id": 192033,
+    "query": "I would like to request a refund for the recent charge.",
+    "used_sources": [
+      "billing_refunds.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.239352296663904
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.18917940337453443
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1665943449926067
+      }
+    ]
+  },
+  {
+    "ticket_id": 149854,
+    "query": "I would like to request a refund for the recent charge.",
+    "used_sources": [
+      "billing_refunds.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.24224904228706448
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1643558484426232
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14902434596248892
+      }
+    ]
+  },
+  {
+    "ticket_id": 104050,
+    "query": "There seems to be a discrepancy in my billing statement for this month.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.24313210481105837
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.20643662767176527
+      },
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.17164347967524424
+      }
+    ]
+  },
+  {
+    "ticket_id": 12198,
+    "query": "I would like to request a refund for the recent charge.",
+    "used_sources": [
+      "billing_refunds.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.2288191237791855
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.1637140319278966
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.15926303018225588
+      }
+    ]
+  },
+  {
+    "ticket_id": 29695,
+    "query": "I would like to request a refund for the recent charge.",
+    "used_sources": [
+      "billing_refunds.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.24224904228706448
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1643558484426232
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14902434596248892
+      }
+    ]
+  },
+  {
+    "ticket_id": 199186,
+    "query": "I would like to request a refund for the recent charge.",
+    "used_sources": [
+      "billing_refunds.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.2288191237791855
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.1637140319278966
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.15926303018225588
+      }
+    ]
+  },
+  {
+    "ticket_id": 25447,
+    "query": "The payment was deducted from my bank account but the transaction shows failed.",
+    "used_sources": [
+      "billing_refunds.md",
+      "escalation_policy.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.2869698763613331
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.19779473476037662
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17361515478410863
+      }
+    ]
+  },
+  {
+    "ticket_id": 199701,
+    "query": "I would like to request a refund for the recent charge.",
+    "used_sources": [
+      "billing_refunds.md",
+      "priority_rules.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.239352296663904
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17125023857649369
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1665943449926067
+      }
+    ]
+  },
+  {
+    "ticket_id": 199908,
+    "query": "The payment was deducted from my bank account but the transaction shows failed.",
+    "used_sources": [
+      "billing_refunds.md",
+      "escalation_policy.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.2777440172929823
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.2278891636909385
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.16706774033887084
+      }
+    ]
+  },
+  {
+    "ticket_id": 53735,
+    "query": "The payment was deducted from my bank account but the transaction shows failed.",
+    "used_sources": [
+      "billing_refunds.md",
+      "escalation_policy.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.2777440172929823
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.2278891636909385
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.16706774033887084
+      }
+    ]
+  },
+  {
+    "ticket_id": 7213,
+    "query": "The payment was deducted from my bank account but the transaction shows failed.",
+    "used_sources": [
+      "billing_refunds.md",
+      "escalation_policy.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.2869698763613331
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.19779473476037662
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17361515478410863
+      }
+    ]
+  },
+  {
+    "ticket_id": 153524,
+    "query": "There seems to be a discrepancy in my billing statement for this month.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22802789027071496
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.19361206418697818
+      },
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.16098038792320818
+      }
+    ]
+  },
+  {
+    "ticket_id": 118913,
+    "query": "There seems to be a discrepancy in my billing statement for this month.",
+    "used_sources": [
+      "routing_rules.md",
+      "escalation_policy.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22299113272244753
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.1831626337779508
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17225711859236087
+      }
+    ]
+  },
+  {
+    "ticket_id": 99213,
+    "query": "The payment was deducted from my bank account but the transaction shows failed.",
+    "used_sources": [
+      "billing_refunds.md",
+      "escalation_policy.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.2869698763613331
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.19779473476037662
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17361515478410863
+      }
+    ]
+  },
+  {
+    "ticket_id": 31666,
+    "query": "I would like to request a refund for the recent charge.",
+    "used_sources": [
+      "billing_refunds.md",
+      "routing_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.23276764082606025
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.15672393384522668
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.15585153864016954
+      }
+    ]
+  },
+  {
+    "ticket_id": 119372,
+    "query": "The payment was deducted from my bank account but the transaction shows failed.",
+    "used_sources": [
+      "billing_refunds.md",
+      "escalation_policy.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.27444687977240867
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.1852916008124998
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17431811420192736
+      }
+    ]
+  },
+  {
+    "ticket_id": 75980,
+    "query": "There seems to be a discrepancy in my billing statement for this month.",
+    "used_sources": [
+      "routing_rules.md",
+      "escalation_policy.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22299113272244753
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.1831626337779508
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17225711859236087
+      }
+    ]
+  },
+  {
+    "ticket_id": 169095,
+    "query": "The payment was deducted from my bank account but the transaction shows failed.",
+    "used_sources": [
+      "billing_refunds.md",
+      "escalation_policy.md",
+      "routing_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.2777440172929823
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.2278891636909385
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.16706774033887084
+      }
+    ]
+  },
+  {
+    "ticket_id": 51512,
+    "query": "There seems to be a discrepancy in my billing statement for this month.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22802789027071496
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.19361206418697818
+      },
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.16098038792320818
+      }
+    ]
+  },
+  {
+    "ticket_id": 16981,
+    "query": "There seems to be a discrepancy in my billing statement for this month.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "billing_refunds.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22802789027071496
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.19361206418697818
+      },
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.16098038792320818
+      }
+    ]
+  },
+  {
+    "ticket_id": 129449,
+    "query": "I would like to request a refund for the recent charge.",
+    "used_sources": [
+      "billing_refunds.md",
+      "routing_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.23276764082606025
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.15672393384522668
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.15585153864016954
+      }
+    ]
+  },
+  {
+    "ticket_id": 88624,
+    "query": "I would like to request a refund for the recent charge.",
+    "used_sources": [
+      "billing_refunds.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "billing_refunds.md",
+        "score": 0.24224904228706448
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1643558484426232
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14902434596248892
+      }
+    ]
+  },
+  {
+    "ticket_id": 119488,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.300037080284136
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.21649782378311502
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17099637642701562
+      }
+    ]
+  },
+  {
+    "ticket_id": 197298,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.3085702278209269
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22265508897842345
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14041854337237106
+      }
+    ]
+  },
+  {
+    "ticket_id": 21853,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.3122929575618167
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22534129991832486
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17798121510906434
+      }
+    ]
+  },
+  {
+    "ticket_id": 130319,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.3122929575618167
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22534129991832486
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.1611133400670422
+      }
+    ]
+  },
+  {
+    "ticket_id": 72720,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.29575008521559315
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.2134044557833013
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.14760430665622853
+      }
+    ]
+  },
+  {
+    "ticket_id": 136890,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.3085702278209269
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22265508897842345
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14041854337237106
+      }
+    ]
+  },
+  {
+    "ticket_id": 178404,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.3085702278209269
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22265508897842345
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14041854337237106
+      }
+    ]
+  },
+  {
+    "ticket_id": 102902,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.300037080284136
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.21649782378311502
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17099637642701562
+      }
+    ]
+  },
+  {
+    "ticket_id": 121291,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.29575008521559315
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.2134044557833013
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.14760430665622853
+      }
+    ]
+  },
+  {
+    "ticket_id": 95919,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.300037080284136
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.21649782378311502
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.15479047790878156
+      }
+    ]
+  },
+  {
+    "ticket_id": 90086,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.300037080284136
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.21649782378311502
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.15479047790878156
+      }
+    ]
+  },
+  {
+    "ticket_id": 96674,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.300037080284136
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.21649782378311502
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17099637642701562
+      }
+    ]
+  },
+  {
+    "ticket_id": 130516,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.300037080284136
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.21649782378311502
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17099637642701562
+      }
+    ]
+  },
+  {
+    "ticket_id": 82515,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.300037080284136
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.21649782378311502
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.15479047790878156
+      }
+    ]
+  },
+  {
+    "ticket_id": 127248,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.29575008521559315
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.2134044557833013
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.14760430665622853
+      }
+    ]
+  },
+  {
+    "ticket_id": 119742,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.300037080284136
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.21649782378311502
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17099637642701562
+      }
+    ]
+  },
+  {
+    "ticket_id": 112229,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.29575008521559315
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.2134044557833013
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.14760430665622853
+      }
+    ]
+  },
+  {
+    "ticket_id": 53996,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.3085702278209269
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22265508897842345
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14041854337237106
+      }
+    ]
+  },
+  {
+    "ticket_id": 70867,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.300037080284136
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.21649782378311502
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17099637642701562
+      }
+    ]
+  },
+  {
+    "ticket_id": 44702,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.29575008521559315
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.2134044557833013
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.14760430665622853
+      }
+    ]
+  },
+  {
+    "ticket_id": 180515,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.3085702278209269
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22265508897842345
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14041854337237106
+      }
+    ]
+  },
+  {
+    "ticket_id": 132012,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.300037080284136
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.21649782378311502
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.15479047790878156
+      }
+    ]
+  },
+  {
+    "ticket_id": 119149,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.3085702278209269
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22265508897842345
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14041854337237106
+      }
+    ]
+  },
+  {
+    "ticket_id": 163481,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.3085702278209269
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.22265508897842345
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14041854337237106
+      }
+    ]
+  },
+  {
+    "ticket_id": 170449,
+    "query": "My subscription was cancelled without my request and I need clarification.",
+    "used_sources": [
+      "subscription_policy.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "subscription_policy.md",
+        "score": 0.300037080284136
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.21649782378311502
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17099637642701562
+      }
+    ]
+  },
+  {
+    "ticket_id": 35766,
+    "query": "The application crashes whenever I try to upload a file.",
+    "used_sources": [
+      "routing_rules.md",
+      "technical_bugs.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.19046192595738112
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.17705631737632493
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.16329106597184148
+      }
+    ]
+  },
+  {
+    "ticket_id": 40410,
+    "query": "The system is not syncing data across devices properly.",
+    "used_sources": [
+      "routing_rules.md",
+      "escalation_policy.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1879636311207973
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.17351158399369945
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.16318069294300067
+      }
+    ]
+  },
+  {
+    "ticket_id": 99711,
+    "query": "The application crashes whenever I try to upload a file.",
+    "used_sources": [
+      "routing_rules.md",
+      "technical_bugs.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.19651945892359188
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.188907508454057
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14861441770096234
+      }
+    ]
+  },
+  {
+    "ticket_id": 15663,
+    "query": "I found a bug in the latest update affecting report generation.",
+    "used_sources": [
+      "technical_bugs.md",
+      "routing_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.34546831643970394
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17359523064340276
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.14397824711793572
+      }
+    ]
+  },
+  {
+    "ticket_id": 105390,
+    "query": "The application crashes whenever I try to upload a file.",
+    "used_sources": [
+      "routing_rules.md",
+      "technical_bugs.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.19046192595738112
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.17705631737632493
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.16329106597184148
+      }
+    ]
+  },
+  {
+    "ticket_id": 173995,
+    "query": "I am experiencing very slow performance while using the dashboard.",
+    "used_sources": [
+      "priority_rules.md",
+      "routing_rules.md",
+      "technical_bugs.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.20777975145670782
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18502808395670806
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.12278515408513366
+      }
+    ]
+  },
+  {
+    "ticket_id": 3871,
+    "query": "I am experiencing very slow performance while using the dashboard.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18161045900840883
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17016678406700034
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.16764689118035053
+      }
+    ]
+  },
+  {
+    "ticket_id": 155649,
+    "query": "I found a bug in the latest update affecting report generation.",
+    "used_sources": [
+      "technical_bugs.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.35022793193368185
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17598690163067596
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.16667760986598812
+      }
+    ]
+  },
+  {
+    "ticket_id": 66990,
+    "query": "The application crashes whenever I try to upload a file.",
+    "used_sources": [
+      "routing_rules.md",
+      "technical_bugs.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18744073114555407
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.1742477685035269
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.15546157465741853
+      }
+    ]
+  },
+  {
+    "ticket_id": 19985,
+    "query": "I am experiencing very slow performance while using the dashboard.",
+    "used_sources": [
+      "priority_rules.md",
+      "routing_rules.md",
+      "technical_bugs.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.20777975145670782
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18502808395670806
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.12278515408513366
+      }
+    ]
+  },
+  {
+    "ticket_id": 156099,
+    "query": "The application crashes whenever I try to upload a file.",
+    "used_sources": [
+      "routing_rules.md",
+      "technical_bugs.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.19046192595738112
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.17705631737632493
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.16329106597184148
+      }
+    ]
+  },
+  {
+    "ticket_id": 3668,
+    "query": "I am experiencing very slow performance while using the dashboard.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18161045900840883
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17016678406700034
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.16764689118035053
+      }
+    ]
+  },
+  {
+    "ticket_id": 134208,
+    "query": "I found a bug in the latest update affecting report generation.",
+    "used_sources": [
+      "technical_bugs.md",
+      "routing_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.34546831643970394
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17359523064340276
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.14397824711793572
+      }
+    ]
+  },
+  {
+    "ticket_id": 46923,
+    "query": "I am experiencing very slow performance while using the dashboard.",
+    "used_sources": [
+      "priority_rules.md",
+      "routing_rules.md",
+      "technical_bugs.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.18929488431103433
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18502808395670806
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.12278515408513366
+      }
+    ]
+  },
+  {
+    "ticket_id": 157913,
+    "query": "The application crashes whenever I try to upload a file.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "technical_bugs.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.19918101305245953
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.18864480753198998
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.18516171400180834
+      }
+    ]
+  },
+  {
+    "ticket_id": 120890,
+    "query": "I am experiencing very slow performance while using the dashboard.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "escalation_policy.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18161045900840883
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17016678406700034
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.16764689118035053
+      }
+    ]
+  },
+  {
+    "ticket_id": 36783,
+    "query": "The application crashes whenever I try to upload a file.",
+    "used_sources": [
+      "routing_rules.md",
+      "technical_bugs.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.19651945892359188
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.188907508454057
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.14861441770096234
+      }
+    ]
+  },
+  {
+    "ticket_id": 199768,
+    "query": "I am experiencing very slow performance while using the dashboard.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "technical_bugs.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.19196447831451252
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17478846908505116
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.13415058820586534
+      }
+    ]
+  },
+  {
+    "ticket_id": 184112,
+    "query": "The system is not syncing data across devices properly.",
+    "used_sources": [
+      "routing_rules.md",
+      "escalation_policy.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1879636311207973
+      },
+      {
+        "source_id": "escalation_policy.md",
+        "score": 0.17351158399369945
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.16318069294300067
+      }
+    ]
+  },
+  {
+    "ticket_id": 166364,
+    "query": "The system is not syncing data across devices properly.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "technical_bugs.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.1917602988022964
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.18298205718068813
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.1432378299818542
+      }
+    ]
+  },
+  {
+    "ticket_id": 95539,
+    "query": "The application crashes whenever I try to upload a file.",
+    "used_sources": [
+      "routing_rules.md",
+      "technical_bugs.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.19046192595738112
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.17705631737632493
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.16329106597184148
+      }
+    ]
+  },
+  {
+    "ticket_id": 191238,
+    "query": "I am experiencing very slow performance while using the dashboard.",
+    "used_sources": [
+      "routing_rules.md",
+      "priority_rules.md",
+      "technical_bugs.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.19196447831451252
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.17478846908505116
+      },
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.13415058820586534
+      }
+    ]
+  },
+  {
+    "ticket_id": 105029,
+    "query": "I found a bug in the latest update affecting report generation.",
+    "used_sources": [
+      "technical_bugs.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.35022793193368185
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17598690163067596
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.1508810152995359
+      }
+    ]
+  },
+  {
+    "ticket_id": 153413,
+    "query": "I found a bug in the latest update affecting report generation.",
+    "used_sources": [
+      "technical_bugs.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.35022793193368185
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.17598690163067596
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.16667760986598812
+      }
+    ]
+  },
+  {
+    "ticket_id": 138709,
+    "query": "I found a bug in the latest update affecting report generation.",
+    "used_sources": [
+      "technical_bugs.md",
+      "routing_rules.md",
+      "priority_rules.md"
+    ],
+    "policy_context": [
+      {
+        "source_id": "technical_bugs.md",
+        "score": 0.3653917943492294
+      },
+      {
+        "source_id": "routing_rules.md",
+        "score": 0.18073220305671453
+      },
+      {
+        "source_id": "priority_rules.md",
+        "score": 0.13667558044482936
+      }
+    ]
+  }
+]

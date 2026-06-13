@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+.cache/
+input/raw/*
+!input/raw/.gitkeep

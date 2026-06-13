@@ -1,0 +1,24 @@
+{
+  "total_tickets": 100,
+  "category_counts": {
+    "account_access": 25,
+    "billing_refund": 25,
+    "subscription": 25,
+    "technical_bug": 25
+  },
+  "priority_counts": {
+    "high": 26,
+    "medium": 26,
+    "low": 25,
+    "urgent": 23
+  },
+  "department_counts": {
+    "support_l2": 50,
+    "billing_team": 25,
+    "technical_team": 25
+  },
+  "escalation_required_count": 89,
+  "avg_confidence": 0.888,
+  "ghost_quote_count": 0,
+  "fake_source_count": 0
+}

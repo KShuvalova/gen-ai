@@ -1,0 +1,3502 @@
+[
+  {
+    "ticket_id": 122066,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 119884,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone.",
+        "output_summary": "category=account_access, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=high",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone. category account_access priority high department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=Two-factor authentication codes are not being delivered to my phone.; sources=['account_access.md', 'routing_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 199127,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone.",
+        "output_summary": "category=account_access, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=low",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone. category account_access priority low department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=Two-factor authentication codes are not being delivered to my phone.; sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 94240,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 105022,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 92448,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=low",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=False; reason=no escalation trigger found"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority low department support_l2 escalation False",
+        "output_summary": "used_sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 187925,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=high",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority high department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'escalation_policy.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'escalation_policy.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 49241,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=high",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority high department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'escalation_policy.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'escalation_policy.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 199214,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone.",
+        "output_summary": "category=account_access, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone. category account_access priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=Two-factor authentication codes are not being delivered to my phone.; sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 39008,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=high",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority high department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'escalation_policy.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'escalation_policy.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 43144,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=low",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority low department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 112186,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone.",
+        "output_summary": "category=account_access, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=False; reason=no escalation trigger found"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone. category account_access priority medium department support_l2 escalation False",
+        "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=Two-factor authentication codes are not being delivered to my phone.; sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 187072,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=low",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority low department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 144164,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=False; reason=no escalation trigger found"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority medium department support_l2 escalation False",
+        "output_summary": "used_sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 32944,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone.",
+        "output_summary": "category=account_access, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone. category account_access priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=Two-factor authentication codes are not being delivered to my phone.; sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 128182,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 166241,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 150122,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=low",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=False; reason=no escalation trigger found"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority low department support_l2 escalation False",
+        "output_summary": "used_sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 181278,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone.",
+        "output_summary": "category=account_access, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=high",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone. category account_access priority high department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=Two-factor authentication codes are not being delivered to my phone.; sources=['account_access.md', 'routing_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 197100,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone.",
+        "output_summary": "category=account_access, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is urgent; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone. category account_access priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=Two-factor authentication codes are not being delivered to my phone.; sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 38006,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=False; reason=no escalation trigger found"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority medium department support_l2 escalation False",
+        "output_summary": "used_sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 145751,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 178184,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone.",
+        "output_summary": "category=account_access, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "Two-factor authentication codes are not being delivered to my phone. category account_access priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=Two-factor authentication codes are not being delivered to my phone.; sources=['account_access.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 112708,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=high",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is high; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority high department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'escalation_policy.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'escalation_policy.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 43177,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am unable to access my account after entering the correct credentials.",
+        "output_summary": "category=account_access, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=account_access, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am unable to access my account after entering the correct credentials. category account_access priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am unable to access my account after entering the correct credentials.; sources=['account_access.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 101002,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=medium",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month. category billing_refund priority medium department billing_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=There seems to be a discrepancy in my billing statement for this month.; sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 90935,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=low",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month. category billing_refund priority low department billing_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=There seems to be a discrepancy in my billing statement for this month.; sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 25242,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=medium",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month. category billing_refund priority medium department billing_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=There seems to be a discrepancy in my billing statement for this month.; sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 192033,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I would like to request a refund for the recent charge.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=medium",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=False; reason=no escalation trigger found"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I would like to request a refund for the recent charge. category billing_refund priority medium department billing_team escalation False",
+        "output_summary": "used_sources=['billing_refunds.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I would like to request a refund for the recent charge.; sources=['billing_refunds.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 149854,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I would like to request a refund for the recent charge.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=urgent",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I would like to request a refund for the recent charge. category billing_refund priority urgent department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I would like to request a refund for the recent charge.; sources=['billing_refunds.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 104050,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=low",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=False; reason=no escalation trigger found"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month. category billing_refund priority low department billing_team escalation False",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=There seems to be a discrepancy in my billing statement for this month.; sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 12198,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I would like to request a refund for the recent charge.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=low",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I would like to request a refund for the recent charge. category billing_refund priority low department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I would like to request a refund for the recent charge.; sources=['billing_refunds.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 29695,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I would like to request a refund for the recent charge.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=urgent",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is urgent; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I would like to request a refund for the recent charge. category billing_refund priority urgent department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I would like to request a refund for the recent charge.; sources=['billing_refunds.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 199186,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I would like to request a refund for the recent charge.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=low",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I would like to request a refund for the recent charge. category billing_refund priority low department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I would like to request a refund for the recent charge.; sources=['billing_refunds.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 25447,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed.",
+        "output_summary": "category=billing_refund, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=urgent",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed. category billing_refund priority urgent department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The payment was deducted from my bank account but the transaction shows failed.; sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 199701,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I would like to request a refund for the recent charge.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=low",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=False; reason=no escalation trigger found"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I would like to request a refund for the recent charge. category billing_refund priority low department billing_team escalation False",
+        "output_summary": "used_sources=['billing_refunds.md', 'priority_rules.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I would like to request a refund for the recent charge.; sources=['billing_refunds.md', 'priority_rules.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 199908,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed.",
+        "output_summary": "category=billing_refund, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=high",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed. category billing_refund priority high department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The payment was deducted from my bank account but the transaction shows failed.; sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 53735,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed.",
+        "output_summary": "category=billing_refund, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=high",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed. category billing_refund priority high department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The payment was deducted from my bank account but the transaction shows failed.; sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 7213,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed.",
+        "output_summary": "category=billing_refund, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=urgent",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed. category billing_refund priority urgent department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The payment was deducted from my bank account but the transaction shows failed.; sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 153524,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=low",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month. category billing_refund priority low department billing_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=There seems to be a discrepancy in my billing statement for this month.; sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 118913,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=high",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is high; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month. category billing_refund priority high department billing_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=There seems to be a discrepancy in my billing statement for this month.; sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 99213,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed.",
+        "output_summary": "category=billing_refund, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=urgent",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed. category billing_refund priority urgent department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The payment was deducted from my bank account but the transaction shows failed.; sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 31666,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I would like to request a refund for the recent charge.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=high",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I would like to request a refund for the recent charge. category billing_refund priority high department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'routing_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I would like to request a refund for the recent charge.; sources=['billing_refunds.md', 'routing_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 119372,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed.",
+        "output_summary": "category=billing_refund, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=medium",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed. category billing_refund priority medium department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'escalation_policy.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The payment was deducted from my bank account but the transaction shows failed.; sources=['billing_refunds.md', 'escalation_policy.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 75980,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=high",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month. category billing_refund priority high department billing_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=There seems to be a discrepancy in my billing statement for this month.; sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 169095,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed.",
+        "output_summary": "category=billing_refund, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=high",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The payment was deducted from my bank account but the transaction shows failed. category billing_refund priority high department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The payment was deducted from my bank account but the transaction shows failed.; sources=['billing_refunds.md', 'escalation_policy.md', 'routing_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 51512,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=low",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month. category billing_refund priority low department billing_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=There seems to be a discrepancy in my billing statement for this month.; sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 16981,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=low",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "There seems to be a discrepancy in my billing statement for this month. category billing_refund priority low department billing_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=There seems to be a discrepancy in my billing statement for this month.; sources=['routing_rules.md', 'priority_rules.md', 'billing_refunds.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 129449,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I would like to request a refund for the recent charge.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=high",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I would like to request a refund for the recent charge. category billing_refund priority high department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'routing_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I would like to request a refund for the recent charge.; sources=['billing_refunds.md', 'routing_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 88624,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I would like to request a refund for the recent charge.",
+        "output_summary": "category=billing_refund, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=billing_refund, priority=urgent",
+        "output_summary": "department=billing_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I would like to request a refund for the recent charge. category billing_refund priority urgent department billing_team escalation True",
+        "output_summary": "used_sources=['billing_refunds.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I would like to request a refund for the recent charge.; sources=['billing_refunds.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 119488,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 197298,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is urgent; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 21853,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=False; reason=no escalation trigger found"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority medium department support_l2 escalation False",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 130319,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=low",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=False; reason=no escalation trigger found"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority low department support_l2 escalation False",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 72720,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=high",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority high department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 136890,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 178404,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 102902,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 121291,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=high",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority high department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 95919,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=low",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority low department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 90086,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=low",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority low department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 96674,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 130516,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 82515,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=low",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority low department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 127248,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=high",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is high; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority high department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 119742,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 112229,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=high",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority high department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 53996,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is urgent; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 70867,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 44702,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=high",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority high department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 180515,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 132012,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=low",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority low department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 119149,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 163481,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=urgent",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is urgent; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority urgent department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 170449,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "My subscription was cancelled without my request and I need clarification.",
+        "output_summary": "category=subscription, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=subscription, priority=medium",
+        "output_summary": "department=support_l2"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "My subscription was cancelled without my request and I need clarification. category subscription priority medium department support_l2 escalation True",
+        "output_summary": "used_sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=My subscription was cancelled without my request and I need clarification.; sources=['subscription_policy.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 35766,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The application crashes whenever I try to upload a file.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=low",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The application crashes whenever I try to upload a file. category technical_bug priority low department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The application crashes whenever I try to upload a file.; sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 40410,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The system is not syncing data across devices properly.",
+        "output_summary": "category=technical_bug, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=high",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The system is not syncing data across devices properly. category technical_bug priority high department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The system is not syncing data across devices properly.; sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 99711,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The application crashes whenever I try to upload a file.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=urgent",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The application crashes whenever I try to upload a file. category technical_bug priority urgent department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The application crashes whenever I try to upload a file.; sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 15663,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I found a bug in the latest update affecting report generation.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=high",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I found a bug in the latest update affecting report generation. category technical_bug priority high department technical_team escalation True",
+        "output_summary": "used_sources=['technical_bugs.md', 'routing_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I found a bug in the latest update affecting report generation.; sources=['technical_bugs.md', 'routing_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 105390,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The application crashes whenever I try to upload a file.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=low",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The application crashes whenever I try to upload a file. category technical_bug priority low department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The application crashes whenever I try to upload a file.; sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 173995,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am experiencing very slow performance while using the dashboard.",
+        "output_summary": "category=technical_bug, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=medium",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am experiencing very slow performance while using the dashboard. category technical_bug priority medium department technical_team escalation True",
+        "output_summary": "used_sources=['priority_rules.md', 'routing_rules.md', 'technical_bugs.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am experiencing very slow performance while using the dashboard.; sources=['priority_rules.md', 'routing_rules.md', 'technical_bugs.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 3871,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am experiencing very slow performance while using the dashboard.",
+        "output_summary": "category=technical_bug, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=high",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am experiencing very slow performance while using the dashboard. category technical_bug priority high department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am experiencing very slow performance while using the dashboard.; sources=['routing_rules.md', 'priority_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 155649,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I found a bug in the latest update affecting report generation.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=medium",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I found a bug in the latest update affecting report generation. category technical_bug priority medium department technical_team escalation True",
+        "output_summary": "used_sources=['technical_bugs.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I found a bug in the latest update affecting report generation.; sources=['technical_bugs.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 66990,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The application crashes whenever I try to upload a file.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=high",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The application crashes whenever I try to upload a file. category technical_bug priority high department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'technical_bugs.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The application crashes whenever I try to upload a file.; sources=['routing_rules.md', 'technical_bugs.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 19985,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am experiencing very slow performance while using the dashboard.",
+        "output_summary": "category=technical_bug, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=medium",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am experiencing very slow performance while using the dashboard. category technical_bug priority medium department technical_team escalation True",
+        "output_summary": "used_sources=['priority_rules.md', 'routing_rules.md', 'technical_bugs.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am experiencing very slow performance while using the dashboard.; sources=['priority_rules.md', 'routing_rules.md', 'technical_bugs.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 156099,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The application crashes whenever I try to upload a file.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=low",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The application crashes whenever I try to upload a file. category technical_bug priority low department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The application crashes whenever I try to upload a file.; sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 3668,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am experiencing very slow performance while using the dashboard.",
+        "output_summary": "category=technical_bug, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=high",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is high; ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am experiencing very slow performance while using the dashboard. category technical_bug priority high department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am experiencing very slow performance while using the dashboard.; sources=['routing_rules.md', 'priority_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 134208,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I found a bug in the latest update affecting report generation.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=high",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is high; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I found a bug in the latest update affecting report generation. category technical_bug priority high department technical_team escalation True",
+        "output_summary": "used_sources=['technical_bugs.md', 'routing_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I found a bug in the latest update affecting report generation.; sources=['technical_bugs.md', 'routing_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 46923,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am experiencing very slow performance while using the dashboard.",
+        "output_summary": "category=technical_bug, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=low",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am experiencing very slow performance while using the dashboard. category technical_bug priority low department technical_team escalation True",
+        "output_summary": "used_sources=['priority_rules.md', 'routing_rules.md', 'technical_bugs.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am experiencing very slow performance while using the dashboard.; sources=['priority_rules.md', 'routing_rules.md', 'technical_bugs.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 157913,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The application crashes whenever I try to upload a file.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=medium",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=False; reason=no escalation trigger found"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The application crashes whenever I try to upload a file. category technical_bug priority medium department technical_team escalation False",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'technical_bugs.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The application crashes whenever I try to upload a file.; sources=['routing_rules.md', 'priority_rules.md', 'technical_bugs.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 120890,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am experiencing very slow performance while using the dashboard.",
+        "output_summary": "category=technical_bug, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=high",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=priority is high"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am experiencing very slow performance while using the dashboard. category technical_bug priority high department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'escalation_policy.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am experiencing very slow performance while using the dashboard.; sources=['routing_rules.md', 'priority_rules.md', 'escalation_policy.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 36783,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The application crashes whenever I try to upload a file.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=urgent",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The application crashes whenever I try to upload a file. category technical_bug priority urgent department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The application crashes whenever I try to upload a file.; sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 199768,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am experiencing very slow performance while using the dashboard.",
+        "output_summary": "category=technical_bug, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=urgent",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is urgent; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am experiencing very slow performance while using the dashboard. category technical_bug priority urgent department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'technical_bugs.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am experiencing very slow performance while using the dashboard.; sources=['routing_rules.md', 'priority_rules.md', 'technical_bugs.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 184112,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The system is not syncing data across devices properly.",
+        "output_summary": "category=technical_bug, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=high",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=high, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is high; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The system is not syncing data across devices properly. category technical_bug priority high department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The system is not syncing data across devices properly.; sources=['routing_rules.md', 'escalation_policy.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 166364,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The system is not syncing data across devices properly.",
+        "output_summary": "category=technical_bug, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=low",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=No, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The system is not syncing data across devices properly. category technical_bug priority low department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'technical_bugs.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The system is not syncing data across devices properly.; sources=['routing_rules.md', 'priority_rules.md', 'technical_bugs.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 95539,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "The application crashes whenever I try to upload a file.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=low",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "The application crashes whenever I try to upload a file. category technical_bug priority low department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=The application crashes whenever I try to upload a file.; sources=['routing_rules.md', 'technical_bugs.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 191238,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I am experiencing very slow performance while using the dashboard.",
+        "output_summary": "category=technical_bug, confidence=0.85"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=urgent",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I am experiencing very slow performance while using the dashboard. category technical_bug priority urgent department technical_team escalation True",
+        "output_summary": "used_sources=['routing_rules.md', 'priority_rules.md', 'technical_bugs.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I am experiencing very slow performance while using the dashboard.; sources=['routing_rules.md', 'priority_rules.md', 'technical_bugs.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 105029,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I found a bug in the latest update affecting report generation.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=low",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=low, escalated=Yes, sla_breached=No",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I found a bug in the latest update affecting report generation. category technical_bug priority low department technical_team escalation True",
+        "output_summary": "used_sources=['technical_bugs.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I found a bug in the latest update affecting report generation.; sources=['technical_bugs.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 153413,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I found a bug in the latest update affecting report generation.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=medium",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=medium, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I found a bug in the latest update affecting report generation. category technical_bug priority medium department technical_team escalation True",
+        "output_summary": "used_sources=['technical_bugs.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I found a bug in the latest update affecting report generation.; sources=['technical_bugs.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  },
+  {
+    "ticket_id": 138709,
+    "steps": [
+      {
+        "step_id": 1,
+        "tool_name": "classify_ticket_text",
+        "input_summary": "I found a bug in the latest update affecting report generation.",
+        "output_summary": "category=technical_bug, confidence=0.95"
+      },
+      {
+        "step_id": 2,
+        "tool_name": "choose_department",
+        "input_summary": "category=technical_bug, priority=urgent",
+        "output_summary": "department=technical_team"
+      },
+      {
+        "step_id": 3,
+        "tool_name": "should_escalate",
+        "input_summary": "priority=urgent, escalated=Yes, sla_breached=Yes",
+        "output_summary": "escalation_required=True; reason=priority is urgent; ticket is already marked as escalated; SLA is breached"
+      },
+      {
+        "step_id": 4,
+        "tool_name": "retrieve_policy_docs",
+        "input_summary": "I found a bug in the latest update affecting report generation. category technical_bug priority urgent department technical_team escalation True",
+        "output_summary": "used_sources=['technical_bugs.md', 'routing_rules.md', 'priority_rules.md']"
+      },
+      {
+        "step_id": 5,
+        "tool_name": "hallucination_check",
+        "input_summary": "quote=I found a bug in the latest update affecting report generation.; sources=['technical_bugs.md', 'routing_rules.md', 'priority_rules.md']",
+        "output_summary": "evidence_quote_found=True, ghost_quote_count=0, fake_source_count=0"
+      }
+    ]
+  }
+]

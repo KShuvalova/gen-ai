@@ -1,0 +1,27 @@
+{
+  "raw_rows": 200000,
+  "tickets_sample_rows": 100,
+  "eval_cases": 20,
+  "ticket_categories": {
+    "account_access": 25,
+    "billing_refund": 25,
+    "subscription": 25,
+    "technical_bug": 25
+  },
+  "ticket_priorities": {
+    "high": 26,
+    "medium": 26,
+    "low": 25,
+    "urgent": 23
+  },
+  "departments": {
+    "support_l2": 50,
+    "billing_team": 25,
+    "technical_team": 25
+  },
+  "pii_removed": [
+    "customer_name",
+    "customer_email"
+  ],
+  "source_dataset_file": "customer_support_tickets_200k.csv"
+}

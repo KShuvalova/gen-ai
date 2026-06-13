@@ -1,0 +1,10 @@
+{
+  "total": 12,
+  "category_accuracy": 0.75,
+  "department_accuracy": 0.75,
+  "quote_valid_rate": 1.0,
+  "fake_source_count": 0,
+  "ghost_quote_count": 0,
+  "pass_rate": 0.75,
+  "failed_cases": 3
+}

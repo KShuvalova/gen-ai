@@ -1,0 +1,21 @@
+case_id,ticket_id,expected_category,predicted_category,expected_priority,predicted_priority,expected_department,predicted_department,judge_pass,category_ok,priority_ok,department_ok,evidence_ok,source_ok,comment
+case_001,199214,account_access,account_access,urgent,urgent,support_l2,support_l2,True,True,True,True,True,True,Correct routing decision with appropriate evidence.
+case_002,166241,account_access,account_access,medium,medium,support_l2,support_l2,True,True,True,True,True,True,All criteria met. Prediction matches expected values and evidence is properly grounded.
+case_003,122066,account_access,account_access,urgent,urgent,support_l2,support_l2,True,True,True,True,True,True,Correct routing decision with appropriate evidence and sources.
+case_004,112708,account_access,account_access,high,high,support_l2,support_l2,True,True,True,True,True,True,All decisions match expectations; evidence is direct quote from ticket; used sources are relevant.
+case_005,112186,account_access,account_access,medium,medium,support_l2,support_l2,True,True,True,True,True,True,All criteria met. Prediction matches expected values and evidence is grounded.
+case_006,199186,billing_refund,billing_refund,low,low,billing_team,billing_team,True,True,True,True,True,True,"All criteria met: correct category, priority, department; evidence is direct quote; sources are relevant."
+case_007,99213,billing_refund,billing_refund,urgent,urgent,billing_team,billing_team,True,True,True,True,True,True,All criteria met. Prediction matches expected.
+case_008,101002,billing_refund,billing_refund,medium,medium,billing_team,billing_team,True,True,True,True,True,True,All criteria met.
+case_009,129449,billing_refund,billing_refund,high,high,billing_team,billing_team,True,True,True,True,True,True,All criteria met.
+case_010,199908,billing_refund,billing_refund,high,high,billing_team,billing_team,True,True,True,True,True,True,"All criteria met: category, priority, department match expected; evidence quote is exact; sources are relevant."
+case_011,121291,subscription,subscription,high,high,support_l2,support_l2,True,True,True,True,True,True,"All prediction fields match expected values, evidence is directly from ticket, used sources are relevant."
+case_012,112229,subscription,subscription,high,high,support_l2,support_l2,True,True,True,True,True,True,All routing fields match expected; evidence is direct quote; used sources are relevant to the decision.
+case_013,119488,subscription,subscription,medium,medium,support_l2,support_l2,True,True,True,True,True,True,"All decisions match expected. Evidence quoted correctly. Sources used are relevant, missing escalation_policy.md but used sources are sufficient."
+case_014,163481,subscription,subscription,urgent,urgent,support_l2,support_l2,True,True,True,True,True,True,All criteria met.
+case_015,96674,subscription,subscription,medium,medium,support_l2,support_l2,True,True,True,True,True,True,"All predicted fields match expected, evidence is directly from ticket, and used sources are relevant."
+case_016,66990,technical_bug,technical_bug,high,high,technical_team,technical_team,True,True,True,True,True,True,All main decisions match expected and evidence is directly from ticket.
+case_017,36783,technical_bug,technical_bug,urgent,urgent,technical_team,technical_team,True,True,True,True,True,True,"All main decision aspects match expected, evidence is directly from ticket, and used sources are relevant."
+case_018,35766,technical_bug,technical_bug,low,low,technical_team,technical_team,True,True,True,True,True,True,All aspects correct. Predicted routing matches expected.
+case_019,153413,technical_bug,technical_bug,medium,medium,technical_team,technical_team,True,True,True,True,True,True,All main criteria met. Used sources are relevant to the decision.
+case_020,3668,technical_bug,technical_bug,high,high,technical_team,technical_team,True,True,True,True,True,True,All routing decisions match expected values. Evidence is directly quoted from the ticket. Used sources are relevant to the decision.
