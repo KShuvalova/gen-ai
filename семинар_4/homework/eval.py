@@ -1,98 +1,113 @@
-"""
-Eval по 10 gold-вопросам. Метрика: hit-rate@5 на уровне документа-источника.
+from __future__ import annotations
 
-Правило: если в ТОП-5 чанков встретился хотя бы один чанк из gold_sources —
-вопрос зачтён как HIT. Для вопросов, которым необходимы несколько чанков, считаем как долю найденных
-источников (например, 2 из 3 → 0.67).
-
-Команды:
-    python eval.py --naive         # прогнать текущую конфигурацию pipeline.py
-"""
-
-import argparse
+import csv
 import json
 from pathlib import Path
 
-from pipeline import collection, hybrid_retrieve, retrieve
+from pipeline import RAGPipeline
 
-GOLD_PATH = Path(__file__).parent / "data" / "gold.json"
+
+DATA_DIR = Path("data")
+GOLD_PATH = DATA_DIR / "gold.json"
+TOP_K = 5
 
 
 def load_gold() -> list[dict]:
-    return json.loads(GOLD_PATH.read_text(encoding="utf-8"))
+    with GOLD_PATH.open("r", encoding="utf-8") as file:
+        return json.load(file)
 
 
-def hit_rate(retrieved_ids: list[str], gold_sources: list[str]) -> float:
-    """
-    Для одного вопроса: сколько из gold_sources попали в ТОП-K чанков.
-    retrieved_ids = ['olymp_anna__0', 'tinkoff_alex__2', ...]
-    Мы смотрим только на префикс до '__' — это source_id.
-    """
-    retrieved_sources = {rid.split("__")[0] for rid in retrieved_ids}
-    found = [g for g in gold_sources if g in retrieved_sources]
-    return len(found) / len(gold_sources)
+def evaluate_strategy(strategy: str) -> tuple[float, list[dict]]:
+    gold_items = load_gold()
 
+    pipeline = RAGPipeline(
+        data_dir=DATA_DIR,
+        strategy=strategy,
+        top_k=TOP_K,
+    )
 
-def dense_only_retrieve(query: str, k: int = 5) -> dict:
-    return collection.query(query_texts=[query], n_results=k)
+    pipeline.load_documents()
+    pipeline.build_chunks()
+    pipeline.build_index()
 
+    details: list[dict] = []
+    hits = 0
 
-def run(dense_only: bool = False, k: int = 5, verbose: bool = True) -> dict:
-    gold = load_gold()
-    total = 0.0
-    results = []
-
-    fn = dense_only_retrieve if dense_only else hybrid_retrieve
-    label = "DENSE-ONLY" if dense_only else "HYBRID (DENSE + BM25 + RRF)"
-    print(f"\n==={label}===\n")
-
-    for item in gold:
-        q = item["question"]
+    for item in gold_items:
+        retrieved = pipeline.retrieve(item["question"], top_k=TOP_K)
+        retrieved_sources = [result["source"] for result in retrieved]
         gold_sources = item["gold_sources"]
 
-        hits = fn(q, k=k)
-        retrieved_ids = hits["ids"][0]
-        retrieved_sources = [rid.split("__")[0] for rid in retrieved_ids]
+        hit = any(source in retrieved_sources for source in gold_sources)
 
-        score = hit_rate(retrieved_ids, gold_sources)
-        total += score
+        if hit:
+            hits += 1
 
-        results.append(
+        details.append(
             {
                 "id": item["id"],
                 "type": item["type"],
-                "score": score,
-                "gold": gold_sources,
+                "question": item["question"],
+                "gold_sources": gold_sources,
                 "retrieved_sources": retrieved_sources,
+                "hit": hit,
+                "top_chunks": retrieved,
             }
         )
 
-        if verbose:
-            mark = "✓" if score == 1.0 else ("◐" if score > 0 else "✗")
-            print(
-                f"  [{item['id']:2d}] {item['type']:25s}  "
-                f"hit@{k} = {score:.2f}  {mark}  {q}"
-            )
-
-    mean = total / len(gold)
-    if verbose:
-        print(f"\n  ИТОГО: hit-rate@{k} = {mean:.2f}  ({total:.1f} / {len(gold)})")
-    return {"mean": mean, "results": results}
+    hit_rate = hits / len(gold_items)
+    return hit_rate, details
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--dense-only", action="store_true")
-    parser.add_argument("--k", type=int, default=5)
-    parser.add_argument("--quiet", action="store_true")
-    args = parser.parse_args()
+def save_details(strategy: str, details: list[dict]) -> None:
+    output_path = Path(f"results_{strategy}.json")
+    with output_path.open("w", encoding="utf-8") as file:
+        json.dump(details, file, ensure_ascii=False, indent=2)
 
-    # Проверка, что заполнили коллекцию
-    if collection.count() == 0:
-        print("⚠ Коллекция пустая. Запусти: python pipeline.py ingest")
-        return
 
-    run(k=args.k, verbose=not args.quiet)
+def save_summary(rows: list[dict]) -> None:
+    output_path = Path("eval_results.csv")
+    with output_path.open("w", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=["strategy", "hit_rate@5", "hits", "total"])
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def main() -> None:
+    strategies = ["fixed", "recursive"]
+    summary_rows: list[dict] = []
+
+    for strategy in strategies:
+        hit_rate, details = evaluate_strategy(strategy)
+        save_details(strategy, details)
+
+        hits = sum(1 for item in details if item["hit"])
+        total = len(details)
+
+        summary_rows.append(
+            {
+                "strategy": strategy,
+                "hit_rate@5": round(hit_rate, 4),
+                "hits": hits,
+                "total": total,
+            }
+        )
+
+    save_summary(summary_rows)
+
+    print("\nEvaluation results")
+    print("------------------")
+    for row in summary_rows:
+        print(
+            f"{row['strategy']}: "
+            f"hit-rate@5 = {row['hit_rate@5']} "
+            f"({row['hits']}/{row['total']})"
+        )
+
+    print("\nSaved files:")
+    print("eval_results.csv")
+    print("results_fixed.json")
+    print("results_recursive.json")
 
 
 if __name__ == "__main__":

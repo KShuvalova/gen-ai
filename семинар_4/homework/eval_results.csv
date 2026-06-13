@@ -1,0 +1,3 @@
+strategy,hit_rate@5,hits,total
+fixed,0.9167,11,12
+recursive,0.9167,11,12

@@ -1,230 +1,185 @@
-"""
-Наивный RAG: ChromaDB + OpenAI, fixed-size chunking, только dense-поиск.
+from __future__ import annotations
 
-Команды:
-    python pipeline.py ingest
-    python pipeline.py ask "Кто жаловался на push-уведомления?"
-
-TODO для семинара:
-    Блок 3, Фикс 1 — заменить фиксированные чанки на рекурсивные по абзацам
-    Блок 3, Фикс 2 — обернуть ответ в Pydantic RAGAnswer
-    Блок 3, Фикс 3 — добавить BM25-гибрид через rank-bm25 и RRF
-"""
-
-import json
-import os
-import re
-import sys
-import time
+from dataclasses import dataclass
 from pathlib import Path
+from typing import Literal
 
-import chromadb
-from chromadb.utils import embedding_functions
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from llm_client import get_model, make_client, make_raw_client
-from rank_bm25 import BM25Okapi
-from schema import RAGAnswer
-
-# Блок 1 — наивный RAG: ответ модели идёт обычным текстом
-# client = make_raw_client()
-client = make_client()
-MODEL = get_model()
-chroma = chromadb.PersistentClient(path="./chroma_db")
-
-print("Загружаю эмбеддер...", flush=True)
-_t_embed = time.time()
-EMBED_FN = embedding_functions.SentenceTransformerEmbeddingFunction(
-    model_name="paraphrase-multilingual-MiniLM-L12-v2",
-)
-print(f"Эмбеддер готов за {time.time() - _t_embed:.1f}с", flush=True)
-collection = chroma.get_or_create_collection(
-    name="focus_groups",
-    embedding_function=EMBED_FN,
-    metadata={"hnsw:space": "cosine"},
-)
-
-DATA_DIR = Path(__file__).parent / "data"
-BM25_CACHE = Path(__file__).parent / "bm25_cache.json"
+import numpy as np
+from sentence_transformers import SentenceTransformer
 
 
-splitter = RecursiveCharacterTextSplitter(
-    chunk_size=512, chunk_overlap=80, separators=["\n\n", "\n", ". ", "? ", "! ", " "]
-)
+Strategy = Literal["fixed", "recursive"]
 
 
-def tokenize_ru(text: str):
-    "Нормализация текста: приведение к нижнему регистру"
-    return re.findall(r"[а-яa-z0-9ё-]{2,}", text.lower())
+@dataclass
+class Document:
+    source: str
+    text: str
 
 
-def chunk_text(text: str):
-    "Разбивка текста на кусочки рекурсивным сплиттером"
-    return [c.strip() for c in splitter.split_text(text) if c.strip()]
+@dataclass
+class Chunk:
+    chunk_id: str
+    source: str
+    text: str
 
 
-# фиксированный чанкинг по символам
-def chunk_text_naive(text: str, chunk_size: int = 2000) -> list[str]:
-    """
-    Примитивная нарезка: рубим каждые N символов.
-    Проблема: граница может попасть в середину фразы «я ругался на |
-    скорость» — и на запрос «скорость» не найдётся чанк про недовольство.
-    """
-    return [text[i : i + chunk_size] for i in range(0, len(text), chunk_size)]
+class RAGPipeline:
+    def __init__(
+        self,
+        data_dir: str | Path = "data",
+        strategy: Strategy = "fixed",
+        top_k: int = 5,
+        model_name: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    ) -> None:
+        self.data_dir = Path(data_dir)
+        self.strategy = strategy
+        self.top_k = top_k
+        self.model = SentenceTransformer(model_name)
 
+        self.documents: list[Document] = []
+        self.chunks: list[Chunk] = []
+        self.chunk_embeddings: np.ndarray | None = None
 
-# заполнение векторного хранилища: читаем data/, режем, кладём в ChromaDB
-def ingest():
-    # Чистим старую коллекцию перед переиндексацией
-    existing = collection.get()
-    if existing["ids"]:
-        collection.delete(ids=existing["ids"])
+    def load_documents(self) -> list[Document]:
+        paths = sorted(self.data_dir.glob("doc_*.md"))
+        if not paths:
+            raise FileNotFoundError(f"No doc_*.md files found in {self.data_dir}")
 
-    all_chunks = []
-    all_ids = []
-    all_meta = []
+        documents: list[Document] = []
 
-    for f in sorted(DATA_DIR.glob("*.txt")):
-        text = f.read_text(encoding="utf-8")
-        chunks = chunk_text(text)
+        for path in paths:
+            source = path.stem
+            text = path.read_text(encoding="utf-8")
+            documents.append(Document(source=source, text=text))
 
-        for i, c in enumerate(chunks):
-            cid = f"{f.stem}__{i}"
-            all_chunks.append(c)
-            all_ids.append(cid)
-            all_meta.append({"source": f.stem, "chunk_id": i})
+        self.documents = documents
+        return documents
 
-        print(f"  {f.stem}: {len(chunks)} чанков")
+    @staticmethod
+    def chunk_fixed(text: str, chunk_size: int = 2000) -> list[str]:
+        return [
+            text[i : i + chunk_size]
+            for i in range(0, len(text), chunk_size)
+            if text[i : i + chunk_size].strip()
+        ]
 
-    collection.add(documents=all_chunks, ids=all_ids, metadatas=all_meta)
+    @staticmethod
+    def chunk_recursive_like(
+        text: str,
+        chunk_size: int = 400,
+        chunk_overlap: int = 80,
+    ) -> list[str]:
+        """
+        Умная стратегия без дополнительной зависимости langchain:
+        сначала старается сохранять абзацы, потом режет слишком длинные
+        фрагменты с перекрытием.
+        """
+        paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
+        chunks: list[str] = []
+        current = ""
 
-    bm25_data = {
-        "ids": all_ids,
-        "tokens": [tokenize_ru(c) for c in all_chunks],
-        "texts": all_chunks,
-    }
-    BM25_CACHE.write_text(json.dumps(bm25_data, ensure_ascii=False))
+        for paragraph in paragraphs:
+            if len(paragraph) > chunk_size:
+                if current.strip():
+                    chunks.append(current.strip())
+                    current = ""
 
-    total = collection.count()
-    print(
-        f"\nИндексировано: Dense — {total} чанков из {len(list(DATA_DIR.glob('*.txt')))} файлов"
-    )
-    print(f"\nBM25 — {len(all_ids)} чанков кэшировано в {BM25_CACHE.name}")
+                start = 0
+                step = max(1, chunk_size - chunk_overlap)
+                while start < len(paragraph):
+                    part = paragraph[start : start + chunk_size]
+                    if part.strip():
+                        chunks.append(part.strip())
+                    start += step
+                continue
 
+            candidate = (current + "\n\n" + paragraph).strip() if current else paragraph
 
-def _load_bm25():
-    data = json.loads(BM25_CACHE.read_text())
-    bm25 = BM25Okapi(data["tokens"])
-    return bm25, data["ids"], data["texts"]
+            if len(candidate) <= chunk_size:
+                current = candidate
+            else:
+                if current.strip():
+                    chunks.append(current.strip())
+                current = paragraph
 
+        if current.strip():
+            chunks.append(current.strip())
 
-# Retrieve + generate
-def retrieve(query: str, k: int = 5) -> dict:
-    """Dense-поиск в ChromaDB."""
-    return collection.query(query_texts=[query], n_results=k)
+        return chunks
 
+    def build_chunks(self) -> list[Chunk]:
+        if not self.documents:
+            self.load_documents()
 
-def hybrid_retrieve(query: str, k: int = 5, top: int = 15, c: int = 60) -> dict:
-    """Hybrid-поиск контекста."""
+        chunks: list[Chunk] = []
 
-    # семантический поиск
-    dense = collection.query(query_texts=[query], n_results=top)
-    dense_ids = dense["ids"][0]
+        for document in self.documents:
+            if self.strategy == "fixed":
+                texts = self.chunk_fixed(document.text, chunk_size=2000)
+            elif self.strategy == "recursive":
+                texts = self.chunk_recursive_like(
+                    document.text,
+                    chunk_size=400,
+                    chunk_overlap=80,
+                )
+            else:
+                raise ValueError(f"Unknown strategy: {self.strategy}")
 
-    # tf-idf поиск
-    bm25, bm25_ids, bm25_texts = _load_bm25()
-    tokens = tokenize_ru(query)
-    scores = bm25.get_scores(tokens)
+            for idx, chunk_text in enumerate(texts):
+                chunks.append(
+                    Chunk(
+                        chunk_id=f"{document.source}_chunk_{idx}",
+                        source=document.source,
+                        text=chunk_text,
+                    )
+                )
 
-    bm25_order = sorted(range(len(bm25_ids)), key=lambda i: scores[i], reverse=True)[
-        :top
-    ]
-    sparse_ids = [bm25_ids[i] for i in bm25_order]
+        self.chunks = chunks
+        return chunks
 
-    # reciprocal rank fusion для совмещения результатов выдачи двух методов поиска
-    rrf = {}
-    for rank, cid in enumerate(dense_ids):
-        rrf[cid] = rrf.get(cid, 0.0) + 1.0 / (c + rank)
+    def build_index(self) -> None:
+        if not self.chunks:
+            self.build_chunks()
 
-    for rank, cid in enumerate(sparse_ids):
-        rrf[cid] = rrf.get(cid, 0.0) + 1.0 / (c + rank)
+        texts = [chunk.text for chunk in self.chunks]
+        embeddings = self.model.encode(
+            texts,
+            convert_to_numpy=True,
+            normalize_embeddings=True,
+            show_progress_bar=False,
+        )
+        self.chunk_embeddings = embeddings
 
-    # top-k списка
-    ordered = sorted(rrf.items(), key=lambda kv: kv[1], reverse=True)[:k]
-    top_ids = [cid for cid, _ in ordered]
+    def retrieve(self, question: str, top_k: int | None = None) -> list[dict]:
+        if self.chunk_embeddings is None:
+            self.build_index()
 
-    # достаем тексты по id
-    text_by_id = dict(zip(bm25_ids, bm25_texts))
-    for i, did in enumerate(dense["ids"][0]):
-        text_by_id[did] = dense["documents"][0][i]
+        if top_k is None:
+            top_k = self.top_k
 
-    return {"ids": [top_ids], "documents": [[text_by_id[i] for i in top_ids]]}
+        query_embedding = self.model.encode(
+            [question],
+            convert_to_numpy=True,
+            normalize_embeddings=True,
+            show_progress_bar=False,
+        )[0]
 
+        scores = self.chunk_embeddings @ query_embedding
+        top_indices = np.argsort(scores)[::-1][:top_k]
 
-def build_prompt(query: str, hits: dict) -> str:
-    docs = hits["documents"][0]
-    ids = hits["ids"][0]
-    ctx = "\n\n---\n\n".join(f"[{i}]\n{d}" for i, d in zip(ids, docs))
-    return (
-        "Ты отвечаешь на вопрос продакта по архиву фокус-групп. "
-        "Опирайся ТОЛЬКО на контекст ниже. Если в контексте нет ответа — "
-        "скажи об этом прямо. Перечисли имена участников.\n\n"
-        "Правила:\n"
-        "1. Опирайся ТОЛЬКО на контекст ниже. Не добавляй факты из общего знания.\n"
-        "2. В `quotes` — 1-5 точных коротких цитат (НЕ пересказ), с именами.\n"
-        "3. В `sources` — id блоков, откуда взяты цитаты (формат: 'tbank_egor__0').\n"
-        "4. В `confidence` — честная оценка: 0.9+ ТОЛЬКО когда прямой ответ в контексте,"
-        "0.5-0.8, если собран из несколььких кусков, < 0.5 — если контекст не отвечает на запрос.\n\n"
-        f"Контекст:\n{ctx}\n\n"
-        f"Вопрос: {query}\n\n"
-        "Ответ:"
-    )
+        results: list[dict] = []
 
+        for rank, idx in enumerate(top_indices, start=1):
+            chunk = self.chunks[int(idx)]
+            results.append(
+                {
+                    "rank": rank,
+                    "score": float(scores[int(idx)]),
+                    "chunk_id": chunk.chunk_id,
+                    "source": chunk.source,
+                    "text": chunk.text,
+                }
+            )
 
-def ask(query: str):
-    # Эмбеддим запрос и ищем топ-5 в Chroma.
-    print("Поиск по базе...", flush=True)
-    t0 = time.time()
-    hits = hybrid_retrieve(query, k=15)
-    found = hits["ids"][0]
-    print(
-        f"   нашёл {len(found)} чанков за {time.time() - t0:.1f}с: {', '.join(found)}",
-        flush=True,
-    )
-
-    # Кладём найденное в промпт, спрашиваем модель.
-    print("Генерация ответа...", flush=True)
-    t1 = time.time()
-    prompt = build_prompt(query, hits)
-    resp: RAGAnswer = client.chat.completions.create(
-        model=MODEL,
-        response_model=RAGAnswer,
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.2,
-    )
-    print(f"   ответ за {time.time() - t1:.1f}с", flush=True)
-
-    print("\n" + "=" * 60)
-    print(f"ВОПРОС: {query}")
-    print("=" * 60)
-    print(resp)
-    print("\n--- источники ---")
-    for i in found:
-        print(f"  {i}")
-
-
-if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Использование: python pipeline.py {ingest|ask} [вопрос]")
-        sys.exit(1)
-
-    cmd = sys.argv[1]
-    if cmd == "ingest":
-        ingest()
-    elif cmd == "ask":
-        if len(sys.argv) < 3:
-            print('Нужен вопрос: python pipeline.py ask "..."')
-            sys.exit(1)
-        ask(sys.argv[2])
-    else:
-        print(f"Неизвестная команда: {cmd}")
-        sys.exit(1)
+        return results
