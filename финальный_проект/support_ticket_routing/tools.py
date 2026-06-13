@@ -184,8 +184,13 @@ def recommended_action(category: str, priority: str, escalation_required: bool) 
     return prefix + actions.get(category, actions["other"])
 
 
-def retrieve_policy_docs(rag: PolicyRAG, query: str, top_k: int = 3) -> list[RetrievedPolicy]:
-    return rag.search(query=query, top_k=top_k)
+def retrieve_policy_docs(
+    rag: PolicyRAG,
+    query: str,
+    top_k: int = 3,
+    min_score: float = 0.05,
+) -> list[RetrievedPolicy]:
+    return rag.search(query=query, top_k=top_k, min_score=min_score)
 
 
 def check_quote_grounding(ticket_text: str, evidence_quote: str) -> bool:

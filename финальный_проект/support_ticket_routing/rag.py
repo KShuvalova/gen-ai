@@ -44,23 +44,49 @@ class PolicyRAG:
         texts = [doc["text"] for doc in self.documents]
         self.matrix = self.vectorizer.fit_transform(texts)
 
-    def search(self, query: str, top_k: int = 3) -> list[RetrievedPolicy]:
+    def search(
+        self,
+        query: str,
+        top_k: int = 3,
+        min_score: float = 0.05,
+        fallback_source: str = "routing_rules.md",
+    ) -> list[RetrievedPolicy]:
         if self.matrix is None:
             raise RuntimeError("RAG index was not built")
 
         query_vec = self.vectorizer.transform([query])
         scores = cosine_similarity(query_vec, self.matrix).flatten()
 
-        ranked_indices = scores.argsort()[::-1][:top_k]
+        ranked_indices = scores.argsort()[::-1]
 
         results = []
         for idx in ranked_indices:
+            score = float(scores[int(idx)])
+            if score < min_score:
+                continue
+
             doc = self.documents[int(idx)]
             results.append(
                 RetrievedPolicy(
                     source_id=doc["source_id"],
-                    score=float(scores[int(idx)]),
+                    score=score,
                     text=doc["text"][:1200],
+                )
+            )
+
+            if len(results) >= top_k:
+                break
+
+        if not results:
+            fallback_doc = next(
+                (doc for doc in self.documents if doc["source_id"] == fallback_source),
+                self.documents[int(ranked_indices[0])],
+            )
+            results.append(
+                RetrievedPolicy(
+                    source_id=fallback_doc["source_id"],
+                    score=0.0,
+                    text=fallback_doc["text"][:1200],
                 )
             )
 
