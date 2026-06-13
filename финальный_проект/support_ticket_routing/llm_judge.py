@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from llm_client import chat_json, get_model_name, llm_config_available
+from llm_client import chat_json_with_usage, get_model_name, llm_config_available
 from schema import LLMJudgeResponse
 
 
@@ -116,7 +116,7 @@ def main() -> None:
         rag_result = rag_by_id[ticket_key]
 
         prompt = build_prompt(case, prediction, rag_result)
-        judge_model = chat_json(prompt, response_model=LLMJudgeResponse, max_retries=3)
+        judge_model, usage = chat_json_with_usage(prompt, response_model=LLMJudgeResponse, max_retries=3)
         judge = judge_model.model_dump()
 
         row = {
@@ -135,6 +135,12 @@ def main() -> None:
             "evidence_ok": bool(judge.get("evidence_ok", False)),
             "source_ok": bool(judge.get("source_ok", False)),
             "comment": str(judge.get("comment", "")),
+            "prompt_tokens": int(usage["prompt_tokens"]),
+            "completion_tokens": int(usage["completion_tokens"]),
+            "total_tokens": int(usage["total_tokens"]),
+            "estimated_cost_usd": float(usage["estimated_cost_usd"]),
+            "llm_attempts": int(usage["llm_attempts"]),
+            "cost_pricing_configured": bool(usage["cost_pricing_configured"]),
         }
         rows.append(row)
 
@@ -151,10 +157,18 @@ def main() -> None:
         "department_ok_rate": round(float(df["department_ok"].mean()), 4),
         "evidence_ok_rate": round(float(df["evidence_ok"].mean()), 4),
         "source_ok_rate": round(float(df["source_ok"].mean()), 4),
+        "prompt_tokens": int(df["prompt_tokens"].sum()),
+        "completion_tokens": int(df["completion_tokens"].sum()),
+        "total_tokens": int(df["total_tokens"].sum()),
+        "estimated_cost_usd": round(float(df["estimated_cost_usd"].sum()), 8),
+        "avg_tokens_per_case": round(float(df["total_tokens"].mean()), 4),
+        "total_llm_attempts": int(df["llm_attempts"].sum()),
+        "cost_pricing_configured": bool(df["cost_pricing_configured"].any()),
     }
 
     save_json(LLM_REPORT_PATH, rows)
     save_json(LLM_SUMMARY_PATH, summary)
+    save_json(OUTPUT_DIR / "cost_summary.json", summary)
 
     print("LLM judge finished.")
     print(json.dumps(summary, ensure_ascii=False, indent=2))

@@ -14,7 +14,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All main decisions match expected, evidence quote is exact and supports, used sources are relevant."
+    "comment": "Category, priority, and department match expected. Evidence is directly from ticket. Sources used are relevant.",
+    "prompt_tokens": 455,
+    "completion_tokens": 298,
+    "total_tokens": 753,
+    "estimated_cost_usd": 0.00014714,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_002",
@@ -31,7 +37,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All predicted values match expected, evidence is directly quoted from ticket."
+    "comment": "All main decisions match expected, evidence is a direct quote supporting the issue, and used sources are relevant to the decision.",
+    "prompt_tokens": 458,
+    "completion_tokens": 852,
+    "total_tokens": 1310,
+    "estimated_cost_usd": 0.00030268,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_003",
@@ -48,7 +60,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All decision fields match expected, evidence is directly from ticket, and used sources are relevant."
+    "comment": "All criteria met. Evidence is directly from ticket, category/priority/department match expected, and sources used are relevant.",
+    "prompt_tokens": 458,
+    "completion_tokens": 226,
+    "total_tokens": 684,
+    "estimated_cost_usd": 0.0001274,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_004",
@@ -65,7 +83,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All expected fields match. Evidence is exact quote. Sources are relevant."
+    "comment": "All criteria met. Prediction matches expected values and evidence is grounded.",
+    "prompt_tokens": 462,
+    "completion_tokens": 135,
+    "total_tokens": 597,
+    "estimated_cost_usd": 0.00010248,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_005",
@@ -82,7 +106,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met. Prediction matches expected category, priority, department, evidence is directly from ticket, and sources are correct."
+    "comment": "All criteria meet expectations: category, priority, department match; evidence is directly from ticket; sources are relevant.",
+    "prompt_tokens": 444,
+    "completion_tokens": 139,
+    "total_tokens": 583,
+    "estimated_cost_usd": 0.00010108,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_006",
@@ -99,7 +129,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met."
+    "comment": "All predictions match expected values, evidence is directly quoted from ticket, and used sources are relevant.",
+    "prompt_tokens": 463,
+    "completion_tokens": 285,
+    "total_tokens": 748,
+    "estimated_cost_usd": 0.00014462,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_007",
@@ -116,7 +152,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met: category, priority, and department match expected; evidence is quoted correctly; used sources are relevant."
+    "comment": "All aspects correct.",
+    "prompt_tokens": 473,
+    "completion_tokens": 219,
+    "total_tokens": 692,
+    "estimated_cost_usd": 0.00012754,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_008",
@@ -133,7 +175,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All predictions match expected values and evidence is directly from ticket."
+    "comment": "All criteria met.",
+    "prompt_tokens": 469,
+    "completion_tokens": 216,
+    "total_tokens": 685,
+    "estimated_cost_usd": 0.00012614,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_009",
@@ -150,7 +198,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "Main decision matches expected, evidence is direct quote from ticket, and used sources are relevant."
+    "comment": "All main decisions match expected; evidence quote is directly from ticket and supports decision; used sources are relevant.",
+    "prompt_tokens": 467,
+    "completion_tokens": 460,
+    "total_tokens": 927,
+    "estimated_cost_usd": 0.00019418,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_010",
@@ -167,7 +221,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All decisions match expected. Evidence is direct quote. Used sources are relevant."
+    "comment": "All decisions match expected; evidence is direct quote; sources are relevant.",
+    "prompt_tokens": 473,
+    "completion_tokens": 264,
+    "total_tokens": 737,
+    "estimated_cost_usd": 0.00014014,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_011",
@@ -184,7 +244,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All fields match expected values, evidence is exact quote, used sources are relevant."
+    "comment": "All criteria met.",
+    "prompt_tokens": 463,
+    "completion_tokens": 268,
+    "total_tokens": 731,
+    "estimated_cost_usd": 0.00013986,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_012",
@@ -201,7 +267,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All decisions match expected values and evidence is directly from ticket text."
+    "comment": "All criteria met: category, priority, department correct; evidence quote exact; sources relevant.",
+    "prompt_tokens": 463,
+    "completion_tokens": 276,
+    "total_tokens": 739,
+    "estimated_cost_usd": 0.0001421,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_013",
@@ -218,7 +290,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All expected fields match and evidence is properly grounded."
+    "comment": "All main criteria match; predicted category, priority, and department are correct. Evidence quote is exact from ticket. Used sources are relevant, though 'escalation_policy.md' is missing from used_sources but not required for correctness.",
+    "prompt_tokens": 458,
+    "completion_tokens": 389,
+    "total_tokens": 847,
+    "estimated_cost_usd": 0.00017304,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_014",
@@ -235,7 +313,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met."
+    "comment": "All predicted fields match expected, evidence is directly from ticket, and used sources are relevant.",
+    "prompt_tokens": 459,
+    "completion_tokens": 236,
+    "total_tokens": 695,
+    "estimated_cost_usd": 0.00013034,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_015",
@@ -252,7 +336,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "Correct routing and evidence."
+    "comment": "Prediction matches expected category, priority, and department. Evidence is directly from the ticket. Used sources are relevant.",
+    "prompt_tokens": 458,
+    "completion_tokens": 296,
+    "total_tokens": 754,
+    "estimated_cost_usd": 0.000147,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_016",
@@ -269,7 +359,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria satisfied."
+    "comment": "All criteria satisfied.",
+    "prompt_tokens": 461,
+    "completion_tokens": 328,
+    "total_tokens": 789,
+    "estimated_cost_usd": 0.00015638,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_017",
@@ -286,7 +382,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "Prediction matches expected routing and evidence is directly quoted."
+    "comment": "All criteria met.",
+    "prompt_tokens": 456,
+    "completion_tokens": 213,
+    "total_tokens": 669,
+    "estimated_cost_usd": 0.00012348,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_018",
@@ -303,7 +405,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met: category, priority, department correct; evidence directly from ticket; used sources relevant."
+    "comment": "All criteria met. Predicted category, priority, and department match expected. Evidence is directly quoted from ticket. Used sources are relevant.",
+    "prompt_tokens": 457,
+    "completion_tokens": 544,
+    "total_tokens": 1001,
+    "estimated_cost_usd": 0.0002163,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_019",
@@ -320,7 +428,13 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met: category, priority, department match expected; evidence quote is exact from ticket; used sources are relevant."
+    "comment": "Prediction matches expected category, priority, and department. Evidence quote is directly from the ticket and supports the decision. Used sources are relevant.",
+    "prompt_tokens": 460,
+    "completion_tokens": 270,
+    "total_tokens": 730,
+    "estimated_cost_usd": 0.00014,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   },
   {
     "case_id": "case_020",
@@ -337,6 +451,12 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "Category, priority, department correct. Evidence is direct quote. Sources are relevant."
+    "comment": "Prediction matches expected category, priority, and department. Evidence quote is directly from ticket. Used sources are relevant.",
+    "prompt_tokens": 461,
+    "completion_tokens": 235,
+    "total_tokens": 696,
+    "estimated_cost_usd": 0.00013034,
+    "llm_attempts": 1,
+    "cost_pricing_configured": true
   }
 ]
