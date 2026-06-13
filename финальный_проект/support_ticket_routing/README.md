@@ -10,6 +10,8 @@
 
 Источник данных: Customer Support Tickets Dataset 200k Records с Kaggle.
 
+Технически система поддерживает 8 категорий: `account_access`, `billing_refund`, `technical_bug`, `subscription`, `security_privacy`, `delivery_status`, `product_question`, `other`. В рабочей подвыборке из Kaggle представлены 4 основные категории: `account_access`, `billing_refund`, `subscription`, `technical_bug`.
+
 В репозиторий включена только обезличенная и уменьшенная подвыборка:
 
 - `input/tickets.csv` - 100 тикетов;
@@ -82,14 +84,18 @@ support_ticket_routing/
 4. Classification: категория, приоритет, отдел.
 5. RAG по policy-документам.
 6. Agent tools: классификация, выбор отдела, проверка эскалации, retrieval, hallucination check.
-7. LLM-as-judge через DeepSeek-compatible API.
+7. LLM-as-judge через DeepSeek-compatible API с Pydantic `response_model` и `max_retries=3`.
 8. Проверка галлюцинаций: ghost quotes и fake sources.
 9. Eval на 20 тестовых кейсах и отдельный challenge set.
 
 ## 5. Установка
 
+Из корня репозитория:
+
 ```bash
-cd /workspaces/gen-ai/финальный_проект/support_ticket_routing
+cd финальный_проект/support_ticket_routing
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
@@ -109,7 +115,7 @@ LLM_AUTH_TOKEN=your_token_here
 LLM_MODEL=deepseek-v4-flash
 ```
 
-Если токен не указан, основной pipeline и rule-based eval всё равно работают, но `llm_judge.py` будет пропущен.
+Если токен не указан, основной pipeline и rule-based eval всё равно работают, а `llm_judge.py` создаёт skipped report. LLM используется для judge-оценки, основной классификатор остаётся rule-based.
 
 ## 7. Запуск
 
@@ -160,6 +166,11 @@ LLM-as-judge:
 | department_ok_rate | 1.0 |
 | evidence_ok_rate | 1.0 |
 | source_ok_rate | 1.0 |
+| prompt_tokens | 9218 |
+| completion_tokens | 6149 |
+| total_tokens | 15367 |
+| estimated_cost_usd | 0.00301224 |
+| avg_tokens_per_case | 768.35 |
 
 Challenge set на 12 сложных кейсах:
 
