@@ -14,7 +14,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "Correct routing decision with appropriate evidence."
+    "comment": "All main decisions match expected, evidence quote is exact and supports, used sources are relevant."
   },
   {
     "case_id": "case_002",
@@ -31,7 +31,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met. Prediction matches expected values and evidence is properly grounded."
+    "comment": "All predicted values match expected, evidence is directly quoted from ticket."
   },
   {
     "case_id": "case_003",
@@ -48,7 +48,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "Correct routing decision with appropriate evidence and sources."
+    "comment": "All decision fields match expected, evidence is directly from ticket, and used sources are relevant."
   },
   {
     "case_id": "case_004",
@@ -65,7 +65,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All decisions match expectations; evidence is direct quote from ticket; used sources are relevant."
+    "comment": "All expected fields match. Evidence is exact quote. Sources are relevant."
   },
   {
     "case_id": "case_005",
@@ -82,7 +82,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met. Prediction matches expected values and evidence is grounded."
+    "comment": "All criteria met. Prediction matches expected category, priority, department, evidence is directly from ticket, and sources are correct."
   },
   {
     "case_id": "case_006",
@@ -99,7 +99,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met: correct category, priority, department; evidence is direct quote; sources are relevant."
+    "comment": "All criteria met."
   },
   {
     "case_id": "case_007",
@@ -116,7 +116,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met. Prediction matches expected."
+    "comment": "All criteria met: category, priority, and department match expected; evidence is quoted correctly; used sources are relevant."
   },
   {
     "case_id": "case_008",
@@ -133,7 +133,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met."
+    "comment": "All predictions match expected values and evidence is directly from ticket."
   },
   {
     "case_id": "case_009",
@@ -150,7 +150,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met."
+    "comment": "Main decision matches expected, evidence is direct quote from ticket, and used sources are relevant."
   },
   {
     "case_id": "case_010",
@@ -167,7 +167,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All criteria met: category, priority, department match expected; evidence quote is exact; sources are relevant."
+    "comment": "All decisions match expected. Evidence is direct quote. Used sources are relevant."
   },
   {
     "case_id": "case_011",
@@ -184,7 +184,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All prediction fields match expected values, evidence is directly from ticket, used sources are relevant."
+    "comment": "All fields match expected values, evidence is exact quote, used sources are relevant."
   },
   {
     "case_id": "case_012",
@@ -201,7 +201,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All routing fields match expected; evidence is direct quote; used sources are relevant to the decision."
+    "comment": "All decisions match expected values and evidence is directly from ticket text."
   },
   {
     "case_id": "case_013",
@@ -218,7 +218,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All decisions match expected. Evidence quoted correctly. Sources used are relevant, missing escalation_policy.md but used sources are sufficient."
+    "comment": "All expected fields match and evidence is properly grounded."
   },
   {
     "case_id": "case_014",
@@ -252,7 +252,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All predicted fields match expected, evidence is directly from ticket, and used sources are relevant."
+    "comment": "Correct routing and evidence."
   },
   {
     "case_id": "case_016",
@@ -269,7 +269,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All main decisions match expected and evidence is directly from ticket."
+    "comment": "All criteria satisfied."
   },
   {
     "case_id": "case_017",
@@ -286,7 +286,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All main decision aspects match expected, evidence is directly from ticket, and used sources are relevant."
+    "comment": "Prediction matches expected routing and evidence is directly quoted."
   },
   {
     "case_id": "case_018",
@@ -303,7 +303,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All aspects correct. Predicted routing matches expected."
+    "comment": "All criteria met: category, priority, department correct; evidence directly from ticket; used sources relevant."
   },
   {
     "case_id": "case_019",
@@ -320,7 +320,7 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All main criteria met. Used sources are relevant to the decision."
+    "comment": "All criteria met: category, priority, department match expected; evidence quote is exact from ticket; used sources are relevant."
   },
   {
     "case_id": "case_020",
@@ -337,6 +337,6 @@
     "department_ok": true,
     "evidence_ok": true,
     "source_ok": true,
-    "comment": "All routing decisions match expected values. Evidence is directly quoted from the ticket. Used sources are relevant to the decision."
+    "comment": "Category, priority, department correct. Evidence is direct quote. Sources are relevant."
   }
 ]

@@ -165,3 +165,21 @@ class EvalResult(BaseModel):
     rag_hit_rate: float
     ghost_quote_count: int
     fake_source_count: int
+
+
+class LLMJudgeResponse(BaseModel):
+    judge_pass: bool
+    category_ok: bool
+    priority_ok: bool
+    department_ok: bool
+    evidence_ok: bool
+    source_ok: bool
+    comment: str
+
+    @field_validator("comment")
+    @classmethod
+    def comment_not_empty(cls, value: str) -> str:
+        value = str(value).strip()
+        if not value:
+            raise ValueError("comment must not be empty")
+        return value

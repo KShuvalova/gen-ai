@@ -6,6 +6,7 @@ from pathlib import Path
 import pandas as pd
 
 from llm_client import chat_json, get_model_name, llm_config_available
+from schema import LLMJudgeResponse
 
 
 PROJECT_DIR = Path(__file__).parent
@@ -115,7 +116,8 @@ def main() -> None:
         rag_result = rag_by_id[ticket_key]
 
         prompt = build_prompt(case, prediction, rag_result)
-        judge = chat_json(prompt)
+        judge_model = chat_json(prompt, response_model=LLMJudgeResponse, max_retries=3)
+        judge = judge_model.model_dump()
 
         row = {
             "case_id": case["id"],
